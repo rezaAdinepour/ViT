@@ -1,1 +1,7 @@
-# ViT
+# Hardware Impelementation of Vision Transformer
+
+
+
+
+## Related link:
+* https://github.com/sharc-lab/Edge-MoE
