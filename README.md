@@ -1,4 +1,4 @@
-# Hardware Impelementation of Vision Transformer
+# Hardware Implementation of Vision Transformer
 
 
 
