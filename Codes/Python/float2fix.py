@@ -38,8 +38,8 @@ print(a)
 print("-"*30)
 
 
-print("Matrix A is: ")
-print(a)
+print("Matrix B is: ")
+print(b)
 print("-"*30)
 
 #-- Perform matrix multiplication --#
