@@ -10,8 +10,7 @@
 
 
 
-## Fix/float usful link:
-* 1
-* 2
-* 3
-* 4
+## Fix/float Library:
+* Fxpmath: https://francof2a.github.io/fxpmath/docs/quick_start
+* Decimal: https://docs.python.org/3/library/decimal.html
+* Fixedpoint: https://fixedpoint.readthedocs.io/en/latest/basics.html
