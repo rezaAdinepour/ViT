@@ -9,7 +9,7 @@
 * MatMul acceleration in HLS: https://github.com/twaclaw/matmult/tree/master
 
 
-## Fix/Float useful links:
+## Fix/Float point useful links:
 * VHDL-2008 Support Library: https://github.com/FPHDL/fphdl
 * fix/float lib(This link has a good description of fix/float point numbers): https://github.com/enclustra/en_cl_fix
 * Simple Python Fixed-Point Module (SPFPM): https://github.com/rwpenney/spfpm
