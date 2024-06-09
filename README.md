@@ -31,8 +31,3 @@
 ### C++:
 * https://github.com/MikeLankamp/fpm
 * https://github.com/has-castle/fixed_point
-
-
-
-### This section add in fork!
-
