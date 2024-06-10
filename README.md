@@ -7,6 +7,7 @@
 * Example for HLS tutorial: https://github.com/Xilinx/Vitis-HLS-Introductory-Examples/tree/2023.2
 * Example for HLS tutorial: https://github.com/Xilinx/HLS
 * MatMul acceleration in HLS: https://github.com/twaclaw/matmult/tree/master
+* MatMul acceleration in HLS: https://github.com/kaiiiz/hls-spmv/tree/main
 
 
 ## Fix/Float point useful links:
