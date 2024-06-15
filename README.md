@@ -8,6 +8,7 @@
 * Example for HLS tutorial: https://github.com/Xilinx/HLS
 * MatMul acceleration in HLS: https://github.com/twaclaw/matmult/tree/master
 * MatMul acceleration in HLS: https://github.com/kaiiiz/hls-spmv/tree/main
+* HLS for ML: https://github.com/fastmachinelearning/hls4ml
 
 
 ## Fix/Float point useful links:
