@@ -10,7 +10,7 @@
 * MatMul acceleration in HLS: [[Link]](https://github.com/kaiiiz/hls-spmv/tree/main)
 * HLS for ML: [[Link]](https://github.com/fastmachinelearning/hls4ml)
 * High-Level Digital Design Automation Course (ECE 6775): [[Link]](https://www.csl.cornell.edu/courses/ece6775/)
-* ECE 6775 Final Project course: [[Link]](https://github.com/SteveZhugl/ECE6775FinalProjectTB/tree/main)
+* ECE 6775 Final Project course: [[Link]](https://github.com/SteveZhugl/ECE6775FinalProjectTB/tree/main), [[Link]](https://github.com/Carl782051063/ECE6775projcet), [[Link]](https://github.com/hy592/6775-Final-Project)
 
 
 ## Fix/Float point useful links:
