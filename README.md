@@ -9,7 +9,7 @@
 * MatMul acceleration in HLS: [[Link]](https://github.com/twaclaw/matmult/tree/master)
 * MatMul acceleration in HLS: [[Link]](https://github.com/kaiiiz/hls-spmv/tree/main)
 * HLS for ML: [[Link]](https://github.com/fastmachinelearning/hls4ml)
-* 
+* High-Level Digital Design Automation Course: [[Link]](https://www.csl.cornell.edu/courses/ece6775/)
 
 
 ## Fix/Float point useful links:
