@@ -27,9 +27,9 @@
 ## Fix/float Library:
 
 ### Python:
-* Fxpmath: https://francof2a.github.io/fxpmath/docs/quick_start
-* Decimal: https://docs.python.org/3/library/decimal.html
-* Fixedpoint: https://fixedpoint.readthedocs.io/en/latest/basics.html
+* Fxpmath: [[Link]](https://francof2a.github.io/fxpmath/docs/quick_start)
+* Decimal: [[Link]](https://docs.python.org/3/library/decimal.html)
+* Fixedpoint: [[Link]](https://fixedpoint.readthedocs.io/en/latest/basics.html)
 
 ### C++:
 * https://github.com/MikeLankamp/fpm
