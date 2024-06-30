@@ -1,0 +1,25 @@
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:2222:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:2222:7: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:3196:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:3196:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:3210:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:3210:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:3224:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:3224:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:4853:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\OneDrive\Desktop\MatMul\solution1\.autopilot\db\matmul.pp.0.cpp:4853:7: note: FIX-IT applied suggested code changes

@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'matmul_1'" level="0">
+<item name = "Date">Sun Jun 30 22:43:06 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">MatMul</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.297 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">65, 65, 0.650 us, 0.650 us, 66, 66, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_matmul_1_Pipeline_loop_input_A1_loop_input_A2_fu_142">matmul_1_Pipeline_loop_input_A1_loop_input_A2, 11, 11, 0.110 us, 0.110 us, 11, 11, no</column>
+<column name="grp_matmul_1_Pipeline_loop_input_B1_loop_input_B2_fu_163">matmul_1_Pipeline_loop_input_B1_loop_input_B2, 11, 11, 0.110 us, 0.110 us, 11, 11, no</column>
+<column name="grp_matmul_1_Pipeline_loop1_loop2_fu_186">matmul_1_Pipeline_loop1_loop2, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_matmul_1_Pipeline_loop_output_C1_loop_output_C2_fu_209">matmul_1_Pipeline_loop_output_C1_loop_output_C2, 11, 11, 0.110 us, 0.110 us, 11, 11, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,86 @@
+{
+    "1": {
+        "name": "matmul_1_Pipeline_loop1_loop2",
+        "file": "MatMul\/src\/matmul.cpp",
+        "fileloc": "14",
+        "instructions": "64",
+        "total_instructions": "64",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "matmul_1_Pipeline_loop_input_B1_loop_input_B2",
+        "file": "MatMul\/src\/matmul.cpp",
+        "fileloc": "14",
+        "instructions": "93",
+        "total_instructions": "93",
+        "calls": "",
+        "basicblocks": "17",
+        "loads": {
+            "L": "14"
+        },
+        "stores": {
+            "L": "17"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "matmul_1",
+        "file": "matmul.cpp",
+        "fileloc": "4",
+        "instructions": "65",
+        "total_instructions": "348",
+        "calls": "3 2 1 4",
+        "basicblocks": "1",
+        "loads": {
+            "L": "20"
+        }
+    },
+    "3": {
+        "name": "matmul_1_Pipeline_loop_input_A1_loop_input_A2",
+        "file": "MatMul\/src\/matmul.cpp",
+        "fileloc": "14",
+        "instructions": "83",
+        "total_instructions": "83",
+        "calls": "",
+        "basicblocks": "17",
+        "loads": {
+            "L": "12"
+        },
+        "stores": {
+            "L": "15"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "matmul_1_Pipeline_loop_output_C1_loop_output_C2",
+        "file": "MatMul\/src\/matmul.cpp",
+        "fileloc": "14",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

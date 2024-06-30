@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="MatMul" solutionName="solution1" date="2024-06-30T23:43:07.586+0430" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'matmul_1_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="MatMul" solutionName="solution1" date="2024-07-01T00:01:11.984+0430" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'matmul_1_fadd_32ns_32ns_32_3_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="MatMul" solutionName="solution1" date="2024-07-01T00:01:11.952+0430" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'matmul_1_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="MatMul" solutionName="solution1" date="2024-06-30T23:45:15.385+0430" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'matmul_1_fadd_32ns_32ns_32_3_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="MatMul" solutionName="solution1" date="2024-06-30T23:45:13.376+0430" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

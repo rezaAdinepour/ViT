@@ -1,0 +1,55 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'User1' on host 'desktop-a2lg1n2' (Windows NT_amd64 version 6.2) on Sun Jun 30 23:00:49 +0330 2024
+INFO: [HLS 200-10] In directory 'C:/OneDrive/Desktop/HLS'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/OneDrive/Desktop/HLS/MatMul/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/OneDrive/Desktop/HLS/MatMul/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project MatMul 
+INFO: [HLS 200-10] Opening project 'C:/OneDrive/Desktop/HLS/MatMul'.
+INFO: [HLS 200-1510] Running: set_top matmul_1 
+INFO: [HLS 200-1510] Running: add_files MatMul/src/matmul.cpp 
+INFO: [HLS 200-10] Adding design file 'MatMul/src/matmul.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files MatMul/src/matmul.h 
+INFO: [HLS 200-10] Adding design file 'MatMul/src/matmul.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb MatMul/src/matmul_tb.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'MatMul/src/matmul_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/OneDrive/Desktop/HLS/MatMul/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./MatMul/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name matmul_1 matmul_1 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 566.641 ; gain = 180.836
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'matmul_1_fadd_32ns_32ns_32_3_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'matmul_1_fadd_32ns_32ns_32_3_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'matmul_1_fadd_32ns_32ns_32_3_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'matmul_1_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'matmul_1_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'matmul_1_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 30 23:01:13 2024...
+INFO: [HLS 200-802] Generated output file MatMul/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.897 seconds; current allocated memory: 7.156 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 24.065 seconds; peak allocated memory: 218.051 MB.

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "matmul.cpp",
+    "fileloc": 4,
+    "instructions": 173,
+    "loads": {
+      "L": 15
+    },
+    "name": "matmul_1",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 209
+  }
+}

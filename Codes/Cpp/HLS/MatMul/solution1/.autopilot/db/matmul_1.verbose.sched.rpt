@@ -1,0 +1,247 @@
+
+
+================================================================
+== Vitis HLS Report for 'matmul_1'
+================================================================
+* Date:           Sun Jun 30 22:43:06 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        MatMul
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.297 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       65|       65|  0.650 us|  0.650 us|   66|   66|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_phi7_loc = alloca i64 1"   --->   Operation 12 'alloca' 'p_phi7_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_phi_loc = alloca i64 1"   --->   Operation 13 'alloca' 'p_phi_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_loc109 = alloca i64 1"   --->   Operation 14 'alloca' 'p_loc109' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_loc108 = alloca i64 1"   --->   Operation 15 'alloca' 'p_loc108' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_loc107 = alloca i64 1"   --->   Operation 16 'alloca' 'p_loc107' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_loc106 = alloca i64 1"   --->   Operation 17 'alloca' 'p_loc106' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_loc105 = alloca i64 1"   --->   Operation 18 'alloca' 'p_loc105' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_loc104 = alloca i64 1"   --->   Operation 19 'alloca' 'p_loc104' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_loc103 = alloca i64 1"   --->   Operation 20 'alloca' 'p_loc103' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_loc102 = alloca i64 1"   --->   Operation 21 'alloca' 'p_loc102' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_loc101 = alloca i64 1"   --->   Operation 22 'alloca' 'p_loc101' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_loc91 = alloca i64 1"   --->   Operation 23 'alloca' 'p_loc91' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%p_loc90 = alloca i64 1"   --->   Operation 24 'alloca' 'p_loc90' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%p_loc89 = alloca i64 1"   --->   Operation 25 'alloca' 'p_loc89' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%p_loc88 = alloca i64 1"   --->   Operation 26 'alloca' 'p_loc88' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%p_loc87 = alloca i64 1"   --->   Operation 27 'alloca' 'p_loc87' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%p_loc86 = alloca i64 1"   --->   Operation 28 'alloca' 'p_loc86' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%p_loc85 = alloca i64 1"   --->   Operation 29 'alloca' 'p_loc85' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%p_loc84 = alloca i64 1"   --->   Operation 30 'alloca' 'p_loc84' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%p_loc = alloca i64 1"   --->   Operation 31 'alloca' 'p_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%output_C = alloca i64 1" [MatMul/src/matmul.cpp:12]   --->   Operation 32 'alloca' 'output_C' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 33 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.00>
+ST_2 : Operation 34 [2/2] (1.00ns)   --->   "%call_ln0 = call void @matmul_1_Pipeline_loop_input_A1_loop_input_A2, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 %in_A_V_last_V, i32 %p_loc, i32 %p_loc84, i32 %p_loc85, i32 %p_loc86, i32 %p_loc87, i32 %p_loc88, i32 %p_loc89, i32 %p_loc90, i32 %p_loc91"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 1.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 1.26>
+ST_3 : Operation 35 [1/2] (1.26ns)   --->   "%call_ln0 = call void @matmul_1_Pipeline_loop_input_A1_loop_input_A2, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 %in_A_V_last_V, i32 %p_loc, i32 %p_loc84, i32 %p_loc85, i32 %p_loc86, i32 %p_loc87, i32 %p_loc88, i32 %p_loc89, i32 %p_loc90, i32 %p_loc91"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 1.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%empty_27 = wait i32 @_ssdm_op_Wait"   --->   Operation 36 'wait' 'empty_27' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 1.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%empty_28 = wait i32 @_ssdm_op_Wait"   --->   Operation 37 'wait' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [2/2] (1.00ns)   --->   "%call_ln0 = call void @matmul_1_Pipeline_loop_input_B1_loop_input_B2, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 %in_A_V_last_V, i32 %p_loc101, i32 %p_loc102, i32 %p_loc103, i32 %p_loc104, i32 %p_loc105, i32 %p_loc106, i32 %p_loc107, i32 %p_loc108, i32 %p_loc109, i4 %p_phi_loc, i4 %p_phi7_loc"   --->   Operation 38 'call' 'call_ln0' <Predicate = true> <Delay = 1.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 1.26>
+ST_6 : Operation 39 [1/2] (1.26ns)   --->   "%call_ln0 = call void @matmul_1_Pipeline_loop_input_B1_loop_input_B2, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 %in_A_V_last_V, i32 %p_loc101, i32 %p_loc102, i32 %p_loc103, i32 %p_loc104, i32 %p_loc105, i32 %p_loc106, i32 %p_loc107, i32 %p_loc108, i32 %p_loc109, i4 %p_phi_loc, i4 %p_phi7_loc"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 1.26> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 40 [1/1] (0.00ns)   --->   "%p_loc_load = load i32 %p_loc"   --->   Operation 40 'load' 'p_loc_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 41 [1/1] (0.00ns)   --->   "%p_loc84_load = load i32 %p_loc84"   --->   Operation 41 'load' 'p_loc84_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 42 [1/1] (0.00ns)   --->   "%p_loc85_load = load i32 %p_loc85"   --->   Operation 42 'load' 'p_loc85_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 43 [1/1] (0.00ns)   --->   "%p_loc86_load = load i32 %p_loc86"   --->   Operation 43 'load' 'p_loc86_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 44 [1/1] (0.00ns)   --->   "%p_loc87_load = load i32 %p_loc87"   --->   Operation 44 'load' 'p_loc87_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 45 [1/1] (0.00ns)   --->   "%p_loc88_load = load i32 %p_loc88"   --->   Operation 45 'load' 'p_loc88_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 46 [1/1] (0.00ns)   --->   "%p_loc89_load = load i32 %p_loc89"   --->   Operation 46 'load' 'p_loc89_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 47 [1/1] (0.00ns)   --->   "%p_loc90_load = load i32 %p_loc90"   --->   Operation 47 'load' 'p_loc90_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 48 [1/1] (0.00ns)   --->   "%p_loc91_load = load i32 %p_loc91"   --->   Operation 48 'load' 'p_loc91_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 49 [1/1] (0.00ns)   --->   "%p_loc101_load = load i32 %p_loc101"   --->   Operation 49 'load' 'p_loc101_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 50 [1/1] (0.00ns)   --->   "%p_loc102_load = load i32 %p_loc102"   --->   Operation 50 'load' 'p_loc102_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 51 [1/1] (0.00ns)   --->   "%p_loc103_load = load i32 %p_loc103"   --->   Operation 51 'load' 'p_loc103_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 52 [1/1] (0.00ns)   --->   "%p_loc104_load = load i32 %p_loc104"   --->   Operation 52 'load' 'p_loc104_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 53 [1/1] (0.00ns)   --->   "%p_loc105_load = load i32 %p_loc105"   --->   Operation 53 'load' 'p_loc105_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 54 [1/1] (0.00ns)   --->   "%p_loc106_load = load i32 %p_loc106"   --->   Operation 54 'load' 'p_loc106_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 55 [1/1] (0.00ns)   --->   "%p_loc107_load = load i32 %p_loc107"   --->   Operation 55 'load' 'p_loc107_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 56 [1/1] (0.00ns)   --->   "%p_loc108_load = load i32 %p_loc108"   --->   Operation 56 'load' 'p_loc108_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 57 [1/1] (0.00ns)   --->   "%p_loc109_load = load i32 %p_loc109"   --->   Operation 57 'load' 'p_loc109_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 58 [1/1] (0.00ns)   --->   "%empty_29 = wait i32 @_ssdm_op_Wait"   --->   Operation 58 'wait' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 59 [2/2] (0.00ns)   --->   "%call_ln0 = call void @matmul_1_Pipeline_loop1_loop2, i32 %p_loc91_load, i32 %p_loc90_load, i32 %p_loc89_load, i32 %p_loc88_load, i32 %p_loc87_load, i32 %p_loc86_load, i32 %p_loc85_load, i32 %p_loc84_load, i32 %p_loc_load, i32 %output_C, i32 %p_loc109_load, i32 %p_loc108_load, i32 %p_loc107_load, i32 %p_loc106_load, i32 %p_loc105_load, i32 %p_loc104_load, i32 %p_loc103_load, i32 %p_loc102_load, i32 %p_loc101_load"   --->   Operation 59 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 60 [1/2] (0.00ns)   --->   "%call_ln0 = call void @matmul_1_Pipeline_loop1_loop2, i32 %p_loc91_load, i32 %p_loc90_load, i32 %p_loc89_load, i32 %p_loc88_load, i32 %p_loc87_load, i32 %p_loc86_load, i32 %p_loc85_load, i32 %p_loc84_load, i32 %p_loc_load, i32 %output_C, i32 %p_loc109_load, i32 %p_loc108_load, i32 %p_loc107_load, i32 %p_loc106_load, i32 %p_loc105_load, i32 %p_loc104_load, i32 %p_loc103_load, i32 %p_loc102_load, i32 %p_loc101_load"   --->   Operation 60 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 61 [1/1] (0.00ns)   --->   "%p_phi_loc_load = load i4 %p_phi_loc"   --->   Operation 61 'load' 'p_phi_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 62 [1/1] (0.00ns)   --->   "%p_phi7_loc_load = load i4 %p_phi7_loc"   --->   Operation 62 'load' 'p_phi7_loc_load' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 63 [1/1] (0.00ns)   --->   "%empty_30 = wait i32 @_ssdm_op_Wait"   --->   Operation 63 'wait' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 64 [2/2] (0.00ns)   --->   "%call_ln0 = call void @matmul_1_Pipeline_loop_output_C1_loop_output_C2, i32 %output_C, i4 %p_phi_loc_load, i4 %p_phi7_loc_load, i32 %out_C_V_data_V, i4 %out_C_V_keep_V, i4 %out_C_V_strb_V, i1 %out_C_V_last_V"   --->   Operation 64 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 1.73>
+ST_10 : Operation 65 [1/2] (1.73ns)   --->   "%call_ln0 = call void @matmul_1_Pipeline_loop_output_C1_loop_output_C2, i32 %output_C, i4 %p_phi_loc_load, i4 %p_phi7_loc_load, i32 %out_C_V_data_V, i4 %out_C_V_keep_V, i4 %out_C_V_strb_V, i1 %out_C_V_last_V"   --->   Operation 65 'call' 'call_ln0' <Predicate = true> <Delay = 1.73> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 66 [1/1] (0.00ns)   --->   "%spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_4" [MatMul/src/matmul.cpp:4]   --->   Operation 66 'spectopmodule' 'spectopmodule_ln4' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln4 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0" [MatMul/src/matmul.cpp:4]   --->   Operation 67 'specinterface' 'specinterface_ln4' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 %in_A_V_last_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 69 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %in_A_V_data_V"   --->   Operation 69 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 70 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %in_A_V_keep_V"   --->   Operation 70 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 71 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %in_A_V_strb_V"   --->   Operation 71 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 72 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %in_A_V_last_V"   --->   Operation 72 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %out_C_V_data_V, i4 %out_C_V_keep_V, i4 %out_C_V_strb_V, i1 %out_C_V_last_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 74 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %out_C_V_data_V"   --->   Operation 74 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 75 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %out_C_V_keep_V"   --->   Operation 75 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 76 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %out_C_V_strb_V"   --->   Operation 76 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 77 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %out_C_V_last_V"   --->   Operation 77 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 78 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln24 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %out_C_V_data_V, i4 %out_C_V_keep_V, i4 %out_C_V_strb_V, i1 0, i1 %out_C_V_last_V, i1 0, i1 0, void @empty_2" [MatMul/src/matmul.cpp:24]   --->   Operation 78 'specaxissidechannel' 'specaxissidechannel_ln24' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 79 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln24 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %in_A_V_data_V, i4 %in_A_V_keep_V, i4 %in_A_V_strb_V, i1 0, i1 %in_A_V_last_V, i1 0, i1 0, void @empty_3" [MatMul/src/matmul.cpp:24]   --->   Operation 79 'specaxissidechannel' 'specaxissidechannel_ln24' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 80 [1/1] (0.00ns)   --->   "%ret_ln77 = ret" [MatMul/src/matmul.cpp:77]   --->   Operation 80 'ret' 'ret_ln77' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 1.000ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'matmul_1_Pipeline_loop_input_A1_loop_input_A2' [45]  (1.000 ns)
+
+ <State 3>: 1.269ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'matmul_1_Pipeline_loop_input_A1_loop_input_A2' [45]  (1.269 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 1.000ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'matmul_1_Pipeline_loop_input_B1_loop_input_B2' [57]  (1.000 ns)
+
+ <State 6>: 1.269ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'matmul_1_Pipeline_loop_input_B1_loop_input_B2' [57]  (1.269 ns)
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 1.730ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'matmul_1_Pipeline_loop_output_C1_loop_output_C2' [72]  (1.730 ns)
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

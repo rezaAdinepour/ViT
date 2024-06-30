@@ -1,0 +1,182 @@
+
+
+================================================================
+== Vitis HLS Report for 'matmul_1_Pipeline_loop_input_A1_loop_input_A2'
+================================================================
+* Date:           Sun Jun 30 22:43:06 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        MatMul
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.507 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       11|       11|  0.110 us|  0.110 us|   11|   11|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |           Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_input_A1_loop_input_A2  |        9|        9|         1|          1|          1|     9|       yes|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       57|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|        -|        -|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       72|    -|
+|Register             |        -|     -|      298|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|      298|      129|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3072|   864000|   432000|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9216|  2592000|  1296000|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln24_1_fu_219_p2              |         +|   0|  0|  12|           4|           1|
+    |add_ln24_fu_231_p2                |         +|   0|  0|   9|           2|           1|
+    |add_ln26_fu_312_p2                |         +|   0|  0|   9|           2|           1|
+    |icmp_ln24_fu_213_p2               |      icmp|   0|  0|  12|           4|           4|
+    |icmp_ln26_fu_237_p2               |      icmp|   0|  0|   9|           2|           2|
+    |ap_block_state1_pp0_stage0_iter0  |        or|   0|  0|   2|           1|           1|
+    |select_ln14_fu_243_p3             |    select|   0|  0|   2|           1|           1|
+    |select_ln24_fu_251_p3             |    select|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  57|          17|          13|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_col_load             |   9|          2|    2|          4|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|    4|          8|
+    |ap_sig_allocacmp_row_load             |   9|          2|    2|          4|
+    |col_fu_72                             |   9|          2|    2|          4|
+    |in_A_TDATA_blk_n                      |   9|          2|    1|          2|
+    |indvar_flatten_fu_80                  |   9|          2|    4|          8|
+    |row_fu_76                             |   9|          2|    2|          4|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  72|         16|   18|         36|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------+----+----+-----+-----------+
+    |         Name         | FF | LUT| Bits| Const Bits|
+    +----------------------+----+----+-----+-----------+
+    |ap_CS_fsm             |   1|   0|    1|          0|
+    |ap_done_reg           |   1|   0|    1|          0|
+    |col_fu_72             |   2|   0|    2|          0|
+    |empty_18_fu_88        |  32|   0|   32|          0|
+    |empty_19_fu_92        |  32|   0|   32|          0|
+    |empty_20_fu_96        |  32|   0|   32|          0|
+    |empty_21_fu_100       |  32|   0|   32|          0|
+    |empty_22_fu_104       |  32|   0|   32|          0|
+    |empty_23_fu_108       |  32|   0|   32|          0|
+    |empty_24_fu_112       |  32|   0|   32|          0|
+    |empty_25_fu_116       |  32|   0|   32|          0|
+    |empty_fu_84           |  32|   0|   32|          0|
+    |indvar_flatten_fu_80  |   4|   0|    4|          0|
+    |row_fu_76             |   2|   0|    2|          0|
+    +----------------------+----+----+-----+-----------+
+    |Total                 | 298|   0|  298|          0|
+    +----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+-----+------------+-----------------------------------------------+--------------+
+|   RTL Ports   | Dir | Bits|  Protocol  |                 Source Object                 |    C Type    |
++---------------+-----+-----+------------+-----------------------------------------------+--------------+
+|ap_clk         |   in|    1|  ap_ctrl_hs|  matmul_1_Pipeline_loop_input_A1_loop_input_A2|  return value|
+|ap_rst         |   in|    1|  ap_ctrl_hs|  matmul_1_Pipeline_loop_input_A1_loop_input_A2|  return value|
+|ap_start       |   in|    1|  ap_ctrl_hs|  matmul_1_Pipeline_loop_input_A1_loop_input_A2|  return value|
+|ap_done        |  out|    1|  ap_ctrl_hs|  matmul_1_Pipeline_loop_input_A1_loop_input_A2|  return value|
+|ap_idle        |  out|    1|  ap_ctrl_hs|  matmul_1_Pipeline_loop_input_A1_loop_input_A2|  return value|
+|ap_ready       |  out|    1|  ap_ctrl_hs|  matmul_1_Pipeline_loop_input_A1_loop_input_A2|  return value|
+|in_A_TVALID    |   in|    1|        axis|                                  in_A_V_data_V|       pointer|
+|in_A_TDATA     |   in|   32|        axis|                                  in_A_V_data_V|       pointer|
+|in_A_TREADY    |  out|    1|        axis|                                  in_A_V_last_V|       pointer|
+|in_A_TLAST     |   in|    1|        axis|                                  in_A_V_last_V|       pointer|
+|in_A_TKEEP     |   in|    4|        axis|                                  in_A_V_keep_V|       pointer|
+|in_A_TSTRB     |   in|    4|        axis|                                  in_A_V_strb_V|       pointer|
+|p_out          |  out|   32|      ap_vld|                                          p_out|       pointer|
+|p_out_ap_vld   |  out|    1|      ap_vld|                                          p_out|       pointer|
+|p_out1         |  out|   32|      ap_vld|                                         p_out1|       pointer|
+|p_out1_ap_vld  |  out|    1|      ap_vld|                                         p_out1|       pointer|
+|p_out2         |  out|   32|      ap_vld|                                         p_out2|       pointer|
+|p_out2_ap_vld  |  out|    1|      ap_vld|                                         p_out2|       pointer|
+|p_out3         |  out|   32|      ap_vld|                                         p_out3|       pointer|
+|p_out3_ap_vld  |  out|    1|      ap_vld|                                         p_out3|       pointer|
+|p_out4         |  out|   32|      ap_vld|                                         p_out4|       pointer|
+|p_out4_ap_vld  |  out|    1|      ap_vld|                                         p_out4|       pointer|
+|p_out5         |  out|   32|      ap_vld|                                         p_out5|       pointer|
+|p_out5_ap_vld  |  out|    1|      ap_vld|                                         p_out5|       pointer|
+|p_out6         |  out|   32|      ap_vld|                                         p_out6|       pointer|
+|p_out6_ap_vld  |  out|    1|      ap_vld|                                         p_out6|       pointer|
+|p_out7         |  out|   32|      ap_vld|                                         p_out7|       pointer|
+|p_out7_ap_vld  |  out|    1|      ap_vld|                                         p_out7|       pointer|
+|p_out8         |  out|   32|      ap_vld|                                         p_out8|       pointer|
+|p_out8_ap_vld  |  out|    1|      ap_vld|                                         p_out8|       pointer|
++---------------+-----+-----+------------+-----------------------------------------------+--------------+
+

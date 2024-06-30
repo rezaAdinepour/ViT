@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matmul.cpp" path="C:\OneDrive\Desktop\HLS\MatMul\src\matmul.cpp"/>
+    <originFiles name="matmul.h" path="C:\OneDrive\Desktop\HLS\MatMul\src\matmul.h"/>
+  </source>
+  <testbench>
+    <originFiles name="matmul_tb.cpp" path="C:\OneDrive\Desktop\HLS\MatMul\src\matmul_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

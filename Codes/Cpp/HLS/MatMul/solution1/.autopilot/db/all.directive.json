@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matmul_1",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matmul_1"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/OneDrive/Desktop/MatMul/solution1/csynth.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]
