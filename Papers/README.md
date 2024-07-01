@@ -2,4 +2,4 @@
 
 
 
-* [Accelerating Transformer Deep Learning Models on FPGAs using High-Level synthesises:] Read from page 12
+* ~~Accelerating Transformer Deep Learning Models on FPGAs using High-Level synthesises:~~ Read all (Doesen't exist any important information.)
