@@ -8,7 +8,7 @@
 * Example for HLS tutorial: [[Link]](https://github.com/Xilinx/HLS)
 * MatMul acceleration in HLS: [[Link]](https://github.com/twaclaw/matmult/tree/master), [[Link]](https://github.com/kaiiiz/hls-spmv/tree/main), [[Link]](https://github.com/jeonggunlee/HLS4Matmul/tree/main), [[Link]](https://github.com/wickedb/matmult_hls), [[Link]](https://github.com/highcloud100/matMul_HLS)
 * HLS for ML: [[Link]](https://github.com/fastmachinelearning/hls4ml)
-* High-Level Digital Design Automation Course (ECE 6775): [[Link]](https://www.csl.cornell.edu/courses/ece6775/)
+* High-Level Digital Design Automation Course - ECE 6775: [[Link]](https://www.csl.cornell.edu/courses/ece6775/)
 * Parallel Programming for FPGAs Course - CSE 237C: [[Link]](http://kastner.ucsd.edu/ryan/cse237c/)
 * ECE 6775 Final Project course: [[Link]](https://github.com/SteveZhugl/ECE6775FinalProjectTB/tree/main), [[Link]](https://github.com/Carl782051063/ECE6775projcet), [[Link]](https://github.com/hy592/6775-Final-Project)
 * CNN accelerator with HLS: [[Link]](https://github.com/racosa/cnn-accelerator/tree/master)
