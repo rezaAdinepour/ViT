@@ -1,0 +1,1565 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 210.805 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/csynth.tcl:14)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.269 seconds; current allocated memory: 212.336 MB.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'MatMul'
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.146 seconds; current allocated memory: 1.871 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 210.434 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/csynth.tcl:14)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.774 seconds; current allocated memory: 212.504 MB.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'MatMul'
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.622 seconds; current allocated memory: 2.422 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 210.465 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.326 seconds; current allocated memory: 212.266 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 33 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 22 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 21 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 103 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 103 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 103 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 114 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_5_1> at MatMul-Optimum/MatMul.cpp:5:18 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_8_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:8:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_8_2' (MatMul-Optimum/MatMul.cpp:8:19) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.227 seconds; current allocated memory: 214.320 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 214.320 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 219.098 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 220.609 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:18)...15 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 241.930 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 245.129 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_5_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_1', MatMul-Optimum/MatMul.cpp:10) on array 'A' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_3', MatMul-Optimum/MatMul.cpp:10) on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_5', MatMul-Optimum/MatMul.cpp:10) on array 'A' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_7', MatMul-Optimum/MatMul.cpp:10) on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_13', MatMul-Optimum/MatMul.cpp:10) on array 'A' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'A'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 10, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.521 seconds; current allocated memory: 250.516 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 252.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 252.418 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 252.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_5_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_5_1' pipeline 'VITIS_LOOP_5_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_5_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 255.410 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/x' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.322 seconds; current allocated memory: 258.957 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.408 seconds; current allocated memory: 263.219 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.711 seconds; current allocated memory: 268.215 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 138.01 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 12.343 seconds; current allocated memory: 57.879 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.111 seconds; current allocated memory: 210.289 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.276 seconds; current allocated memory: 211.938 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 28 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 26 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 114 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 122 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_7_2> at MatMul-Optimum/MatMul.cpp:7:19 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_10_3' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:10:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_10_3' (MatMul-Optimum/MatMul.cpp:10:21) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.193 seconds; current allocated memory: 214.098 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 214.098 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 218.836 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 220.141 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:19)...15 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 241.559 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_5_1'(MatMul-Optimum/MatMul.cpp:5:18) and 'VITIS_LOOP_7_2'(MatMul-Optimum/MatMul.cpp:7:19) in function 'MatMul' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_5_1' (MatMul-Optimum/MatMul.cpp:5:18) in function 'MatMul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 241.566 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1_VITIS_LOOP_7_2'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul' (loop 'VITIS_LOOP_5_1_VITIS_LOOP_7_2'): Unable to schedule 'load' operation 32 bit ('A_load_1', MatMul-Optimum/MatMul.cpp:12) on array 'A' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul' (loop 'VITIS_LOOP_5_1_VITIS_LOOP_7_2'): Unable to schedule 'load' operation 32 bit ('A_load_3', MatMul-Optimum/MatMul.cpp:12) on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul' (loop 'VITIS_LOOP_5_1_VITIS_LOOP_7_2'): Unable to schedule 'load' operation 32 bit ('A_load_5', MatMul-Optimum/MatMul.cpp:12) on array 'A' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul' (loop 'VITIS_LOOP_5_1_VITIS_LOOP_7_2'): Unable to schedule 'load' operation 32 bit ('A_load_7', MatMul-Optimum/MatMul.cpp:12) on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul' (loop 'VITIS_LOOP_5_1_VITIS_LOOP_7_2'): Unable to schedule 'load' operation 32 bit ('A_load_13', MatMul-Optimum/MatMul.cpp:12) on array 'A' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'A'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 10, loop 'VITIS_LOOP_5_1_VITIS_LOOP_7_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 241.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 243.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul' pipeline 'VITIS_LOOP_5_1_VITIS_LOOP_7_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 247.211 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.645 seconds; current allocated memory: 254.168 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.693 seconds; current allocated memory: 259.547 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 138.01 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 12.09 seconds; current allocated memory: 49.363 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 210.426 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.212 seconds; current allocated memory: 212.176 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 115 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 110 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,084 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,089 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_10_3' (MatMul-Optimum/MatMul.cpp:10:21) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_5_1> at MatMul-Optimum/MatMul.cpp:5:18 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_7_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:7:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_7_2' (MatMul-Optimum/MatMul.cpp:7:19) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.17 seconds; current allocated memory: 214.023 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 214.023 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 220.699 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 222.488 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:6)...240 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.412 seconds; current allocated memory: 246.316 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.305 seconds; current allocated memory: 255.246 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_5_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_1', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_3', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_5', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_7', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_13', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'A'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 17, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.309 seconds; current allocated memory: 267.805 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.353 seconds; current allocated memory: 269.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.657 seconds; current allocated memory: 271.500 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.233 seconds; current allocated memory: 272.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_5_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_5_1' pipeline 'VITIS_LOOP_5_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_5_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.681 seconds; current allocated memory: 279.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.562 seconds; current allocated memory: 298.391 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.326 seconds; current allocated memory: 310.562 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.941 seconds; current allocated memory: 320.684 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 138.01 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 19.56 seconds; current allocated memory: 110.473 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 211.836 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.161 seconds; current allocated memory: 213.598 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 115 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 110 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,084 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,089 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_3' (MatMul-Optimum/MatMul.cpp:11:21) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_5_1> at MatMul-Optimum/MatMul.cpp:5:18 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_7_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:7:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_7_2' (MatMul-Optimum/MatMul.cpp:7:19) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.593 seconds; current allocated memory: 215.551 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 215.551 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 222.297 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 223.781 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:6)...240 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.418 seconds; current allocated memory: 247.957 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.295 seconds; current allocated memory: 256.633 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_5_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_1', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_3', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_5', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_7', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_13', MatMul-Optimum/MatMul.cpp:5) on array 'A' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'A'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 17, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.303 seconds; current allocated memory: 269.461 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.348 seconds; current allocated memory: 270.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.652 seconds; current allocated memory: 273.246 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 274.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_5_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_5_1' pipeline 'VITIS_LOOP_5_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_5_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.667 seconds; current allocated memory: 281.359 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.415 seconds; current allocated memory: 299.828 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.257 seconds; current allocated memory: 312.184 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.942 seconds; current allocated memory: 322.332 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 138.01 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 19.681 seconds; current allocated memory: 110.586 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 210.418 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.163 seconds; current allocated memory: 212.480 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,579 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,079 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,084 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,089 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_7_2' (MatMul-Optimum/MatMul.cpp:7:19) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_3' (MatMul-Optimum/MatMul.cpp:11:21) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_5_1> at MatMul-Optimum/MatMul.cpp:5:18 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.209 seconds; current allocated memory: 214.598 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 214.602 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 220.988 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 222.820 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:6)...240 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.509 seconds; current allocated memory: 247.078 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.29 seconds; current allocated memory: 255.766 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_5_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_5_1'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_1', MatMul-Optimum/MatMul.cpp:14) on array 'A' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_3', MatMul-Optimum/MatMul.cpp:14) on array 'A' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_5', MatMul-Optimum/MatMul.cpp:14) on array 'A' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_7', MatMul-Optimum/MatMul.cpp:14) on array 'A' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'A'.
+WARNING: [HLS 200-885] The II Violation in module 'MatMul_Pipeline_VITIS_LOOP_5_1' (loop 'VITIS_LOOP_5_1'): Unable to schedule 'load' operation 32 bit ('A_load_13', MatMul-Optimum/MatMul.cpp:14) on array 'A' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'A'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 17, loop 'VITIS_LOOP_5_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.27 seconds; current allocated memory: 268.441 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.341 seconds; current allocated memory: 269.637 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.659 seconds; current allocated memory: 272.367 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.212 seconds; current allocated memory: 273.285 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_5_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_5_1' pipeline 'VITIS_LOOP_5_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_5_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.65 seconds; current allocated memory: 280.438 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.41 seconds; current allocated memory: 298.598 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.714 seconds; current allocated memory: 310.398 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.931 seconds; current allocated memory: 320.355 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 138.01 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 18.762 seconds; current allocated memory: 110.016 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 210.570 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.33 seconds; current allocated memory: 212.234 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 115 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 110 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 942 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 685 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 685 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 684 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 684 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 684 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,206 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,211 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_16_3' (MatMul-Optimum/MatMul.cpp:16:21) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'B': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'y': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_10_1> at MatMul-Optimum/MatMul.cpp:10:19 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_13_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:13:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_13_2' (MatMul-Optimum/MatMul.cpp:13:20) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.28 seconds; current allocated memory: 214.395 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 214.395 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 221.074 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 222.551 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:6)...240 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.556 seconds; current allocated memory: 247.066 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.308 seconds; current allocated memory: 255.566 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_10_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.548 seconds; current allocated memory: 268.309 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 269.602 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.497 seconds; current allocated memory: 272.793 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.195 seconds; current allocated memory: 273.430 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_10_1' pipeline 'VITIS_LOOP_10_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 256 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_10_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.64 seconds; current allocated memory: 284.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.804 seconds; current allocated memory: 303.059 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.461 seconds; current allocated memory: 314.652 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.06 seconds; current allocated memory: 329.609 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 139.39 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 21.395 seconds; current allocated memory: 119.113 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.116 seconds; current allocated memory: 210.957 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.171 seconds; current allocated memory: 212.652 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,579 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,079 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,414 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,206 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,211 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_13_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:13:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_16_3' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:16:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_13_2' (MatMul-Optimum/MatMul.cpp:13:19) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_16_3' (MatMul-Optimum/MatMul.cpp:16:21) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'B': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'y': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.207 seconds; current allocated memory: 215.051 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 215.051 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.131 seconds; current allocated memory: 221.879 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 223.367 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:6)...240 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.545 seconds; current allocated memory: 247.730 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.304 seconds; current allocated memory: 256.379 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_10_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.536 seconds; current allocated memory: 268.930 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.281 seconds; current allocated memory: 270.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.494 seconds; current allocated memory: 273.133 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 274.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_10_1' pipeline 'VITIS_LOOP_10_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 256 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_10_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.643 seconds; current allocated memory: 285.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.797 seconds; current allocated memory: 303.750 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.725 seconds; current allocated memory: 315.152 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.063 seconds; current allocated memory: 330.047 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 139.39 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 20.393 seconds; current allocated memory: 119.180 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 210.504 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.393 seconds; current allocated memory: 212.176 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 115 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 110 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 942 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 685 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 685 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 684 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 684 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 684 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,206 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,211 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_16_3' (MatMul-Optimum/MatMul.cpp:16:21) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'B': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'y': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_10_1> at MatMul-Optimum/MatMul.cpp:10:19 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_12_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:12:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_12_2' (MatMul-Optimum/MatMul.cpp:12:20) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.124 seconds; current allocated memory: 214.438 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 214.441 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.133 seconds; current allocated memory: 221.191 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 222.578 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:6)...240 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.556 seconds; current allocated memory: 247.090 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.306 seconds; current allocated memory: 256.070 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_10_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.53 seconds; current allocated memory: 269.062 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.283 seconds; current allocated memory: 270.457 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.492 seconds; current allocated memory: 273.496 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 274.098 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_10_1' pipeline 'VITIS_LOOP_10_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 256 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_10_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.657 seconds; current allocated memory: 285.367 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.781 seconds; current allocated memory: 303.914 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.758 seconds; current allocated memory: 315.324 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.217 seconds; current allocated memory: 330.238 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 139.39 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 20.74 seconds; current allocated memory: 119.812 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 211.098 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.147 seconds; current allocated memory: 213.047 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,579 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,079 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,078 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,414 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,206 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,211 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_13_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:13:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_16_3' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:16:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_13_2' (MatMul-Optimum/MatMul.cpp:13:19) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_16_3' (MatMul-Optimum/MatMul.cpp:16:21) in function 'MatMul' completely with a factor of 16 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'B': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'y': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.194 seconds; current allocated memory: 215.531 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 215.531 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 222.328 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 223.613 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'MatMul' (MatMul-Optimum/MatMul.cpp:3:6)...240 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.552 seconds; current allocated memory: 248.285 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.324 seconds; current allocated memory: 256.875 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_10_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.549 seconds; current allocated memory: 269.402 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 270.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.491 seconds; current allocated memory: 273.648 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 274.918 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_10_1' pipeline 'VITIS_LOOP_10_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 256 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_10_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.655 seconds; current allocated memory: 286.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.784 seconds; current allocated memory: 304.531 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.719 seconds; current allocated memory: 315.637 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.067 seconds; current allocated memory: 330.898 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 139.39 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 20.386 seconds; current allocated memory: 120.023 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.784 seconds; current allocated memory: 0.379 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.654 seconds; current allocated memory: 0.387 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.588 seconds; current allocated memory: 0.336 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.816 seconds; current allocated memory: 0.328 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.829 seconds; current allocated memory: 0.328 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.855 seconds; current allocated memory: 0.402 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.856 seconds; current allocated memory: 0.422 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.373 seconds; current allocated memory: 0.469 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.822 seconds; current allocated memory: 0.344 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.908 seconds; current allocated memory: 0.359 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.338 seconds; current allocated memory: 0.453 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 211.012 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.32 seconds; current allocated memory: 212.750 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 31 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 26 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 44 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_15_3' (MatMul-Optimum/MatMul.cpp:15:21) in function 'MatMul' completely with a factor of 2 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'B': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'y': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_10_1> at MatMul-Optimum/MatMul.cpp:10:19 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_12_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:12:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_12_2' (MatMul-Optimum/MatMul.cpp:12:20) in function 'MatMul' completely with a factor of 2 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.137 seconds; current allocated memory: 214.922 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 214.922 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 219.602 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 220.625 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 241.738 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 244.398 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_10_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.201 seconds; current allocated memory: 248.641 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 249.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 250.301 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 250.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_10_1' pipeline 'VITIS_LOOP_10_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_10_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 252.988 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.208 seconds; current allocated memory: 254.766 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.37 seconds; current allocated memory: 258.809 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.797 seconds; current allocated memory: 263.824 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.80 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.711 seconds; current allocated memory: 53.004 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format sysgen 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format sysgen 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file MatMul-Optimum/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 34.116 seconds; current allocated memory: 6.762 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format sysgen -rtl verilog 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 210.832 MB.
+INFO: [HLS 200-10] Analyzing design file 'MatMul-Optimum/MatMul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.183 seconds; current allocated memory: 212.641 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 31 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 26 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 46 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 42 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 44 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 49 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/OneDrive/Desktop/HLS/MatMul-Optimum/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_15_3' (MatMul-Optimum/MatMul.cpp:15:21) in function 'MatMul' completely with a factor of 2 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'B': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to 'y': Complete partitioning on dimension 2. (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_10_1> at MatMul-Optimum/MatMul.cpp:10:19 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_12_2' is marked as complete unroll implied by the pipeline pragma (MatMul-Optimum/MatMul.cpp:12:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_12_2' (MatMul-Optimum/MatMul.cpp:12:20) in function 'MatMul' completely with a factor of 2 (MatMul-Optimum/MatMul.cpp:4:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.244 seconds; current allocated memory: 215.016 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 215.016 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 219.859 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 220.891 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 242.219 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 244.883 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MatMul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_10_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.195 seconds; current allocated memory: 248.734 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 250.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 250.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 250.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul_Pipeline_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MatMul_Pipeline_VITIS_LOOP_10_1' pipeline 'VITIS_LOOP_10_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul_Pipeline_VITIS_LOOP_10_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 252.961 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MatMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/A_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/B_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MatMul/y_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MatMul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MatMul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 254.863 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.345 seconds; current allocated memory: 258.738 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.791 seconds; current allocated memory: 263.836 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MatMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for MatMul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.80 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.654 seconds; current allocated memory: 53.543 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -rtl verilog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file MatMul-Optimum/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 16.022 seconds; current allocated memory: 7.078 MB.

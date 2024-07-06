@@ -1,0 +1,144 @@
+
+
+================================================================
+== Synthesis Summary Report of 'MatMul'
+================================================================
++ General Information: 
+    * Date:           Sun Jul  7 00:17:57 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        MatMul-Optimum
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+    |               Modules              | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |          |           |           |     |
+    |               & Loops              | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF    |    LUT    | URAM|
+    +------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+    |+ MatMul                            |     -|  0.80|        6|  60.000|         -|        7|     -|        no|     -|  12 (~0%)|  139 (~0%)|  235 (~0%)|    -|
+    | + MatMul_Pipeline_VITIS_LOOP_10_1  |     -|  0.80|        4|  40.000|         -|        4|     -|        no|     -|  12 (~0%)|    7 (~0%)|  215 (~0%)|    -|
+    |  o VITIS_LOOP_10_1                 |     -|  7.30|        2|  20.000|         2|        1|     2|       yes|     -|         -|          -|          -|    -|
+    +------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++--------------+-----------+----------+
+| Port         | Direction | Bitwidth |
++--------------+-----------+----------+
+| A_0_address0 | out       | 1        |
+| A_0_q0       | in        | 32       |
+| A_1_address0 | out       | 1        |
+| A_1_q0       | in        | 32       |
+| B_0_address0 | out       | 1        |
+| B_0_address1 | out       | 1        |
+| B_0_q0       | in        | 32       |
+| B_0_q1       | in        | 32       |
+| B_1_address0 | out       | 1        |
+| B_1_address1 | out       | 1        |
+| B_1_q0       | in        | 32       |
+| B_1_q1       | in        | 32       |
+| y_0_address0 | out       | 1        |
+| y_0_d0       | out       | 32       |
+| y_1_address0 | out       | 1        |
+| y_1_d0       | out       | 32       |
++--------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| A        | in        | int*     |
+| B        | in        | int*     |
+| y        | out       | int*     |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+----------+
+| Argument | HW Interface | HW Type | HW Usage |
++----------+--------------+---------+----------+
+| A        | A_0_address0 | port    | offset   |
+| A        | A_0_ce0      | port    |          |
+| A        | A_0_q0       | port    |          |
+| A        | A_1_address0 | port    | offset   |
+| A        | A_1_ce0      | port    |          |
+| A        | A_1_q0       | port    |          |
+| B        | B_0_address0 | port    | offset   |
+| B        | B_0_ce0      | port    |          |
+| B        | B_0_q0       | port    |          |
+| B        | B_0_address1 | port    | offset   |
+| B        | B_0_ce1      | port    |          |
+| B        | B_0_q1       | port    |          |
+| B        | B_1_address0 | port    | offset   |
+| B        | B_1_ce0      | port    |          |
+| B        | B_1_q0       | port    |          |
+| B        | B_1_address1 | port    | offset   |
+| B        | B_1_ce1      | port    |          |
+| B        | B_1_q1       | port    |          |
+| y        | y_0_address0 | port    | offset   |
+| y        | y_0_ce0      | port    |          |
+| y        | y_0_we0      | port    |          |
+| y        | y_0_d0       | port    |          |
+| y        | y_1_address0 | port    | offset   |
+| y        | y_1_ce0      | port    |          |
+| y        | y_1_we0      | port    |          |
+| y        | y_1_d0       | port    |          |
++----------+--------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                               | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++------------------------------------+-----+--------+------------+-----+--------+---------+
+| + MatMul                           | 12  |        |            |     |        |         |
+|  + MatMul_Pipeline_VITIS_LOOP_10_1 | 12  |        |            |     |        |         |
+|    add_ln10_fu_162_p2              |     |        | add_ln10   | add | fabric | 0       |
+|    mul_32s_32s_32_1_1_U1           | 3   |        | mul_ln18   | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U2           | 3   |        | mul_ln18_1 | mul | auto   | 0       |
+|    y_0_d0                          |     |        | acc        | add | fabric | 0       |
+|    mul_32s_32s_32_1_1_U3           | 3   |        | mul_ln18_2 | mul | auto   | 0       |
+|    mul_32s_32s_32_1_1_U4           | 3   |        | mul_ln18_3 | mul | auto   | 0       |
+|    y_1_d0                          |     |        | acc_1      | add | fabric | 0       |
++------------------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+------------------+------------------------------------------+
+| Type            | Options          | Location                                 |
++-----------------+------------------+------------------------------------------+
+| array_partition | variable=A dim=2 | MatMul-Optimum/MatMul.cpp:6 in matmul, A |
+| array_partition | variable=B dim=2 | MatMul-Optimum/MatMul.cpp:7 in matmul, B |
+| array_partition | variable=y dim=2 | MatMul-Optimum/MatMul.cpp:8 in matmul, y |
+| unroll          |                  | MatMul-Optimum/MatMul.cpp:17 in matmul   |
++-----------------+------------------+------------------------------------------+
+
+

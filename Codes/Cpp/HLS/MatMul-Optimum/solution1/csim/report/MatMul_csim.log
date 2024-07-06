@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../tb_MatMul.cpp in debug mode
+   Compiling ../../../MatMul.cpp in debug mode
+   Generating csim.exe
+Result matrix y:
+19 22 
+43 50 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
