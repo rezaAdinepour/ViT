@@ -11,6 +11,7 @@
 * High-Level Digital Design Automation Course - ECE 6775: [[Link]](https://www.csl.cornell.edu/courses/ece6775/)
 * Parallel Programming for FPGAs Course - CSE 237C: [[Link]](http://kastner.ucsd.edu/ryan/cse237c/)
 * ECE 6775 Final Project course: [[Link]](https://github.com/SteveZhugl/ECE6775FinalProjectTB/tree/main), [[Link]](https://github.com/Carl782051063/ECE6775projcet), [[Link]](https://github.com/hy592/6775-Final-Project)
+* ECE 8893- Parallel Programming for FPGAs: [[Link]](https://sharclab.ece.gatech.edu/teaching/2022-spring-fpga/)
 * CNN accelerator with HLS: [[Link]](https://github.com/racosa/cnn-accelerator/tree/master)
 
 
