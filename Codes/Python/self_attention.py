@@ -15,9 +15,9 @@ class AttentionHead(nn.Module):
         self.hidden_size = hidden_size
         self.attention_head_size = attention_head_size
         # Create the query, key, and value projection layers
-        self.query = nn.Linear(hidden_size, attention_head_size, bias=bias, dtype=torch.float16)
-        self.key = nn.Linear(hidden_size, attention_head_size, bias=bias, dtype=torch.float16)
-        self.value = nn.Linear(hidden_size, attention_head_size, bias=bias, dtype=torch.float16)
+        self.query = nn.Linear(hidden_size, attention_head_size, bias=bias, dtype=torch.float32)
+        self.key = nn.Linear(hidden_size, attention_head_size, bias=bias, dtype=torch.float32)
+        self.value = nn.Linear(hidden_size, attention_head_size, bias=bias, dtype=torch.float32)
 
         self.dropout = nn.Dropout(dropout)
     
@@ -48,7 +48,7 @@ class AttentionHead(nn.Module):
 img = np.load("img_fix.npy")
 print(img.shape)
 
-img_tensor = torch.from_numpy(img).to(torch.float16)
+img_tensor = torch.from_numpy(img).to(torch.float32)
 print(img_tensor.size())
 
 
