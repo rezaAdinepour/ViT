@@ -1,0 +1,72 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'User1' on host 'desktop-a2lg1n2' (Windows NT_amd64 version 6.2) on Sun Jul 28 14:59:56 +0330 2024
+INFO: [HLS 200-10] In directory 'C:/OneDrive/Desktop/ViT'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/OneDrive/Desktop/ViT/Weight_quantization/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/OneDrive/Desktop/ViT/Weight_quantization/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project Weight_quantization 
+INFO: [HLS 200-10] Opening project 'C:/OneDrive/Desktop/ViT/Weight_quantization'.
+INFO: [HLS 200-1510] Running: set_top weight_quant 
+INFO: [HLS 200-1510] Running: add_files Weight_quantization/src/weight_quant.cpp 
+INFO: [HLS 200-10] Adding design file 'Weight_quantization/src/weight_quant.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files Weight_quantization/src/weight_quant.h 
+INFO: [HLS 200-10] Adding design file 'Weight_quantization/src/weight_quant.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb Weight_quantization/src/tb_weight_quant.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'Weight_quantization/src/tb_weight_quant.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb Weight_quantization/src/tb_weight_quant.h -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'Weight_quantization/src/tb_weight_quant.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/OneDrive/Desktop/ViT/Weight_quantization/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format sysgen 
+INFO: [HLS 200-1510] Running: source ./Weight_quantization/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name weight_quant weight_quant 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format sysgen 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 568.598 ; gain = 180.492
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'weight_quant_ddiv_64ns_64ns_64_13_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_quant_ddiv_64ns_64ns_64_13_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_quant_ddiv_64ns_64ns_64_13_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'weight_quant_fadd_32ns_32ns_32_3_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_quant_fadd_32ns_32ns_32_3_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_quant_fadd_32ns_32ns_32_3_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'weight_quant_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_quant_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_quant_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'weight_quant_fdiv_32ns_32ns_32_7_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_quant_fdiv_32ns_32ns_32_7_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_quant_fdiv_32ns_32ns_32_7_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'weight_quant_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_quant_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_quant_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'weight_quant_fpext_32ns_64_1_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_quant_fpext_32ns_64_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_quant_fpext_32ns_64_1_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'weight_quant_fptrunc_64ns_32_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'weight_quant_fptrunc_64ns_32_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'weight_quant_fptrunc_64ns_32_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 28 15:00:22 2024...
+INFO: [HLS 200-802] Generated output file Weight_quantization/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 22.868 seconds; current allocated memory: 7.859 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 26.806 seconds; peak allocated memory: 218.344 MB.
