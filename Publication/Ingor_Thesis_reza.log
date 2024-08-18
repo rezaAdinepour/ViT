@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.4)  18 AUG 2024 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.4)  18 AUG 2024 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -141,15 +141,17 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
 78.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texm
+f-dist/fonts/enc/dvips/base/8r.enc}
+
+
+]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 406.
+(Font)              <8> on input line 608.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 406.
+(Font)              <6> on input line 608.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 565.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 565.
+(Font)              <5> on input line 608.
 
 
 ** Conference Paper **
@@ -162,12 +164,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}
-
-
-
-] (./Ingor_Thesis_reza.aux)
+[2] (./Ingor_Thesis_reza.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -175,21 +172,21 @@ L3 programming layer <2024-01-22>
  ) 
 Here is how much of TeX's memory you used:
  1329 strings out of 474222
- 26373 string characters out of 5748734
- 1929975 words of memory out of 5000000
- 23633 multiletter control sequences out of 15000+600000
- 594187 words of font info for 98 fonts, out of 8000000 for 9000
+ 26415 string characters out of 5748734
+ 1938975 words of memory out of 5000000
+ 23634 multiletter control sequences out of 15000+600000
+ 593109 words of font info for 97 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 36i,8n,50p,212b,299s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 36i,8n,50p,926b,299s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on Ingor_Thesis_reza.pdf (1 page, 56549 bytes).
+Output written on Ingor_Thesis_reza.pdf (2 pages, 66861 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 37 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
