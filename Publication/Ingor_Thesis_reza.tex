@@ -472,6 +472,16 @@
 		DeiT (Data-Efficient Image Transformer) incorporates a student-teacher strategy with distillation tokens to speed up training and improve performance with limited data. Additionally, self-supervised learning (SSL) has been explored to further enhance ViT’s capabilities in deepfake detection, particularly in cases where labeled data is scarce.
 		
 		\subsection{Quantization}
+		As Transformer architectures scale in size and complexity, their computational and memory requirements also increase, posing challenges for real-world applications, particularly in resource-constrained environments. To address these issues, various model compression techniques have been explored, such as knowledge distillation (e.g., DeiT), weight pruning, and quantization.
+		
+		Quantization, a process that reduces model precision by mapping high-precision weights to lower bit-widths, is particularly effective for compressing Transformer models. PTQ is widely adopted as it allows for quantization without retraining, although it often results in accuracy loss, especially with lower bit-widths (e.g., 3 bits or fewer).
+		
+		QAT mitigates the accuracy loss seen in PTQ by training the model with quantization in mind from the start. Although it maintains higher accuracy at inference, it demands greater computational resources and longer training times. QAT also requires retraining the model from scratch, making it more resource-intensive than PTQ.
+		
+		In efforts to improve power efficiency and reduce memory consumption, binary and ternary quantization schemes are employed. These methods simplify computations by replacing expensive floating-point operations with efficient bitwise ones. For example, Binary and Ternary Neural Networks (BNNs and TNNs) are utilized in vision tasks to further optimize model performance.
+		
+		In the domain of language models, BitNet demonstrated the scalability of 1-bit quantization. The BitLinear layer combines 8-bit activation quantization with binary weights trained using QAT, replacing all linear layers in the model. More recently, BitNet b1.58 introduced ternary weights, maintaining performance while improving computational efficiency. These advancements hold promise for applying BitLinear layers to Vision Transformer (ViT) models, potentially making them more efficient while retaining high classification accuracy.
+		
 		
 		
 		
@@ -577,8 +587,8 @@
 		
 		
 		
-		\section{Conclusion}
-		The conclusion goes here.
+%		\section{Conclusion}
+%		The conclusion goes here.
 		
 		
 		
@@ -587,10 +597,8 @@
 		
 		
 		% use section* for acknowledgment
-		\section*{Acknowledgment}
+%		\section*{Acknowledgment}
 		
-		
-		The authors would like to thank...
 		
 		
 		
