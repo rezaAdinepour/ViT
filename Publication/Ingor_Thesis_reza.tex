@@ -460,6 +460,22 @@
 		Recent work has also compared models using full-face inputs versus specific facial regions. Results consistently show that models using entire face inputs outperform region-based models. Finally, the DeepFake Detection Challenge revealed that ensemble learning and frame-by-frame classification generally produce better results. Top-performing solutions utilized models like EfficientNet and XceptionNet, with techniques such as augmentations and MixUp for improved accuracy.
 		
 		\subsection{Transformer}
+		The Transformer architecture, introduced in 2017, was primarily designed for Natural Language Processing (NLP) tasks. It leveraged a self-attention mechanism to capture long-range dependencies in data. However, initial applications in computer vision were limited due to the computational demands of applying self-attention to high-dimensional data like images.
+		
+		
+		In 2020, Dosovitskiy and colleagues introduced Vision Transformers (ViT), building on the successes of transformers in NLP. ViT processes images by splitting them into patches, treating each patch as a token. This patch-based approach enabled the efficient application of self-attention, allowing the model to capture complex relationships in the image while maintaining computational feasibility. ViTs rely heavily on pre-training with large datasets to address the lack of inductive biases (like locality) found in CNNs, achieving performance comparable to CNNs on various image benchmarks.
+		
+		
+		Vision Transformers are utilized in deepfake detection in two primary ways: either following CNNs as feature extractors or fully replacing CNNs. The CViT model combines CNN and ViT elements, utilizing CNNs for local feature learning and ViTs for global features, enhancing the detection of complex relationships. CrossViT further improves performance by using a multiscale approach, processing both small and large image patches.
+		
+		
+		DeiT (Data-Efficient Image Transformer) incorporates a student-teacher strategy with distillation tokens to speed up training and improve performance with limited data. Additionally, self-supervised learning (SSL) has been explored to further enhance ViT’s capabilities in deepfake detection, particularly in cases where labeled data is scarce.
+		
+		\subsection{Quantization}
+		
+		
+		
+		
 		
 		
 		
