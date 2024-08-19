@@ -1,6 +1,10 @@
-\documentclass{article}
+\documentclass{report}
 \usepackage[utf8]{inputenc}
 \usepackage{cite}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
+
 
 
 
@@ -12,10 +16,53 @@
 	
 	\maketitle
 	
-	\section*{Introduction}
+	\chapter*{BinaryViT \cite{le2023binaryvit}}
 	
-
-	This is where the content of your document begins. \cite{smith2023}
+	\section{Binarization in Neural Networks}
+	
+	\subsection{Convolutional Neural Networks (CNNs):}
+	Binarization in CNNs has been extensively explored. The idea of using binary weights and activations in CNNs to reduce memory and computation dates back to works like XNOR-Net (Rastegari et al., 2016). These works showed that CNNs could achieve competitive performance while significantly reducing resource consumption.
+	
+	\subsubsection{Binary Neural Networks (BNNs):}
+	values for both weights and activations, leading to models that require less storage and computational power.
+	
+	Highlight how CNN architectures, especially with their convolutional nature, lend themselves to being binarized without extreme performance degradation.
+	
+	\subsection{Vision Transformers (ViTs):}
+	ViTs, since being introduced by Dosovitskiy et al. (2020), have demonstrated significant improvements over CNNs in various vision tasks by modeling long-range dependencies through self-attention mechanisms.
+	
+	ViTs, however, face challenges related to computational cost, making them difficult to deploy on edge devices.
+	
+	In comparison to CNNs, few studies have explored binarizing ViTs due to their unique architecture. Some early attempts at transformer binarization (such as BiMLP) explore this to a limited degree but focus mainly on feedforward layers and do not thoroughly analyze architectural impacts.
+	
+	
+	\section{Existing Challenges in Binarizing ViTs}
+	\begin{enumerate}
+		\item
+		Unlike CNNs, directly applying existing binarization techniques to ViTs often results in significant performance degradation, particularly on large datasets like ImageNet-1k. CNNs benefit from convolutional layers that preserve spatial information, whereas ViTs' token-based structure lacks this property, leading to lower representational capability when binarized.
+		
+		\item 
+		Mention that CNN-based binarization techniques (such as ReBNet and XNOR-Net) have been successful because they account for the architectural benefits of convolutions that help preserve important spatial information even in binary form.
+		
+		\item 
+		Summarize existing research like BinaryViT, which seeks to overcome these limitations by introducing architectural modifications from CNNs into a ViT framework.
+	\end{enumerate}
+	
+	
+	\section{BinaryViT and its Novel Contributions}
+	In \cite{le2023binaryvit} proposes a new way to introduce architectural innovations inspired by CNNs into a binary ViT model, without actually introducing convolutions. Key contributions of this model include:
+	\begin{enumerate}
+		\item 
+		The use of average pooling layers instead of token pooling layers.
+		
+		\item 
+		The introduction of multiple pooling branches to help compensate for the loss of representational power.
+		
+		\item 
+		Affine transformations and the addition of a pyramid structure that allows binary features to be processed at higher resolutions while minimizing computational complexity.
+	\end{enumerate}
+	
+	Discuss how BinaryViT leverages elements from CNNs while maintaining the flexibility of ViT architectures. Explain how your approach addresses the shortcomings of previous binarization efforts for ViTs by preserving essential architectural properties.
 	
 	
 	
@@ -27,7 +74,8 @@
 	
 	
 	
+	\newpage
 	\bibliographystyle{IEEEtran}
-	\bibliography{bib} % Assuming your bibliography file is named bib.bib
+	\bibliography{refs} % Assuming your bibliography file is named bib.bib
 	
 \end{document}
