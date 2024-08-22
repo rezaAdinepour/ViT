@@ -141,3 +141,4 @@
 \contentsline {subsection}{\numberline {9.2.6}Potential for Further Optimization Through Quantization}{47}{subsection.9.2.6}%
 \contentsline {subsection}{\numberline {9.2.7}Wider Applicability Beyond Language Modeling}{48}{subsection.9.2.7}%
 \contentsline {section}{\numberline {9.3}Overall Improvements:}{48}{section.9.3}%
+\contentsline {chapter}{\numberline {10}SpikeGPT: Generative Pre-trained Language Model with Spiking Neural Networks \cite {zhu2024spikegptgenerativepretrainedlanguage}}{49}{chapter.10}%
