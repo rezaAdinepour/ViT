@@ -126,3 +126,4 @@
 \contentsline {subsection}{\numberline {8.2.5}Simplicity and Efficiency of the Pruning Process}{43}{subsection.8.2.5}%
 \contentsline {subsection}{\numberline {8.2.6}Promising Future Improvements}{44}{subsection.8.2.6}%
 \contentsline {section}{\numberline {8.3}Overall Improvements:}{44}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Scalable MatMul-free Language Modeling \cite {zhu2024scalablematmulfreelanguagemodeling}}{45}{chapter.9}%

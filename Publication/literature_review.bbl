@@ -78,4 +78,11 @@ M.~Zhu, K.~Han, Y.~Tang, and Y.~Wang, ``Visual transformer pruning,''
   \url{https://arxiv.org/abs/2104.08500}
 \BIBentrySTDinterwordspacing
 
+\bibitem{zhu2024scalablematmulfreelanguagemodeling}
+\BIBentryALTinterwordspacing
+R.-J. Zhu, Y.~Zhang, E.~Sifferman, T.~Sheaves, Y.~Wang, D.~Richmond, P.~Zhou,
+  and J.~K. Eshraghian, ``Scalable matmul-free language modeling,'' 2024.
+  [Online]. Available: \url{https://arxiv.org/abs/2406.02528}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
