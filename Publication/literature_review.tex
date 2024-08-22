@@ -540,6 +540,29 @@
 	
 	\chapter{Training data-efficient image transformers \& distillation through attention \cite{DBLP:journals/corr/abs-2012-12877}}
 	
+	This paper focuses on making Vision Transformers (ViTs) more accessible and efficient by reducing their reliance on large datasets and expensive computing resources. Vision Transformers are highly effective for image classification, but their performance typically depends on massive datasets and extended training times on large infrastructure. This paper aims to train transformers effectively using only the ImageNet dataset on standard hardware, making these models more usable for a broader audience.
+	
+	
+	
+	\section{Data-Efficient Image Transformers (DeiT)}
+	The authors propose a new training method for Vision Transformers, called DeiT, which allows these models to achieve high performance using only the ImageNet-1k dataset, without the need for the massive datasets like JFT-300M used in earlier ViT models. They demonstrate that it is possible to train ViTs efficiently on a single computer with 4 to 8 GPUs within just a few days, making them competitive with convolutional neural networks (CNNs) on standard benchmarks.
+	
+	\subsection{Previous Works:}
+	The original ViT model by Dosovitskiy et al. (2020) showed exceptional performance, but it required training on extremely large datasets like JFT-300M, which contains 300 million labeled images. This makes the model less accessible for researchers and organizations with limited computational resources. The training of ViT models also demanded significant infrastructure, often involving many GPUs over long periods.
+	
+	\subsection{Proposed Changes:}
+	The authors propose the DeiT (Data-efficient Image Transformer), a novel approach for training ViTs more efficiently. Key changes in the training strategy include:
+	\begin{enumerate}
+		\item 
+		\textbf{Training on ImageNet-1k only:} The authors demonstrate that it is possible to train ViTs using only the 1.28 million images in the ImageNet-1k dataset, instead of relying on large-scale private datasets.
+		
+		\item 
+		\textbf{Shorter Training Time:} The authors successfully trained their models on a single machine with 4 to 8 GPUs in less than three days, significantly reducing the computational cost and making it accessible to a wider range of users.
+		
+		\item 
+		\textbf{Use of Repeated Augmentation:} Repeated augmentation was introduced to provide more data variations during training, allowing the model to generalize better on smaller datasets. This is crucial for data efficiency in training without relying on external datasets.
+	\end{enumerate}
+	By optimizing the training setup, the DeiT model becomes more practical for real-world use cases, where large-scale datasets and high-end computing resources are unavailable.
 	
 	
 	
@@ -547,15 +570,234 @@
 	
 	
 	
+	\section{Distillation Through Attention}
+	A unique contribution of this paper is the introduction of a distillation token, a new method that enables the student model (transformer) to learn from a teacher model (either a CNN or another transformer). This token is added to the transformer’s input and interacts with the class token during training. The distillation token improves the model's performance by helping it mimic the predictions of the teacher, allowing the transformer to learn more efficiently from the teacher’s inductive biases, especially when the teacher is a CNN.
+	
+	\subsection{Previous Works:}
+	Knowledge distillation is a common technique used in CNN models, where a smaller "student" model learns from a larger "teacher" model, typically by mimicking the teacher's output (soft labels). Previous works used this approach for model compression and transfer learning, but it was not specifically adapted to the transformer architecture.
+	
+	
+	\subsection{Proposed Changes:}
+	The authors introduce a novel distillation mechanism specifically designed for transformers. The key innovation is the distillation token, which operates alongside the class token. Unlike the typical class token that learns from the ground truth labels, the distillation token learns from the teacher model’s predictions, allowing the student transformer to benefit from the teacher's inductive biases.
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Interaction Through Attention:} The distillation token interacts with the other tokens through the self-attention mechanism, ensuring that the student model receives rich, token-level information from the teacher.
+		
+		\item 
+		\textbf{Inductive Bias Transfer:} Interestingly, the paper shows that a CNN teacher (such as RegNet) transfers its inductive biases (such as convolutional feature learning) to the transformer through this attention-based distillation process, making the transformer perform better on image recognition tasks.
+	\end{enumerate}
+	This approach to distillation is a significant departure from earlier methods because it leverages the attention mechanism to integrate the teacher's guidance into the student's learning process, improving the model's performance.
+	
+	
+	
+	\section{Smaller and More Efficient Models (DeiT-S and DeiT-Ti)}
+	\subsection{Previous Works:}
+	The original ViT model introduced a large transformer architecture (ViT-B) that required massive datasets and significant computational resources to achieve competitive results. Smaller versions of ViTs had not been thoroughly explored, and the effectiveness of scaling down transformers while maintaining performance was not well established.
+	
+	
+	\subsection{Proposed Changes:}
+	The authors introduce two smaller versions of the ViT model in their DeiT approach:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{DeiT-S (Small):} A smaller version with fewer parameters and heads, designed to be more efficient while still maintaining competitive performance.
+		
+		\item 
+		\textbf{DeiT-Ti (Tiny):} An even smaller model, comparable to ResNet-18 in terms of parameter count, which is designed to be lightweight and fast while achieving solid accuracy on image classification tasks.
+	\end{enumerate}
+	These smaller models are trained using the same data-efficient strategies and distillation techniques as the larger DeiT-B model, making them highly competitive with traditional CNNs like ResNet. The development of these smaller models is a step forward in making transformers accessible for deployment on edge devices and environments with limited computational power.
+	
+	
+	
+	
+	\section{Performance and Efficiency Gains}
+	The proposed DeiT models achieve competitive results with state-of-the-art CNNs, reaching up to 85.2\% top-1 accuracy on ImageNet while requiring less compute time and fewer resources. The authors show that, with their distillation method, Vision Transformers can even outperform their teacher models in some cases, demonstrating the effectiveness of this distillation approach.
+	
+	
+	\subsection{Previous Works:}
+	Earlier Vision Transformer models (such as ViT-B and ViT-L) were known for their large computational overhead. Their training and inference speed were slower than state-of-the-art CNN models like EfficientNet and ResNet, limiting their usability in real-time or resource-constrained environments.
+	
+	
+	\subsection{Proposed Changes:}
+	The authors focus on improving the \textbf{throughput} (images processed per second) of DeiT models, ensuring that they are efficient in terms of both \textbf{accuracy} and \textbf{speed}. They show that:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{DeiT-S} achieves higher throughput than many large CNNs like EfficientNet-B4 while maintaining competitive accuracy.
+		
+		\item 
+		\textbf{The DeiT-B} model surpasses earlier ViTs trained on ImageNet-1k in terms of throughput, closing the gap between transformers and CNNs.
+		
+		\item 
+		Through their distillation process, the authors achieve \textbf{better accuracy-to-throughput ratios} than standard CNNs, meaning that transformers can now offer high performance without compromising speed.
+	\end{enumerate}
+	
+	
+	
+	\section{Transfer Learning and Generalization}
+	The authors also explore the transfer learning capabilities of the DeiT models, showing that they perform well when fine-tuned on other popular datasets like CIFAR-10, CIFAR-100, and iNaturalist, further proving their generalization power.
+	
+	\subsection{Previous Works:}
+	Vision Transformers, especially in their original form, struggled with transfer learning performance when fine-tuned on smaller datasets, often requiring extensive fine-tuning or retraining with external datasets. This was a significant limitation compared to CNNs, which have long been effective at transferring learned features across tasks and domains.
+	
+	
+	\subsection{Proposed Changes:}
+	The DeiT models are shown to \textbf{generalize well} to downstream tasks through transfer learning, performing competitively on popular datasets such as CIFAR-10, CIFAR-100, and iNaturalist. Key improvements include:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Fine-tuning at higher resolutions:} The authors successfully fine-tune DeiT models at different image resolutions, demonstrating that they can achieve high accuracy even when transferred to tasks that require different input sizes.
+		
+		\item 
+		\textbf{Cross-dataset generalization:} DeiT models achieve competitive performance across various fine-grained classification tasks, proving their versatility beyond ImageNet. The model can be fine-tuned efficiently on smaller datasets, making it a more general-purpose model.
+	\end{enumerate}
+	This shows that DeiT not only excels at training from scratch but also performs strongly in transfer learning scenarios, making it more suitable for a broader range of tasks compared to previous ViT models.
 	
 	
 	
 	
 	
+	
+	\section{Results and Improvements}
+	\subsection{Competitive Performance with Smaller Datasets}
+	The primary contribution of this work is that it shows Vision Transformers (ViTs) can achieve competitive results using only the ImageNet-1k dataset. Previous ViTs required massive datasets like JFT-300M for training. The authors achieve the following:
+	\begin{enumerate}
+		\item 
+		\textbf{DeiT-B} (Base model) achieves \textbf{83.1\% top-1 accuracy} on ImageNet-1k, with no external data.
+		
+		\item 
+		When fine-tuned at higher resolution (384×384), \textbf{DeiT-B} achieves \textbf{85.2\% top-1 accuracy}, surpassing many state-of-the-art CNN models like ResNet and EfficientNet.
+	\end{enumerate}
+	
+	These results highlight that DeiT models can perform on par with models that rely on much larger datasets, making ViTs more accessible to the broader machine learning community.
+	
+	
+	\subsection{Distillation Through Attention Enhances Model Performance}
+	The introduction of the \textbf{distillation token} is a novel improvement in this work. This token allows the transformer model to learn from a teacher (often a CNN) in a more effective manner than traditional distillation methods. The benefits of this approach include:
+	\begin{enumerate}
+		\item 
+		\textbf{DeiT-B with distillation (DeiT-B)} achieves \textbf{84.4\% top-1 accuracy} on ImageNet-1k, which is higher than the original ViT-B model (trained on larger datasets) and better than CNN models of similar size.
+		
+		\item 
+		The distillation token outperforms standard soft and hard distillation techniques, showing that it is particularly effective in helping the transformer model adopt the inductive biases from a CNN teacher.
+	\end{enumerate}
+	This result demonstrates that transformers can benefit from distilling knowledge from CNNs, making the training process more efficient and effective.
+	
+	
+	
+	\subsection{Improved Throughput and Computational Efficiency}
+	Another key improvement is the \textbf{throughput and computational efficiency} of the DeiT models. Compared to earlier Vision Transformers, the DeiT models:
+	
+	\begin{enumerate}
+		\item 
+		Achieve faster \textbf{throughput while maintaining high accuracy}. For example, DeiT-Tiny (DeiT-Ti), the smallest model, processes 2536 images per second, making it one of the fastest ViTs available.
+		
+		\item 
+		\textbf{Outperform ViTs trained on larger datasets} in terms of the balance between accuracy and throughput. The DeiT models are competitive with CNNs like EfficientNet and ResNet in terms of both speed and accuracy.
+	\end{enumerate}
+	The improved throughput and reduced computational requirements make DeiT models more suitable for real-world applications, especially in environments with limited computational resources.
+	
+	
+	
+	
+	\subsection{Smaller Models with Comparable Accuracy}
+	The paper introduces smaller and more efficient variants of the DeiT model:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{DeiT-S (Small model)} achieves \textbf{79.8\% top-1 accuracy} on ImageNet-1k while having fewer parameters than ResNet-50, making it a strong alternative to CNNs for image classification tasks.
+		
+		\item 
+		\textbf{DeiT-Ti (Tiny model)}, a smaller version comparable to ResNet-18, achieves \textbf{72.2\% top-1 accuracy} on ImageNet-1k, showing that even small ViT models can be effective when trained efficiently.
+	\end{enumerate}
+	
+	These smaller models provide flexibility in choosing the right trade-off between model size, speed, and accuracy, depending on the task at hand.
+	
+	
+	
+	
+	\subsection{Transfer Learning and Generalization}
+	The authors demonstrate that DeiT models generalize well to downstream tasks, achieving competitive performance in transfer learning scenarios. Key results include:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{DeiT-B} \textbf{achieves 99.1\% accuracy on CIFAR-10, 91.4\% on CIFAR-100}, and \textbf{93.9\% on Stanford Cars}, which are common benchmarks for transfer learning tasks.
+		
+		\item 
+		The models also perform well on fine-grained classification tasks and datasets like iNaturalist, Oxford-102 Flowers, and Stanford Cars.
+	\end{enumerate}These results show that the DeiT models are not only effective for large-scale classification tasks like ImageNet but also excel in transfer learning, making them versatile for different types of datasets and tasks.
+	
+	
+	
+	
+	\subsection{Training Time Reduction}
+	One of the critical improvements in this method is the reduced training time:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{DeiT-B} is trained on \textbf{a single machine with 4 to 8 GPUs} in just three days, compared to the weeks or even months of training required for other ViT models on large datasets.
+		
+		\item 
+		The fine-tuning of DeiT models at higher resolutions is also efficient, taking only around 20 hours on an 8-GPU machine for 25 epochs.
+	\end{enumerate}
+	This reduction in training time, combined with efficient throughput, makes DeiT models more practical and accessible for organizations with limited resources.
+	
+	
+	
+	\subsection{Distillation from CNNs Is More Effective than from Transformers}
+	A surprising finding in the paper is that \textbf{transformers learn better when the teacher is a CNN rather than another transformer}. The authors observed that:
+	
+	\begin{enumerate}
+		\item 
+		When using a \textbf{RegNetY CNN} as the teacher, the student DeiT model outperforms models distilled from transformer teachers.
+		
+		\item 
+		The distillation process allows the transformer to learn important inductive biases from the CNN, improving its ability to capture spatial and hierarchical information in images.
+	\end{enumerate}
+	
+	This result suggests that CNNs can still play a valuable role in improving transformer models through distillation, leveraging the strengths of both architectures.
+	
+	
+	
+	\section{Overall Improvements}
+	\begin{enumerate}
+		\item 
+		\textbf{Data Efficiency:} The DeiT models reduce the need for large datasets, showing that ViTs can perform well with ImageNet-1k only.
+		
+		\item 
+		\textbf{Distillation Innovation:} The novel distillation token mechanism leads to significant performance gains, especially when CNNs are used as teachers.
+		
+		\item 
+		\textbf{Improved Throughput:} DeiT models achieve a better balance between accuracy and throughput, making them faster and more efficient for real-time applications.
+		
+		\item 
+		\textbf{Smaller, Faster Models:} The introduction of DeiT-S and DeiT-Ti offers more flexibility with smaller models that perform competitively.
+		
+		\item 
+		\textbf{Transfer Learning Success:} DeiT models generalize well across various downstream tasks, proving to be versatile for different datasets.
+	\end{enumerate}
 	
 	
 	
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{s}
+	
+	
+	
+	
+	
 	
 	
 	
