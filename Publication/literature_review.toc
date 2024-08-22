@@ -94,4 +94,10 @@
 \contentsline {subsection}{\numberline {5.2.4}Training Efficiency and Generalization}{32}{subsection.5.2.4}%
 \contentsline {subsection}{\numberline {5.2.5}Benchmark Results and Competitive Performance}{32}{subsection.5.2.5}%
 \contentsline {subsection}{\numberline {5.2.6}Improved Attention Mechanism for Class Prediction}{33}{subsection.5.2.6}%
-\contentsline {chapter}{\numberline {6}title}{34}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Attention is All you need \cite {DBLP:journals/corr/VaswaniSPUJGKP17}}{34}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Transformer Architecture:}{34}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Self-Attention and Multi-Head Attention:}{34}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Positional Encoding:}{35}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Advantages of Transformers:}{35}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Results:}{35}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Summary}{35}{section.6.6}%

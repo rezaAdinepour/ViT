@@ -56,4 +56,12 @@ H.~Touvron, M.~Cord, A.~Sablayrolles, G.~Synnaeve, and H.~J{\'{e}}gou, ``Going
   [Online]. Available: \url{https://arxiv.org/abs/2103.17239}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/VaswaniSPUJGKP17}
+\BIBentryALTinterwordspacing
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  L.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' \emph{CoRR},
+  vol. abs/1706.03762, 2017. [Online]. Available:
+  \url{http://arxiv.org/abs/1706.03762}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
