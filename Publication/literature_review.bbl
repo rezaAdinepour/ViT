@@ -71,4 +71,11 @@ D.~Wodajo and S.~Atnafu, ``Deepfake video detection using convolutional vision
   \url{https://arxiv.org/abs/2102.11126}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/abs-2104-08500}
+\BIBentryALTinterwordspacing
+M.~Zhu, K.~Han, Y.~Tang, and Y.~Wang, ``Visual transformer pruning,''
+  \emph{CoRR}, vol. abs/2104.08500, 2021. [Online]. Available:
+  \url{https://arxiv.org/abs/2104.08500}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

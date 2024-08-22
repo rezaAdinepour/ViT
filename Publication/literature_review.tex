@@ -1071,6 +1071,130 @@
 	
 	
 	
+	\chapter{Visual Transformer Pruning \cite{DBLP:journals/corr/abs-2104-08500}}
+	This paper focuses on making Vision Transformers (ViTs) more efficient by reducing their size and computational demands without significantly sacrificing performance. Vision Transformers are known for their high accuracy in computer vision tasks like image classification, but they are resource-intensive, requiring substantial memory, computation, and storage. This makes them difficult to deploy on devices with limited resources, such as mobile phones and embedded systems.
+	
+	
+	
+	The authors propose a method to prune Vision Transformers, which means removing less important parts of the model to reduce the number of parameters and computational operations. This is done through L1 regularization, a technique that encourages sparsity in the model's dimensions. During training, this method automatically identifies which parts of the model (such as individual dimensions in the layers) are less important and can be removed. By applying this pruning technique, the authors manage to create smaller, faster, and more efficient Vision Transformers while maintaining competitive accuracy.
+	
+	
+	\section{Key Components of the Approach}
+	\begin{enumerate}
+		\item 
+		L1 Regularization for Sparsity: The method applies L1 regularization to the transformer’s dimensions, which forces the model to focus on the most important components while ignoring others. This results in a model with fewer, but more critical, dimensions.
+		
+		\item 
+		Pruning Process: After training with L1 regularization, the dimensions with low importance are pruned. This means they are effectively removed from the model, reducing its size and computational complexity.
+		
+		\item 
+		Fine-tuning After Pruning: Once the model is pruned, it is fine-tuned to ensure that the performance drop is minimized. This final step helps the model regain any accuracy lost during pruning.
+		
+		\item 
+		Experiments and Results: The authors test their pruning method on two large datasets—ImageNet-100 and ImageNet-1K. The results show that the pruned models significantly reduce the number of parameters and computations, while maintaining similar accuracy to the original, unpruned models. For example, pruning 40\% of the model’s dimensions reduces computational costs by 43\% while only dropping accuracy by about 1%.
+	\end{enumerate}
+	
+	
+	\section{Results and Improvements}
+	\subsection{Significant Reduction in Parameters and Computation Costs}
+	The proposed pruning method successfully reduces both the number of parameters and the computational costs (measured in FLOPs) of Vision Transformers. For example:
+	
+	\begin{enumerate}
+		\item 
+		40\% pruning of the model’s dimensions resulted in a 45.3\% reduction in parameters and a 43.0\% reduction in FLOPs (computational cost).
+		
+		\item 
+		20\% pruning reduced the parameters by 23.5\% and FLOPs by 22.0\%, showing the method’s ability to effectively compress the model.
+	\end{enumerate}
+	This demonstrates that the pruning approach drastically cuts the resource requirements of Vision Transformers, making them more suitable for deployment on devices with limited resources.
+	
+	
+	\subsection{Maintaining High Accuracy with Minimal Loss}
+	Despite reducing the model's size and complexity, the accuracy of the pruned models remained high, showing only minor drops in performance. Specifically:
+	
+	
+	\begin{enumerate}
+		\item 
+		After pruning 40\% of the model’s dimensions, the accuracy on ImageNet-1K dropped by only 1.1\%, from 81.8\% to 80.7\%.
+		
+		\item 
+		Pruning 20\% of the dimensions resulted in an accuracy drop of just 0.5\%, maintaining a high level of performance with significantly fewer parameters and lower computational cost.
+	\end{enumerate}
+	This result demonstrates the strength of the pruning method, as it allows for a substantial reduction in resources while keeping the model highly accurate.
+	
+	
+	
+	\subsection{Effectiveness on Large Datasets}
+	The pruning method was tested on both ImageNet-100 (a subset of ImageNet-1K) and ImageNet-1K, two large-scale image classification datasets. The results were consistent across both datasets:
+	
+	
+	\begin{enumerate}
+		\item 
+		On ImageNet-100, the pruned models achieved similar reductions in parameters and FLOPs with minimal accuracy loss. For instance, the 40\% pruned model maintained an accuracy of 92.58\% on ImageNet-100.
+		
+		\item 
+		On the larger ImageNet-1K dataset, the pruned model remained highly competitive with only a 1.1\% accuracy loss despite the significant reduction in computational complexity.
+	\end{enumerate}
+	This demonstrates that the method generalizes well to large datasets, making it viable for use in real-world applications involving complex data.
+	
+	
+	\subsection{Flexibility of Pruning Rates}
+	The authors conducted ablation studies to test different pruning rates, allowing for flexible reductions in model size. Depending on the desired trade-off between resource savings and accuracy, users can select different pruning rates:
+	
+	
+	\begin{enumerate}
+		\item 
+		20\% pruning saves a modest amount of computational resources while maintaining nearly the same level of accuracy.
+		
+		\item 
+		40\% pruning significantly reduces resource usage while still keeping the accuracy drop minimal.
+	\end{enumerate}
+	This flexibility enables users to adjust the pruning rate based on the specific requirements of their application, such as maximizing efficiency for mobile devices or embedded systems.
+	
+	
+	
+	
+	\subsection{Simplicity and Efficiency of the Pruning Process}
+	The method is described as simple yet efficient. It uses L1 regularization during training to automatically identify less important dimensions in the Vision Transformer. Afterward, the model is pruned based on the learned importance scores, and a final fine-tuning step ensures that the performance remains high.
+	
+	The simplicity of this pruning pipeline—training with L1 regularization, pruning, and fine-tuning—makes it easy to implement and apply to various Vision Transformer models. It is less complex than other compression techniques, such as quantization or knowledge distillation, but achieves comparable improvements in resource efficiency.
+	
+	
+	
+	
+	\subsection{Promising Future Improvements}
+	The authors suggest that this pruning method could be extended in future research to further reduce other components of Vision Transformers, such as:
+	
+	\begin{enumerate}
+		\item 
+		Pruning attention heads within the multi-head self-attention layers.
+		
+		\item 
+		Pruning transformer layers, which could lead to even more significant reductions in both parameters and computational costs.
+		
+		\item 
+		These potential improvements open the door for even more efficient and compact Vision Transformers that can be deployed on a wider range of devices.
+	\end{enumerate}
+	
+	
+	\section{Overall Improvements:}
+	\begin{enumerate}
+		\item 
+		Reduced parameters and FLOPs: Pruning 20-40\% of the model's dimensions results in a significant reduction in both parameters and FLOPs, making the model more efficient for real-world applications.
+		
+		\item 
+		Minimal accuracy loss: The method achieves large savings in computational resources while maintaining high accuracy, with only minor performance drops (as low as 0.5% in some cases).
+		
+		\item 
+		Flexibility of pruning rates: Users can adjust the pruning rate depending on the trade-off they prefer between model size and performance, making the method adaptable to different use cases.
+		
+		\item 
+		Simplicity and ease of implementation: The pruning method is straightforward to apply, relying on L1 regularization and a simple pruning and fine-tuning process.
+		
+		\item 
+		Potential for future enhancements: The method can be expanded to further reduce other components like attention heads and transformer layers, providing even more opportunities for efficient Vision Transformers.
+	\end{enumerate}
+	
 	
 	
 	
