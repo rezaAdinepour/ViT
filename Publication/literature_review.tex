@@ -936,6 +936,153 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{Deepfake Video Detection Using Convolutional Vision Transformer \cite{DBLP:journals/corr/abs-2102-11126}}
+	
+	This paper addresses the growing concerns around deepfakes—hyper-realistic videos created through deep learning techniques that can manipulate or replace faces in videos. While deepfakes have useful applications in fields like entertainment, education, and virtual reality, they also pose serious risks, such as being used for identity theft, misinformation, or fraud.
+	
+	The authors propose a new model for detecting deepfakes, called the \textbf{Convolutional Vision Transformer (CViT)}. This model combines the strengths of two powerful architectures: Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs). CNNs are effective at learning local features (such as textures or small patterns), while ViTs excel at capturing global features and understanding the relationship between different parts of an image. By combining both models, CViT is able to detect subtle visual differences between real and fake videos.
+	
+	\section{Key Components of the Model}
+	\subsection{Feature Learning through CNNs:}
+	Feature Learning through CNNs: The CNN module extracts local features from video frames, such as facial details and textures, which are crucial for detecting visual artifacts commonly found in deepfakes.
+	
+	
+	\subsection{Global Feature Understanding through ViTs:}
+	The Vision Transformer component processes the features extracted by the CNN, learning the relationships between different parts of the image. This helps the model detect manipulations at both a local and global level.
+	
+	
+	\subsection{Comprehensive Data Preprocessing:}
+	The authors emphasize the importance of data preprocessing, which ensures that the input data is well-prepared for training. This step helps improve the model's accuracy and robustness.
+	
+	
+	\subsection{Testing and Results:}
+	 The CViT model was trained and tested on the DeepFake Detection Challenge (DFDC) dataset, one of the largest and most diverse datasets for detecting deepfakes. The model achieved an accuracy of 91.5\%, demonstrating strong performance in identifying fake videos. However, the authors acknowledge that there is room for improvement and plan to expand their research by using more diverse datasets in the future.
+	
+	
+	
+	
+	\section{Results and Improvements}
+	This paper presents several key results and improvements from the proposed Convolutional Vision Transformer (CViT) model, which combines CNNs and Vision Transformers for detecting deepfake videos. Below is a detailed overview of the results and improvements:
+	
+	\subsection{High Accuracy in Deepfake Detection}
+	The CViT model achieved 91.5\% accuracy on the DeepFake Detection Challenge (DFDC) dataset, demonstrating its effectiveness in distinguishing between real and fake videos. This high accuracy reflects the model's ability to detect subtle artifacts and inconsistencies in manipulated videos, which are often difficult for simpler models to detect.
+	
+	
+	\subsection{AUC and Loss Metrics}
+	Along with the high accuracy, the model also achieved an AUC (Area Under the Curve) value of 0.91 and a loss value of 0.32. These metrics further validate the robustness of the model in detecting deepfakes. The AUC score indicates that the model performs well in distinguishing true positives (real videos) from false positives (deepfakes), and the low loss value shows that the predictions are close to the actual values.
+	
+	
+	\subsection{Combination of CNN and ViT for Local and Global Feature Learning}
+	One of the main improvements of the CViT model is its ability to combine the strengths of CNNs and Vision Transformers (ViTs). CNNs are highly effective at extracting local features such as textures and small details, while ViTs are powerful in understanding global relationships across an image. The fusion of these two methods allows CViT to detect deepfakes more effectively by capturing both fine-grained details and broader spatial relationships in video frames.
+	
+	
+	This combined approach is a notable improvement over models that rely solely on CNNs or Transformers, as it provides a more comprehensive analysis of the video content.
+	
+	
+	\subsection{Generalized Model for Different Deepfake Scenarios}
+	The authors describe their model as "generalized" for several reasons:
+	\begin{enumerate}
+		\item 
+		\textbf{Local and Global Feature Learning:} The combination of CNN and ViT enables the model to learn from both small details and larger spatial contexts, making it more versatile in detecting various types of deepfakes.
+		
+		\item 
+		\textbf{Thorough Data Preprocessing:} The emphasis on proper data preprocessing ensures that the input data is of high quality, leading to better detection performance.
+		
+		\item 
+		\textbf{Diverse Dataset Training:} The CViT model was trained on the DFDC dataset, which includes a wide variety of videos created in different environments, lighting conditions, and orientations. This makes the model more adaptable to real-world deepfake scenarios.		
+	\end{enumerate}
+	
+	
+	\subsection{Comparison with Other Models}
+	The paper compares the performance of the CViT model with other existing deepfake detection models and shows that:
+	\begin{enumerate}
+		\item 
+		The CViT model performs better than simpler CNN-based models, such as those using RNNs or shallow CNNs.
+		
+		\item 
+		The model demonstrates a higher accuracy on most subsets of the DFDC dataset, such as FaceForensics++, where it achieves high detection rates on multiple types of manipulations (Deepfake, FaceSwap, and others).
+	\end{enumerate}
+	However, the authors note that the model performed less effectively on certain datasets, such as FaceForensics++ FaceShifter, indicating room for further improvement.
+	
+	
+	
+	\subsection{Data Preprocessing and Face Extraction}
+	The authors emphasize the importance of data preprocessing, especially in the extraction of facial images from video frames. By carefully pre-processing the data, including extracting faces in a standardized format (224x224 pixels), the model is able to focus on the relevant parts of the video, improving detection accuracy.
+	
+	
+	The use of tools like BlazeFace and MTCNN for face detection and alignment ensures that the model works with high-quality input data. This careful preprocessing approach is a key factor in the model’s strong performance, setting it apart from other deepfake detection models that may not prioritize preprocessing to the same extent.
+	
+	
+	
+	
+	\subsection{Future Improvements and Expansion}
+	While the model shows strong results, the authors acknowledge that there is still room for improvement. They plan to enhance the model by:
+	
+	\begin{enumerate}
+		\item 
+		Adding more diverse datasets for training, which will help the model detect deepfakes in even more varied scenarios.
+		
+		\item 
+		Improving artifact detection in more challenging deepfake videos, such as those created using advanced techniques like FaceShifter, where the model currently struggles.
+	\end{enumerate}
+	
+	
+	
+	\section{Summary of Improvements:}
+	\begin{enumerate}
+		\item 
+		High accuracy (91.5\%) and AUC score (0.91) on the DFDC dataset, showing effective deepfake detection.
+		
+		\item 
+		CNN and ViT combination enables the model to capture both local and global features, improving the ability to detect deepfakes.
+		
+		\item 
+		Generalized model design allows the CViT to perform well across different deepfake scenarios, including varying video qualities and environments.
+		
+		\item 
+		Comprehensive data preprocessing ensures the input quality is high, leading to better model performance.
+		
+		\item 
+		Future improvements aim to address current limitations, such as improving detection on more complex deepfake techniques and expanding the dataset.
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	\newpage
 	\bibliographystyle{IEEEtran}
 	\bibliography{refs}

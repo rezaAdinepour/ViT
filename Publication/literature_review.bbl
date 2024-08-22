@@ -64,4 +64,11 @@ A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
   \url{http://arxiv.org/abs/1706.03762}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/abs-2102-11126}
+\BIBentryALTinterwordspacing
+D.~Wodajo and S.~Atnafu, ``Deepfake video detection using convolutional vision
+  transformer,'' \emph{CoRR}, vol. abs/2102.11126, 2021. [Online]. Available:
+  \url{https://arxiv.org/abs/2102.11126}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
