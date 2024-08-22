@@ -33,4 +33,20 @@ S.~H. Lee, S.~Lee, and B.~C. Song, ``Vision transformer for small-size
   \url{https://arxiv.org/abs/2112.13492}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/abs-2106-10270}
+\BIBentryALTinterwordspacing
+A.~Steiner, A.~Kolesnikov, X.~Zhai, R.~Wightman, J.~Uszkoreit, and L.~Beyer,
+  ``How to train your vit? data, augmentation, and regularization in vision
+  transformers,'' \emph{CoRR}, vol. abs/2106.10270, 2021. [Online]. Available:
+  \url{https://arxiv.org/abs/2106.10270}
+\BIBentrySTDinterwordspacing
+
+\bibitem{DBLP:journals/corr/abs-2012-12877}
+\BIBentryALTinterwordspacing
+H.~Touvron, M.~Cord, M.~Douze, F.~Massa, A.~Sablayrolles, and H.~J{\'{e}}gou,
+  ``Training data-efficient image transformers {\&} distillation through
+  attention,'' \emph{CoRR}, vol. abs/2012.12877, 2020. [Online]. Available:
+  \url{https://arxiv.org/abs/2012.12877}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

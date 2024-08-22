@@ -411,13 +411,134 @@
 	
 	
 	
-	\chapter{title}
+	\chapter{How to train your ViT? Data, Augmentation,
+		and Regularization in Vision Transformers \cite{DBLP:journals/corr/abs-2106-10270}}
+		
+		
+	This paper, explores the best ways to train Vision Transformers (ViTs) effectively by balancing the use of data augmentation, regularization, model size, and available computational resources. ViTs are powerful models for computer vision tasks like image classification, but they tend to rely heavily on large datasets and regularization techniques to avoid overfitting. This article aims to provide practical insights for improving ViT performance, especially for practitioners with limited data and computational budgets.
+	
+	
+	\section{Data Augmentation and Regularization ("AugReg")}
+	The study shows that using proper data augmentation and regularization can yield models that perform as well as those trained on much larger datasets. By fine-tuning these techniques, smaller datasets can be used effectively, making the training process more efficient.
+	
+	\subsection{Previous Works:}
+	Earlier studies on Vision Transformers, such as the original ViT paper, focused heavily on the need for large datasets like ImageNet-21k or JFT-300M to achieve competitive performance. The use of data augmentation and regularization was acknowledged, but the specific impact of these techniques on different dataset sizes, model configurations, and compute budgets was not systematically explored.
+	
+	\subsection{Proposed Changes}
+	The authors of this paper shift the focus to a systematic study of how data \textbf{augmentation and regularization} can act as powerful tools to improve the performance of ViTs, even when the available dataset is smaller. The idea is that well-applied augmentation techniques (like Mixup and RandAugment) and regularization methods (such as dropout and stochastic depth) can compensate for the lack of large datasets, mimicking the effects of increasing the dataset size.
+	
+	
+	This approach differs from previous work by providing empirical evidence showing that with carefully chosen augmentation and regularization settings, models can achieve results comparable to those trained on much larger datasets. This is particularly relevant for practitioners with limited access to massive datasets.
 	
 	
 	
 	
 	
 	
+	\section{Trade-offs Between Data, Augmentation, and Compute Budget}
+	 The article systematically investigates how the size of training data, the use of augmentation and regularization, and the compute budget interact. It demonstrates that well-designed regularization and augmentation strategies can mimic the effect of significantly increasing the dataset size.
+	 
+	 \subsection{Previous Works:}
+	 Many earlier studies on ViTs, such as the DeiT (Data-efficient Image Transformers) work, emphasized the importance of using teacher-student distillation to enhance the performance of ViTs on smaller datasets. While this approach improved results, it added complexity to the training pipeline. Additionally, previous work often considered fixed trade-offs between model size and dataset size, without systematically exploring the effect of compute budget and regularization across a wide range of scenarios.
+	 
+	 
+	 \subsection{Proposed Changes:}
+	 The authors go beyond distillation-based techniques and offer a more comprehensive investigation into the \textbf{interplay between model size, data size, and compute budget}. They conduct experiments across different ViT variants (from small to large models) and different dataset sizes (ImageNet-1k and ImageNet-21k) while systematically adjusting the amount of compute and AugReg techniques.
+	 
+	 
+	 This approach offers a more nuanced understanding of how to balance \textbf{model complexity, data augmentation, and regularization} to achieve optimal performance under various constraints, helping practitioners make better decisions based on their available resources.
+	 
+	 
+	 
+	 
+	 
+	 
+	 \section{Regularization Techniques and Their Impact}
+	 \subsection{Previous Works:}
+	 The role of regularization in ViTs was relatively underexplored in previous work, with most efforts focusing on training larger models on massive datasets. Dropout and stochastic depth were sometimes applied, but their effects were not systematically tested across different model sizes and dataset conditions.
+	 
+	 
+	 \subsection{Proposed Changes:}
+	 The authors explore the use of \textbf{regularization techniques} like dropout and stochastic depth in greater detail. They find that regularization primarily benefits larger models when trained for extended periods, and actually harms performance in smaller models or when training on smaller datasets like ImageNet-21k. They also conduct ablation studies to identify the best settings for regularization, determining that a peak dropout/stochastic depth probability of 0.1 works best.
+	 
+	 
+	 
+	 This more detailed exploration of regularization sets their work apart by offering actionable insights into when and how to apply regularization effectively in ViTs, providing a deeper understanding of its benefits and drawbacks.
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 \section{Impact of Model Size}
+	 Larger models tend to benefit more from regularization techniques, but this comes with the cost of requiring more training time and computational resources. Smaller models, on the other hand, might not benefit as much from regularization and could even suffer a loss in performance.
+	 
+	 \subsection{Previous Works:}
+	 Earlier studies on ViTs often treated model size as a static factor, with larger models generally preferred when training on large datasets. However, there was little guidance on how to adapt model size based on the available compute or dataset size.
+	 
+	 
+	 \subsection{Proposed Changes:}
+	 The authors provide specific \textbf{model size recommendations} based on their findings. They suggest that \textbf{larger patch sizes (e.g., 32×32)} are often more effective than reducing model size (e.g., using "Tiny" ViT models) when compute resources are limited. This means that instead of making the model smaller, increasing the patch size can help maintain performance without increasing the computational load significantly.
+	 
+	 This recommendation is based on a systematic analysis of throughput, model size, and patch size, providing a practical guide for selecting the right model configuration depending on the computational constraints.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\section{Pre-training and Transfer Learning}
+	The study finds that models pre-trained on larger datasets, like ImageNet-21k, perform better across a variety of tasks, including transfer learning. However, practitioners are advised to carefully choose augmentation and regularization settings to match their available compute budget and dataset size.
+	
+	\subsection{Previous Works:}
+	Earlier ViT papers focused heavily on large-scale pre-training (e.g., JFT-300M) and emphasized the importance of pre-training on massive datasets for transfer learning. However, this left smaller organizations or researchers without access to such data at a disadvantage.
+	
+	
+	\subsection{Proposed Changes:}
+	The authors show that \textbf{transfer learning from pre-trained models on smaller datasets (like ImageNet-1k or ImageNet-21k)}, combined with strong AugReg, can yield results similar to those obtained from pre-training on massive datasets. They provide practical recommendations for selecting pre-trained models and fine-tuning them on specific tasks, which is particularly helpful for practitioners without access to large pre-training datasets.
+	
+	
+	This change democratizes the use of ViTs, making them more accessible to a broader range of users and use cases, and helping users achieve competitive performance without requiring access to extremely large datasets for pre-training.
+	
+	
+	\section{Practical Recommendations}
+	The authors offer several practical guidelines, such as preferring data augmentation over regularization for smaller datasets, and choosing larger models with proper augmentation for the best results in a transfer learning setup.
+	
+	
+	
+	
+	\section{Overall Impact of Changes}
+	These changes collectively offer a more flexible and practical approach to training Vision Transformers, making them more applicable to real-world scenarios with constrained resources. The authors provide a comprehensive guide on how to balance data augmentation, regularization, and compute budget, allowing practitioners to achieve top-tier performance without relying on enormous datasets or computational resources. This is a significant shift from earlier ViT models, which focused primarily on large-scale data and heavy compute environments.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{Training data-efficient image transformers \& distillation through attention \cite{DBLP:journals/corr/abs-2012-12877}}
 	
 	
 	
