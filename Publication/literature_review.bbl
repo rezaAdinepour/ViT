@@ -49,4 +49,11 @@ H.~Touvron, M.~Cord, M.~Douze, F.~Massa, A.~Sablayrolles, and H.~J{\'{e}}gou,
   \url{https://arxiv.org/abs/2012.12877}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/abs-2103-17239}
+\BIBentryALTinterwordspacing
+H.~Touvron, M.~Cord, A.~Sablayrolles, G.~Synnaeve, and H.~J{\'{e}}gou, ``Going
+  deeper with image transformers,'' \emph{CoRR}, vol. abs/2103.17239, 2021.
+  [Online]. Available: \url{https://arxiv.org/abs/2103.17239}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

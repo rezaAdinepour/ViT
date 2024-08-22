@@ -792,7 +792,105 @@
 	
 	
 	
-	\chapter{s}
+	\chapter{Going deeper with Image Transformers \cite{DBLP:journals/corr/abs-2103-17239}}
+	This paper explores how to enhance the performance of Vision Transformers (ViTs) by making them deeper and more efficient for image classification tasks. The authors focus on improving the architecture of ViTs to address their limitations in handling complex visual tasks, especially when compared to Convolutional Neural Networks (CNNs).
+	
+	
+	\section{Key Ideas:}
+	\subsection{Deeper Vision Transformers (ViTs):}
+	The paper investigates the performance of ViTs when scaling them to deeper layers. While transformers have excelled in natural language processing, the same depth and complexity have not been fully explored in vision tasks. The authors experiment with significantly deeper ViTs to better understand how increasing depth affects the model’s ability to capture detailed visual information.
+	
+	\subsection{Class-Attention Mechanism:}
+	One of the major contributions of this work is the introduction of \textbf{class-attention layers}. These layers are added to the architecture to improve how the model attends to important image features. The class-attention mechanism allows the model to focus more on class-relevant areas of the image, leading to better performance, especially when dealing with complex, high-resolution images.
+	
+	\subsection{Distillation with Class-Attention:}
+	The authors explore \textbf{knowledge distillation}—a technique where a smaller or less powerful "student" model learns from a larger, pre-trained "teacher" model. While previous works used a distillation token in Vision Transformers to enhance performance, this paper primarily uses hard-label distillation, which averages the teacher’s prediction with the true label. The class-attention layers, however, did not benefit from the distillation token as much as expected, so the authors opted for \textbf{hard-label distillation}, which provided better results.
+	
+	
+	
+	\subsection{Efficient Training and Generalization:}
+	The paper also focuses on how these deeper ViTs, equipped with class-attention, can be trained efficiently and still generalize well to new tasks. By fine-tuning their model architecture, they show that transformers can handle large-scale vision tasks effectively, even with deeper networks. They also achieve faster convergence through the use of hard-label distillation.
+	
+	
+	\subsection{Performance on Benchmarks:}
+	The authors demonstrate that their deeper ViTs with class-attention perform exceptionally well on various image classification benchmarks, showing improvements over standard ViTs and CNNs. Their models achieve higher accuracy while maintaining computational efficiency, making them more practical for real-world applications.
+	
+	
+	
+	
+	
+	\section{Results and Improvements}
+	\subsection{Performance Improvement with Depth}
+	A major finding of the paper is that scaling ViTs to deeper architectures improves performance on image classification tasks. By extending the depth of Vision Transformers, the model is able to capture more complex visual patterns and hierarchical features, leading to better results. The authors demonstrate that:
+	
+	\begin{enumerate}
+		\item 
+		Deeper ViTs with \textbf{up to 100+} layers outperform shallower models, especially when trained on large datasets.
+		
+		\item 
+		\textbf{Deeper transformers} are shown to be highly competitive with state-of-the-art CNN architectures while retaining the flexibility and scalability that ViTs offer.
+	\end{enumerate}
+	This improvement highlights the ability of ViTs to handle complex visual tasks effectively when scaled to deeper architectures.
+	
+	
+	\subsection{Introduction of Class-Attention Layers}
+	The authors propose \textbf{class-attention layers}, which are a significant architectural improvement. These layers are designed to:
+	\begin{enumerate}
+		\item 
+		Focus more on class-relevant areas of an image, helping the model attend to important features while ignoring irrelevant information.
+		
+		\item 
+		Improve the model's ability to distinguish between fine-grained classes, making it more effective for high-resolution and complex images.
+	\end{enumerate}
+	The introduction of class-attention layers results in \textbf{improved accuracy} in image classification benchmarks compared to standard ViT models. By better aligning the model’s attention with class labels, the classification performance is enhanced, particularly for tasks that require precise attention to detail.
+	
+	
+	\subsection{Hard-Label Distillation for Faster Convergence}
+	In contrast to previous work that relied on distillation tokens, the paper shows that \textbf{hard-label distillation}—a method where the model's predictions are averaged with the teacher’s output—provides better performance, particularly when used with class-attention layers. The authors found that:
+	\begin{enumerate}
+		\item 
+		\textbf{Hard-label distillation} led to \textbf{faster convergence} during training, reducing the overall training time required to achieve high accuracy.
+		
+		\item 
+		The method is more effective for deeper transformers, as it simplifies the distillation process without sacrificing accuracy.
+	\end{enumerate}
+	This improvement demonstrates that hard-label distillation can help models learn more efficiently from pre-trained teachers, particularly when deeper architectures are used.
+	
+	
+	\subsection{Training Efficiency and Generalization}
+	The deeper ViTs proposed in this paper are not only more accurate but also \textbf{more efficient in training}. The authors optimized the training process to handle the deeper architectures, ensuring that the model can still converge quickly and generalize well to new tasks. Key results include:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Faster convergence} during training compared to traditional ViTs, thanks to the combined use of class-attention layers and hard-label distillation.
+		
+		\item 
+		The deeper models generalize well to different datasets and achieve strong performance across various benchmarks without overfitting, demonstrating the robustness of the proposed architecture.
+	\end{enumerate}
+	
+	
+	
+	\subsection{Benchmark Results and Competitive Performance}
+	The authors tested their proposed deeper ViTs on several image classification benchmarks, showing \textbf{improved performance over baseline models:}
+	
+	\begin{enumerate}
+		\item 
+		The model achieves higher accuracy compared to standard Vision Transformers, ResNet-based CNNs, and previous state-of-the-art models.
+		
+		\item 
+		When combined with class-attention and hard-label distillation, the deeper ViTs achieve \textbf{competitive results on benchmarks like ImageNet} and other challenging datasets.
+	\end{enumerate}
+	These results position deeper ViTs with class-attention as a strong alternative to CNNs, making them viable for large-scale and complex visual tasks.
+	
+	
+	
+	\subsection{Improved Attention Mechanism for Class Prediction}
+	The introduction of the class-attention mechanism ensures that the \textbf{model pays more attention to class-relevant features}, reducing the chance of focusing on background noise or irrelevant parts of an image. This improves the accuracy of class predictions, especially in complex datasets where fine-grained differences between classes are crucial.
+	
+	\begin{enumerate}
+		\item 
+		The \textbf{class-attention mechanism} ensures better feature extraction and significantly enhances the model's performance in distinguishing between closely related classes.
+	\end{enumerate}
 	
 	
 	
@@ -803,6 +901,9 @@
 	
 	
 	
+	
+	
+	\chapter{title}
 	
 	
 	
@@ -818,6 +919,6 @@
 	
 	\newpage
 	\bibliographystyle{IEEEtran}
-	\bibliography{refs} % Assuming your bibliography file is named bib.bib
+	\bibliography{refs}
 	
 \end{document}
