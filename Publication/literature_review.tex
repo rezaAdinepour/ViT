@@ -15,54 +15,189 @@
 \begin{document}
 	
 	\maketitle
-	
+		
 	\chapter*{BinaryViT \cite{le2023binaryvit}}
 	
-	\section{Binarization in Neural Networks}
-	
-	\subsection{Convolutional Neural Networks (CNNs):}
-	Binarization in CNNs has been extensively explored. The idea of using binary weights and activations in CNNs to reduce memory and computation dates back to works like XNOR-Net (Rastegari et al., 2016). These works showed that CNNs could achieve competitive performance while significantly reducing resource consumption.
-	
-	\subsubsection{Binary Neural Networks (BNNs):}
-	values for both weights and activations, leading to models that require less storage and computational power.
-	
-	Highlight how CNN architectures, especially with their convolutional nature, lend themselves to being binarized without extreme performance degradation.
-	
-	\subsection{Vision Transformers (ViTs):}
-	ViTs, since being introduced by Dosovitskiy et al. (2020), have demonstrated significant improvements over CNNs in various vision tasks by modeling long-range dependencies through self-attention mechanisms.
-	
-	ViTs, however, face challenges related to computational cost, making them difficult to deploy on edge devices.
-	
-	In comparison to CNNs, few studies have explored binarizing ViTs due to their unique architecture. Some early attempts at transformer binarization (such as BiMLP) explore this to a limited degree but focus mainly on feedforward layers and do not thoroughly analyze architectural impacts.
+	\section{Introduction}
+	The paper addresses the challenge of improving the performance of binary Vision Transformers (ViTs), a class of deep learning models used in computer vision. While ViTs have shown great potential, particularly when trained on large datasets, they suffer significant performance loss when binarized — a technique that reduces computational costs by converting model weights and activations into binary values. This performance drop is especially notable compared to convolutional neural networks (CNNs), which handle binarization more effectively.
 	
 	
-	\section{Existing Challenges in Binarizing ViTs}
+	\section{Proposed Model}
+	The paper identifies that the architecture of standard ViTs lacks key features present in CNNs, which allows CNNs to maintain higher representational capability even after binarization. To address this, the authors propose BinaryViT, a model that incorporates several features inspired by CNNs into the ViT architecture, without using convolutions. These enhancements include:
+	
+	\subsection{Global Average Pooling Layer}
+	Replacing the token pooling layer with a global average pooling layer, which helps gather more information from input patches.
+	
+	\textbf{Previous Approach:} In standard ViTs, a token pooling layer is used before the classifier layer, which only takes into account information from the CLS token rather than considering all tokens in the input sequence.
+	
+	\textbf{Proposed Change:} The authors replace the token pooling layer with a global average pooling layer. This ensures that the model incorporates information from all input tokens (or patches), not just the CLS token. By doing so, the final classifier layer has more flexibility and can capture richer feature representations. This addition significantly increases the representational capability of the binary model by aggregating the information from all patches, which is crucial for improving accuracy in binary settings.
+	
+	
+	\subsection{Multiple Pooling Branches}
+	Introducing multiple pooling branches in each block to increase representational capability.
+	Adding an affine transformation before each residual connection to balance the scales of different layers.
+	
+	\textbf{Previous Approach:} Traditional ViTs, and earlier works in binary ViTs, use simple feed-forward layers (FFNs) after attention layers with limited flexibility in processing features.
+	
+	
+	\textbf{Proposed Change:} Inspired by CNNs, where convolutional layers capture different spatial information, the authors introduce multiple average pooling branches in each block. Each branch has different kernel sizes (e.g., 1x3, 3x1, 1x5, 5x1), allowing the model to process and aggregate spatial information in multiple directions. This change enhances the binary ViT’s ability to represent more complex information, without adding significant computational overhead.
+	
+	
+	
+	\subsection{Affine Transformation Before Residual Connections}
+	Incorporating a pyramid structure to process high-resolution features early on and reduce them as the model goes deeper, increasing its flexibility and performance.
+	
+	
+	\textbf{Previous Approach:} In ViTs, the scale of hidden states grows deeper in the network layers, often causing the residual branches to overwhelm the main branches, leading to a decrease in the model’s effectiveness. Binary CNNs, such as ResNet, use batch normalization before residual connections, which helps balance the scale of different layers and improves performance.
+	
+	
+	\textbf{Proposed Change:} To counter the issue of overwhelming residual connections, the authors introduce an affine transformation before each residual addition in the ViT architecture. This technique is inspired by batch normalization in CNNs, which helps maintain a balance between the main and residual branches. The transformation prevents residual connections from dominating the main branches and allows the binary ViT to maintain better feature flow and representation through deeper layers.
+	
+	
+	
+	
+	
+	
+	\subsection{Pyramid Structure}
+	\textbf{Previous Approach:} Binary ViTs (like DeiT) typically use a fixed resolution for the feature maps throughout the network, unlike CNNs that progressively downsample the feature maps and increase the number of channels as the network goes deeper. In CNNs, this pyramid structure is important for capturing features at different resolutions and improving representational capacity.
+	
+	\textbf{Proposed Change:} The authors introduce a pyramid structure in the binary ViT. In this architecture, the feature map size progressively decreases (downsampling) while the hidden dimension (number of channels) increases as the network goes deeper. This mirrors the pyramid structure found in CNNs, allowing the model to capture features at high resolution in the early stages and focus on more abstract, lower-resolution features in the later stages. This significantly improves the model’s ability to handle complex visual tasks, especially when binarized.
+	
+	
+	
+	\subsection{Binary Fully-Connected Layers with Enhanced Attention}
+	\textbf{Previous Approach:} Standard ViTs rely on attention mechanisms, where matrix multiplications for query, key, and value operations are computationally expensive and prone to significant performance drops when binarized.
+	
+	\textbf{Proposed Change:} In the proposed BinaryViT model, the authors optimize the binary attention mechanism by modifying how attention probabilities are calculated. They apply scaling factors and rounding techniques to improve the binary attention probability matrix’s accuracy, using methods inspired by prior works like ReActNet and Bi-RealNet in binary CNNs. This enhancement ensures that the binary ViT can more effectively process information during self-attention, resulting in better performance.
+	
+	
+	
+	\subsection{Distillation from Full-Precision Models}
+	\textbf{Previous Approach:} Previous methods for binary ViTs did not consistently use teacher-student knowledge distillation methods to reduce the performance gap between binary and full-precision models.
+	
+	\textbf{Proposed Change:} The authors use a full-precision ViT model as a teacher to guide the training of the binary ViT. They distill knowledge by minimizing the soft cross-entropy loss between the binary student model’s logits and the full-precision teacher’s logits. While distillation techniques were used in some prior works, the authors tailor it specifically to improve binary ViT performance, focusing on logits rather than other components like attention scores or feed-forward outputs, which caused performance degradation in previous experiments.
+	
+	
+	\section{Impact of the Changes}
+	These architectural modifications collectively improve the performance of binary ViTs, making them competitive with binary CNNs. The proposed BinaryViT model achieves a significant performance boost on the ImageNet-1k dataset, outperforming earlier binary transformer models. By integrating CNN-inspired architectural features into ViTs, the authors have managed to retain the benefits of transformer models while reducing the computational cost and maintaining high accuracy in a binarized setting.
+	
+	These changes provide a more efficient and flexible architecture for tasks requiring high performance on resource-constrained devices such as smartphones and edge devices.
+	
+	
+	
+	\section{Results and Improvements}
+	The results and improvements announced in the BinaryViT method, as detailed in the paper, demonstrate significant advancements in the performance of binary Vision Transformers (ViTs) compared to previous approaches. Below is a breakdown of the results and the improvements achieved by this method:
+	
+	\subsection{Performance Improvement on ImageNet-1k}
+	The proposed BinaryViT was evaluated on the ImageNet-1k dataset, a standard benchmark for image classification. The model showed significant performance improvements over baseline binary ViTs and previous state-of-the-art (SOTA) binary models. The key results include:
 	\begin{enumerate}
 		\item
-		Unlike CNNs, directly applying existing binarization techniques to ViTs often results in significant performance degradation, particularly on large datasets like ImageNet-1k. CNNs benefit from convolutional layers that preserve spatial information, whereas ViTs' token-based structure lacks this property, leading to lower representational capability when binarized.
+		\textbf{Baseline binary DeiT-S (previous work):} 48.5\% top-1 accuracy on ImageNet-1k.
+		
 		
 		\item 
-		Mention that CNN-based binarization techniques (such as ReBNet and XNOR-Net) have been successful because they account for the architectural benefits of convolutions that help preserve important spatial information even in binary form.
+		\textbf{BinaryViT (proposed method):} Achieved \textbf{67.7\% top-1 accuracy} using the proposed enhancements, representing a large leap of \textbf{19.2\% improvement} over the baseline binary ViT (DeiT-S).
 		
 		\item 
-		Summarize existing research like BinaryViT, which seeks to overcome these limitations by introducing architectural modifications from CNNs into a ViT framework.
+		The modified BinaryViT architecture with full-precision patch embedding layers (BinaryViT*) achieved an even higher \textbf{70.6\% top-1 accuracy}, making it competitive with top binary CNNs like ReActNet.
 	\end{enumerate}
 	
+	\subsection{Efficiency in Terms of Operations and Parameters}
+	BinaryViT not only improves accuracy but also maintains computational efficiency, making it suitable for deployment on edge devices with limited resources. Key findings include:
 	
-	\section{BinaryViT and its Novel Contributions}
-	In \cite{le2023binaryvit} proposes a new way to introduce architectural innovations inspired by CNNs into a binary ViT model, without actually introducing convolutions. Key contributions of this model include:
 	\begin{enumerate}
 		\item 
-		The use of average pooling layers instead of token pooling layers.
+		\textbf{Operations (OPs):} The proposed BinaryViT model performed fewer operations compared to many SOTA binary models. For example, BinaryViT had $0.79 \times 10^8$ operations compared to ReActNet’s $1.93 \times 10^8$ operations, making it nearly \textbf{2.5× more efficient}.
 		
 		\item 
-		The introduction of multiple pooling branches to help compensate for the loss of representational power.
+		\textbf{Parameters:} BinaryViT contains around 22.6 million parameters, which is comparable to the baseline binary ViT (DeiT-S) but significantly less than other competitive models such as ReActNet (21.8 million parameters for ResNet-34 backbone and 29.3 million parameters for MobileNet backbone).
 		
 		\item 
-		Affine transformations and the addition of a pyramid structure that allows binary features to be processed at higher resolutions while minimizing computational complexity.
+		\textbf{FLOPs (Floating-Point Operations):} BinaryViT performed $0.19 \times 10^8$ FLOPs, much lower than ReActNet and other competing models, further highlighting its efficiency.
 	\end{enumerate}
 	
-	Discuss how BinaryViT leverages elements from CNNs while maintaining the flexibility of ViT architectures. Explain how your approach addresses the shortcomings of previous binarization efforts for ViTs by preserving essential architectural properties.
+	
+	
+	\subsection{Comparisons with State-of-the-Art (SOTA) Binary Models}
+	The BinaryViT method was directly compared with other leading binary models, and the results are as follows:
+	
+	\begin{enumerate}
+		\item 
+		ReActNet (ResNet-34 backbone): Achieved 67.5\% top-1 accuracy on ImageNet-1k with $1.93 \times 10^8$ operations and 21.8 million parameters.
+		
+		\item 
+		BinaryViT: Matched ReActNet’s accuracy of 67.7\%, but with significantly fewer operations $(0.79 \times 10^8$ vs. $1.93 \times 10^8)$ and similar parameter count (22.6 million).
+		
+		\item 
+		ReActNet (MobileNet backbone): Achieved 70.1\% top-1 accuracy, while BinaryViT* (with full-precision patch embedding layers) closely followed with 70.6\% top-1 accuracy and fewer operations, making it highly competitive.
+	\end{enumerate}
+	
+	
+	
+	\subsection{Impact of Architectural Enhancements}
+	The authors tested the impact of each architectural enhancement introduced in BinaryViT. The individual contributions to the model’s performance are detailed as follows:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Global Average Pooling:} Replacing token pooling with global average pooling increased the top-1 accuracy from \textbf{48.5\% to 56.4\%}, demonstrating the value of incorporating information from all input tokens.
+		
+		\item 
+		\textbf{Multiple Pooling Branches:} Adding multi-branch average pooling layers further improved the accuracy to \textbf{60.2\%}, showing that this design helps to enrich the representational power of the model.
+		
+		\item 
+		\textbf{Affine Transformations:} Introducing affine transformations before residual connections (to balance feature scales) increased accuracy to \textbf{61.8\%}.
+		
+		\item 
+		\textbf{Pyramid Structure:} Implementing the pyramid structure, which mimics CNNs by processing higher-resolution features early on, provided the biggest improvement, bringing accuracy up to \textbf{67.7\%}.
+	\end{enumerate}
+	
+	
+	
+	\subsection{Reduction in Computational Complexity}
+	One of the key improvements announced by the authors is the ability of BinaryViT to reduce computational complexity without sacrificing performance:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Lower Bit-Operations (BOPs)}: BinaryViT achieved a balance between bit-operations and floating-point operations, outperforming other methods in terms of efficiency.
+		
+		\item 
+		\textbf{Efficient Scaling:} The pyramid structure, multi-branch pooling, and affine transformations ensure that the model remains computationally efficient while handling large-scale image datasets like ImageNet-1k.
+	\end{enumerate}
+	
+	
+	\subsubsection{Comparison Between Full-Precision and Binary Versions}
+	The authors demonstrated that the proposed BinaryViT model maintains performance close to its full-precision counterpart:
+	
+	\begin{enumerate}
+		\item 
+		The full-precision DeiT-S achieves \textbf{79.9\%} top-1 accuracy.
+		
+		\item 
+		The binary version of BinaryViT achieved \textbf{70.6\%} accuracy, closing much of the gap between full-precision and binary ViT models.
+	\end{enumerate}
+	
+	
+	\section{Overall Improvements}
+	\begin{enumerate}
+		\item 
+		\textbf{Significant performance boost:} BinaryViT improves the accuracy of binary ViTs by 19.2\% compared to the baseline, making it competitive with binary CNNs.
+		
+		\item 
+		\textbf{Reduced operations and parameters:} BinaryViT achieves competitive performance with a lower computational cost, making it ideal for edge devices.
+		
+		\item 
+		\textbf{Innovative architecture:} The introduction of CNN-inspired elements such as global average pooling, multiple branches, affine transformations, and pyramid structures enhances the performance of binary ViTs without introducing convolutions.
+	\end{enumerate}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
