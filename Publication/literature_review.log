@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.4)  22 AUG 2024 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.4)  22 AUG 2024 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -281,32 +281,80 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 18.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./literature_review.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 	
-       [1
+l.36 ...ation Study Results}{14}{subsection.2.7.4}
+                                                  % [1
 
-] [2] [3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 110.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 110.
- [4{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (21.75058pt too wide) in paragraph at lines 126--127
+])
+\tf@toc=\write4
+\openout4 = `literature_review.toc'.
+
+ [2]
+Chapter 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 20.
+
+[3
+
+] [4] [5] [6{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (21.75058pt too wide) in paragraph at lines 127--128
 []\OT1/cmr/m/n/10 ReActNet (ResNet-34 back-bone): Achieved 67.5% top-1 ac-cu-ra
 cy on ImageNet-
  []
 
 
-Overfull \hbox (3.91226pt too wide) in paragraph at lines 148--149
+Overfull \hbox (3.91226pt too wide) in paragraph at lines 149--150
 []\OT1/cmr/bx/n/10 Affine Trans-for-ma-tions: \OT1/cmr/m/n/10 In-tro-duc-ing af
 fine trans-for-ma-tions be-fore resid-
  []
 
-[5] [6] (./literature_review.bbl) [7
+[7] [8]
+Chapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 199.
+
+[9
+
+] [10] [11]
+Overfull \hbox (0.6673pt too wide) in paragraph at lines 289--290
+\OT1/cmr/m/n/10 that specif-i-cally ad-dress the lim-i-ta-tions of Vi-sion Tran
+s-form-ers on small datasets.
+ []
+
+[12]
+Overfull \hbox (1.83394pt too wide) in paragraph at lines 324--325
+\OT1/cmr/m/n/10 datasets like Im-a-geNet, al-though their pri-mary ben-e-fit is
+ seen in smaller datasets. 
+ []
+
+[13]
+Overfull \hbox (3.52724pt too wide) in paragraph at lines 371--372
+\OT1/cmr/m/n/10 sev-eral state-of-the-art (SOTA) mod-els, in-clud-ing CNN-based
+ mod-els like ResNet
+ []
+
+[14]
+Overfull \hbox (6.19174pt too wide) in paragraph at lines 394--395
+\OT1/cmr/m/n/10 datasets, SPT and LSA also im-prove ViT per-for-mance on mid-si
+zed datasets
+ []
+
+[15]
+Chapter 3.
+[16
+
+] (./literature_review.bbl) [17
 
 ] (./literature_review.aux)
  ***********
@@ -320,17 +368,17 @@ Package rerunfilecheck Warning: File `literature_review.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `literature_review.out':
-(rerunfilecheck)             Before: E568EA8C3C5C4D72281437A018A1EA99;3470
-(rerunfilecheck)             After:  33DEF4D277C54050C34A9234F7580B55;3619.
+(rerunfilecheck)             Before: B11ADA85748653BA76D0EF5C31CDD527;8289
+(rerunfilecheck)             After:  008E71E7CB8F8A9F91BF9A8BE72C0FBE;8358.
  ) 
 Here is how much of TeX's memory you used:
- 8915 strings out of 474222
- 137383 string characters out of 5748734
- 1932975 words of memory out of 5000000
- 31040 multiletter control sequences out of 15000+600000
- 563929 words of font info for 55 fonts, out of 8000000 for 9000
+ 9013 strings out of 474222
+ 138593 string characters out of 5748734
+ 1937975 words of memory out of 5000000
+ 31072 multiletter control sequences out of 15000+600000
+ 564535 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,619b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,638b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -341,10 +389,10 @@ type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pf
 b>
-Output written on literature_review.pdf (8 pages, 142481 bytes).
+Output written on literature_review.pdf (18 pages, 166697 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 48 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 305 words of extra memory for PDF output out of 10000 (max. 10000000)
 

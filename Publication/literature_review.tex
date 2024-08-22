@@ -15,8 +15,9 @@
 \begin{document}
 	
 	\maketitle
+	\tableofcontents
 		
-	\chapter*{BinaryViT \cite{le2023binaryvit}}
+	\chapter{BinaryViT \cite{le2023binaryvit}}
 	
 	\section{Introduction}
 	The paper addresses the challenge of improving the performance of binary Vision Transformers (ViTs), a class of deep learning models used in computer vision. While ViTs have shown great potential, particularly when trained on large datasets, they suffer significant performance loss when binarized — a technique that reduces computational costs by converting model weights and activations into binary values. This performance drop is especially notable compared to convolutional neural networks (CNNs), which handle binarization more effectively.
@@ -188,6 +189,249 @@
 		\item 
 		\textbf{Innovative architecture:} The introduction of CNN-inspired elements such as global average pooling, multiple branches, affine transformations, and pyramid structures enhances the performance of binary ViTs without introducing convolutions.
 	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	\chapter{Vision Transformer for Small-Size Datasets \cite{DBLP:journals/corr/abs-2112-13492}}
+	This paper focuses on improving the performance of Vision Transformers (ViTs) on small datasets. ViTs, which have shown remarkable success in large-scale datasets, often struggle with small datasets due to their weak locality inductive bias. This bias is critical in image classification tasks as it allows models to focus on local relationships between pixels, which CNNs do well but ViTs lack.
+	
+	The authors propose two main techniques to address this issue:
+	
+	\section{Shifted Patch Tokenization (SPT)}
+	This method aims to improve the tokenization process by spatially shifting image patches in different directions before feeding them into the model. This shift increases the receptive field of each token, allowing the ViT to capture more spatial relationships between neighboring pixels, which enhances the model's ability to understand local features in an image.
+	
+	\subsection{Previous Approach:}
+	Traditional Vision Transformers divide an input image into non-overlapping patches and treat each patch as a token, which is then fed into the transformer for processing. This method lacks spatial awareness between adjacent patches because the patches are non-overlapping. In CNNs, the use of convolutional filters ensures that neighboring pixels are processed together, allowing the network to capture local spatial information. However, ViTs, without such mechanisms, have limited capacity to capture local context.
+	
+	\subsection{Proposed Change:}
+	The authors introduce Shifted Patch Tokenization (SPT), which enhances the spatial relationship between image patches. The core idea behind SPT is to spatially shift an image in multiple directions (up-left, up-right, down-left, down-right) before dividing it into patches. These shifted versions of the image are then concatenated with the original image and passed through the tokenization process. This results in a larger receptive field for each patch, enabling the model to capture more spatial relationships between neighboring pixels.
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Impact:} SPT improves the model’s ability to understand local pixel interactions, which is particularly important for smaller datasets where capturing fine details is crucial. By increasing the locality inductive bias, the ViT performs more like a CNN in terms of capturing local information, while still leveraging the benefits of self-attention.
+	\end{enumerate}
+	
+	
+	
+	
+	
+	\section{Locality Self-Attention (LSA)}
+	This technique adjusts the attention mechanism in ViTs to focus more on local regions of an image. LSA uses two strategies: diagonal masking (removing the attention between a token and itself) and learnable temperature scaling (sharpening the attention score distribution). These adjustments prevent the attention from becoming too smooth, forcing it to focus more locally, thus boosting the model’s ability to differentiate between important regions in an image.
+	
+	\subsection{Previous Approach:}
+	In standard ViTs, the self-attention mechanism evaluates the relationship between all tokens in an image. While this approach is effective for large datasets, it tends to be inefficient for small datasets because it results in a uniform distribution of attention across tokens. This means that ViTs often fail to focus on the most relevant tokens, especially in smaller images where local details matter more. Additionally, the attention scores tend to be smoothed due to the use of high temperatures in the softmax function, making it harder for the model to attend to important local regions.
+	
+	\subsection{Proposed Change:}
+	The authors introduce Locality Self-Attention (LSA), which modifies the attention mechanism in two significant ways:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Diagonal Masking:} This method excludes self-tokens from the attention process. In standard attention mechanisms, tokens often pay too much attention to themselves (self-tokens). Diagonal masking forces the model to focus on relationships between different tokens rather than giving undue weight to each token itself.
+		
+		\item 
+		\textbf{Learnable Temperature Scaling:} The authors propose adding a learnable temperature parameter to the softmax function, allowing the model to sharpen the attention distribution. A lower temperature sharpens the attention scores, helping the model focus on the most important tokens, particularly in the local regions of an image.
+		
+		\item 
+		\textbf{Impact:} These two changes together reduce the tendency of ViTs to spread attention too broadly across the entire image. Instead, the attention becomes more focused on local regions, improving the ability of the model to recognize patterns and details within smaller datasets. LSA makes the attention mechanism more fine-tuned, thus improving performance on small-scale data.
+	\end{enumerate}
+
+
+
+
+	\section{Comparison to Other Data-Efficient ViTs}
+	The paper compares the proposed SPT and LSA techniques to prior data-efficient ViT models, such as:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{DeiT (Data-efficient Image Transformer):} DeiT introduced techniques like knowledge distillation and data augmentations to make ViTs more efficient for training on mid-sized datasets like ImageNet. While effective, it still relies on large datasets and does not specifically address issues with small datasets.
+		
+		\item 
+		\textbf{T2T-ViT (Tokens-to-Tokens ViT):} T2T-ViT introduced overlapping patches to improve the spatial relationship between patches. However, it did not fully solve the locality inductive bias issue as it only slightly increased the receptive field of the tokens.
+		
+		\item 
+		\textbf{PiT (Pooling-based Vision Transformer):} PiT introduced a hierarchical pooling structure similar to CNNs to generate multi-scale features, allowing for better generalization on smaller datasets. However, it still does not effectively capture fine-grained local spatial information like SPT and LSA.
+	\end{enumerate}
+	
+	In contrast, the SPT and LSA techniques specifically address the locality inductive bias in a more targeted way by increasing the receptive field during tokenization (SPT) and making attention more locally focused (LSA). These changes allow the proposed ViT to learn from small datasets effectively without relying on external large-scale pre-training, which was a limitation of previous models.
+	
+	
+	
+	\section{Efficiency vs. Performance Trade-offs}
+	\subsection{Previous Models:}
+	Many of the prior ViT-based models aimed to improve performance but often at the cost of computational efficiency. For example, DeiT used knowledge distillation, and T2T employed a complex overlapping tokenization method, both of which added computational overhead.
+	
+	
+	\subsection{Proposed Model:}
+	The proposed BinaryViT maintains competitive performance without a significant increase in computational cost. The SPT technique increases the receptive field without introducing convolutions or pooling layers, and LSA fine-tunes the attention mechanism with minimal additional parameters. As a result, the authors claim that BinaryViT improves accuracy on small datasets while maintaining acceptable overhead in terms of computational complexity.
+	
+	
+	\section{Performance Gains}
+	The experimental results in the paper show that the proposed BinaryViT model achieves substantial performance improvements over both the standard ViT and prior data-efficient ViTs when tested on small datasets like CIFAR-100, Tiny-ImageNet, and ImageNet. The model achieves these gains primarily due to its improved ability to capture local spatial information, a limitation that previous models struggled with.
+	
+	For example:
+	\begin{enumerate}
+		\item 
+		In CIFAR-100, the use of SPT and LSA leads to an accuracy improvement of around 3-4\% compared to the baseline ViT model.
+		
+		\item 
+		In Tiny-ImageNet, BinaryViT improves accuracy by up to 4.08\%, making it highly competitive with state-of-the-art CNNs on small datasets.
+		
+		\item 
+		Even on a mid-sized dataset like ImageNet, the proposed changes result in a performance boost of 1.06\% to 1.60\%, demonstrating that the improvements are not limited to only small datasets.
+	\end{enumerate}
+	
+	
+	\section{Overall Impact of the Proposed Changes}
+	The changes proposed by the authors—Shifted Patch Tokenization (SPT) and Locality Self-Attention (LSA)—represent significant architectural improvements that specifically address the limitations of Vision Transformers on small datasets. By increasing the locality inductive bias, these techniques make ViTs more efficient and effective at capturing the fine details that are crucial for tasks involving smaller datasets, bridging the gap between CNNs and transformers in this space.
+	
+	
+	
+	
+	
+	\section{Results and Improvements}
+	\subsection{Performance Improvements on Small Datasets}
+	The authors evaluated their methods on various small datasets, such as CIFAR-10, CIFAR-100, Tiny-ImageNet, and SVHN. They compared the performance of standard ViT models with and without the proposed SPT and LSA modules. The key findings are:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{CIFAR-100:} The accuracy improved by up to 3.43\% for the CaiT model and 4.01\% for the PiT model when using SPT and LSA.
+		
+		\item 
+		\textbf{Tiny-ImageNet:} ViTs saw significant performance boosts, with up to 4.08\% improvement for the Swin Transformer and 4.00\% improvement for the baseline ViT.
+		
+		\item 
+		\textbf{SVHN and CIFAR-10:} Moderate improvements were observed, with a maximum gain of around 1-2\% for some models.
+	\end{enumerate}
+	These results highlight that the proposed methods effectively improve ViT performance on small datasets, where the original ViT architectures struggle.
+	
+	\subsection{Improvements in ImageNet Performance}
+	While the methods were primarily designed for small datasets, they were also tested on the larger ImageNet dataset to verify if the improvements generalize to mid-sized data. The results show that the proposed methods also enhance ViT performance on ImageNet:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{ViT:} Performance increased by 1.60\%, achieving a top-1 accuracy of 71.55\% (compared to 69.95\% for the baseline ViT).
+		
+		\item 
+		\textbf{PiT: }Improved by 1.44\%, reaching 77.02\% accuracy.
+		
+		\item 
+		\textbf{Swin Transformer:} Gained 1.06\% in accuracy, reaching 81.01\%.
+	\end{enumerate}
+	These results indicate that SPT and LSA can enhance ViTs even on larger datasets like ImageNet, although their primary benefit is seen in smaller datasets.
+	
+	
+	\subsection{Efficiency and Computational Overhead}
+	One of the key advantages of the proposed methods is their minimal computational overhead. Despite the performance improvements, the added complexity from SPT and LSA is modest:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Throughput:} The proposed methods cause only slight reductions in throughput. For example, the addition of SPT and LSA caused a 1.12\% latency overhead for the ViT model, and similar small increases for other models.
+		
+		\item 
+		\textbf{FLOPs and Parameters:} The increase in FLOPs (Floating Point Operations) and parameters was minimal, ensuring that the models remain efficient and deployable, even with the added improvements in locality inductive bias.
+	\end{enumerate}
+	
+	
+	\subsection{Ablation Study Results}
+	The authors conducted an ablation study to demonstrate the individual contributions of SPT and LSA:
+	
+	\begin{enumerate}
+		\item 
+		SPT (Shifted Patch Tokenization): Improved performance independently by +1.43\% in Tiny-ImageNet.
+		
+		\item 
+		LSA (Locality Self-Attention): Provided an independent boost of +3.60\% in Tiny-ImageNet.
+		
+		\item 
+		Combining SPT and LSA: When both methods were applied together, the performance improvement reached +4.00\% in Tiny-ImageNet, showing a strong synergy between the two methods.
+	\end{enumerate}
+	This shows that each technique effectively increases the model's ability to capture local details, and when used together, they yield even greater performance gains.
+	
+	
+	
+	\subsection{Qualitative Improvements}
+	In addition to quantitative results, the authors provided qualitative visualizations of the ViT models’ attention maps. They compared the attention scores of final class tokens with and without the proposed methods:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{Object Shapes:} When SPT and LSA were applied, the attention maps better captured the object shapes, focusing more on the relevant parts of the image, and avoiding excessive attention on background elements.
+		
+		\item 
+		\textbf{Sharper Attention:} The learnable temperature scaling in LSA sharpened the attention distribution, leading to more focused and accurate attention on the target objects in images.
+	\end{enumerate}
+	These qualitative results visually demonstrate that the proposed changes help the model better understand the structure of the images, especially on smaller datasets where fine-grained details are essential.
+	
+	
+	
+	\subsection{Comparison with State-of-the-Art (SOTA) Models}
+	The authors compared their proposed ViT models (with SPT and LSA) against several state-of-the-art (SOTA) models, including CNN-based models like ResNet and EfficientNet. The results showed that:
+	
+	\begin{enumerate}
+		\item 
+		\textbf{SL-CaiT:} Achieved better performance than ResNet and EfficientNet on most small datasets (except CIFAR-10).
+		
+		\item 
+		\textbf{SL-Swin:} Provided comparable or better performance than CNNs while maintaining higher throughput.
+	\end{enumerate}
+	These comparisons highlight the ability of the modified ViTs to close the performance gap with CNNs on small datasets, a space where CNNs have traditionally outperformed transformers.
+	
+	
+	
+	
+	\section{Key Takeaways:}
+	\begin{enumerate}
+		\item 
+		\textbf{Substantial accuracy improvements:} The proposed SPT and LSA methods significantly enhance the performance of ViTs on small datasets, with gains of up to 4.08\% on Tiny-ImageNet and 3-4\% on CIFAR-100.
+		
+		\item 
+		\textbf{Minimal computational overhead:} Despite the improvements, the increase in latency and computational cost is minimal, making these methods practical for deployment.
+		
+		\item 
+		\textbf{Generalization to larger datasets:} While primarily aimed at small datasets, SPT and LSA also improve ViT performance on mid-sized datasets like ImageNet, with gains of up to 1.60\%.
+		
+		\item 
+		\textbf{ViT competitiveness with CNNs:} The proposed methods make ViTs competitive with CNNs in small dataset tasks, both in terms of accuracy and computational efficiency.
+	\end{enumerate}
+	
+	In conclusion, the results and improvements from the proposed methods mark a significant advancement for ViTs in handling small datasets, overcoming their limitations in local feature extraction, and making them competitive with traditional CNN architectures.
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{title}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 

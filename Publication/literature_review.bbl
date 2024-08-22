@@ -26,4 +26,11 @@ P.-H.~C. Le and X.~Li, ``Binaryvit: pushing binary vision transformers towards
   convolutional models,'' in \emph{Proceedings of the IEEE/CVF Conference on
   Computer Vision and Pattern Recognition}, 2023, pp. 4664--4673.
 
+\bibitem{DBLP:journals/corr/abs-2112-13492}
+\BIBentryALTinterwordspacing
+S.~H. Lee, S.~Lee, and B.~C. Song, ``Vision transformer for small-size
+  datasets,'' \emph{CoRR}, vol. abs/2112.13492, 2021. [Online]. Available:
+  \url{https://arxiv.org/abs/2112.13492}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
