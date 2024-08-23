@@ -92,4 +92,11 @@ R.-J. Zhu, Q.~Zhao, G.~Li, and J.~K. Eshraghian, ``Spikegpt: Generative
   Available: \url{https://arxiv.org/abs/2302.13939}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/abs-2104-01353}
+\BIBentryALTinterwordspacing
+Y.~J. Heo, Y.~J. Choi, Y.~Lee, and B.~Kim, ``Deepfake detection scheme based on
+  vision transformer and distillation,'' \emph{CoRR}, vol. abs/2104.01353,
+  2021. [Online]. Available: \url{https://arxiv.org/abs/2104.01353}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

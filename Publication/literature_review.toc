@@ -142,3 +142,16 @@
 \contentsline {subsection}{\numberline {9.2.7}Wider Applicability Beyond Language Modeling}{48}{subsection.9.2.7}%
 \contentsline {section}{\numberline {9.3}Overall Improvements:}{48}{section.9.3}%
 \contentsline {chapter}{\numberline {10}SpikeGPT: Generative Pre-trained Language Model with Spiking Neural Networks \cite {zhu2024spikegptgenerativepretrainedlanguage}}{49}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Deepfake Detection Scheme Based on Vision Transformer and Distillation \cite {DBLP:journals/corr/abs-2104-01353}}{50}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Main Components}{50}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Vision Transformer and EfficientNet Combination:}{50}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Distillation Token:}{51}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.3}Performance Comparison:}{51}{subsection.11.1.3}%
+\contentsline {section}{\numberline {11.2}Results and Improvements}{51}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Higher Accuracy and Better Performance Metrics}{51}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Improved Deepfake Detection Robustness}{51}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Reduction in False Negatives (Improved Detection of Fake Videos)}{52}{subsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.2.4}Distillation Token for Better Generalization}{52}{subsection.11.2.4}%
+\contentsline {subsection}{\numberline {11.2.5}Clearer Prediction of Fake Videos}{52}{subsection.11.2.5}%
+\contentsline {subsection}{\numberline {11.2.6}Better Loss Reduction in Training}{53}{subsection.11.2.6}%
+\contentsline {section}{\numberline {11.3}Overall Improvements:}{53}{section.11.3}%

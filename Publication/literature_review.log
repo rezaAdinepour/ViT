@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  23 AUG 2024 22:27
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  23 AUG 2024 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -275,19 +275,16 @@ Package hyperref Info: Link coloring ON on input line 15.
 \@outlinefile=\write3
 \openout3 = `literature_review.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 18.
-[1
+ [1
 
-] (./literature_review.toc
+]
+(./literature_review.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -505,23 +502,39 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [49
 
-] (./literature_review.bbl [50
+]
+Chapter 11.
 
-]) [51] (./literature_review.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1371.
+
+[50
+
+] [51] [52] [53] (./literature_review.bbl [54
+
+]) [55]
+(./literature_review.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `literature_review.out' has not changed.
-(rerunfilecheck)             Checksum: 71A29F3BA11D1C146D3900C1B8B40499;33290.
+
+
+Package rerunfilecheck Warning: File `literature_review.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `literature_review.out':
+(rerunfilecheck)             Before: 851025879117EEF06292526C8C68CC12;34682
+(rerunfilecheck)             After:  2B07BC0FE9A7FE4F0DCA2AD52AE0B52B;36802.
  ) 
 Here is how much of TeX's memory you used:
- 8780 strings out of 474878
- 137831 string characters out of 5762517
+ 8781 strings out of 474878
+ 137846 string characters out of 5762517
  1933627 words of memory out of 5000000
- 30730 multiletter control sequences out of 15000+600000
+ 30731 multiletter control sequences out of 15000+600000
  561574 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,79p,716b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review.pdf (52 pages).
+Output written on literature_review.pdf (56 pages).

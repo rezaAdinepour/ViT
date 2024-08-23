@@ -1361,6 +1361,158 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{Deepfake Detection Scheme Based on Vision Transformer and Distillation \cite{DBLP:journals/corr/abs-2104-01353}}
+	
+	
+	This paper focuses on developing a more effective and robust method for detecting deepfake videos, which are digitally manipulated videos created using advanced techniques like GANs (Generative Adversarial Networks). As deepfake videos become more widespread, especially in harmful applications like misinformation and fraud, the need for accurate detection methods has grown.
+	
+	
+	The authors propose a Vision Transformer-based model combined with a distillation technique for improved deepfake detection. The model leverages the strengths of both Vision Transformers (which are effective at capturing global image features) and EfficientNet (a powerful CNN that extracts local features). By combining these two architectures and adding a distillation token (which helps the model learn better by mimicking the output of a teacher network), the proposed scheme aims to achieve more accurate and robust detection of deepfake videos.
+	
+	
+	\section{Main Components}
+	
+	\subsection{Vision Transformer and EfficientNet Combination:}
+	The model uses patch embedding to break the image into smaller sections, which are then processed using both EfficientNet (for local feature extraction) and Vision Transformer (for global feature analysis). This combination allows the model to capture both fine-grained details and broader contextual information in the video frames.
+	
+	
+	
+	\subsection{Distillation Token:}
+	The authors introduce a distillation token, which improves the model's ability to learn from a teacher network (EfficientNet in this case). This method enhances the model's robustness and generalization, allowing it to perform better on unseen deepfake videos.
+	
+	
+	
+	\subsection{Performance Comparison:}
+	The proposed model is tested against the state-of-the-art EfficientNet-based deepfake detection model. Through rigorous experiments, the authors demonstrate that their Vision Transformer model outperforms the previous best models in terms of accuracy, achieving a higher AUC score of 0.978 (compared to 0.972) and a better f1 score of 91.9\% (compared to 90.6\%).
+	
+	
+	
+	
+	\section{Results and Improvements}
+	
+	\subsection{Higher Accuracy and Better Performance Metrics}
+	The proposed model achieved better accuracy compared to the previous state-of-the-art (SOTA) models for deepfake detection:
+	\begin{enumerate}
+		\item 
+		The model reached an AUC score of 0.978, which is an improvement over the 0.972 AUC achieved by the previous SOTA EfficientNet-based model.
+		
+		\item 
+		In terms of the f1 score, which balances precision and recall, the new model achieved a score of 91.9\%, outperforming the 90.6\% f1 score of the previous best model.
+	\end{enumerate}
+	These metrics indicate that the proposed method provides more reliable and accurate results in distinguishing between real and fake videos.
+	
+	
+	
+	\subsection{Improved Deepfake Detection Robustness}
+	The combination of Vision Transformer (ViT) and EfficientNet in the detection model helps to capture both local and global features of the video frames, making the detection more accurate:
+	
+	\begin{enumerate}
+		\item 
+		EfficientNet extracts local features, which are useful for identifying small artifacts or irregularities in individual frames.
+		
+		\item 
+		The Vision Transformer captures global relationships across the entire image, improving the model's ability to identify deepfakes based on broader patterns.
+	\end{enumerate}
+	
+	This integration of local and global feature extraction results in a more robust detection model that performs well even in complex deepfake scenarios.
+	
+	
+	
+	\subsection{Reduction in False Negatives (Improved Detection of Fake Videos)}
+	The model showed a significant improvement in detecting fake videos, as evidenced by a reduction in false negatives compared to the previous SOTA model. The confusion matrix presented in the paper shows that:
+	
+	\begin{enumerate}
+		\item 
+		The proposed model reduced the number of false negatives (incorrectly classifying a fake video as real) from 335 to 187.
+	\end{enumerate}
+	
+	This is a critical improvement since reducing false negatives means the model is better at identifying deepfakes, which is essential for preventing the spread of harmful or misleading content.
+	
+	
+	
+	\subsection{Distillation Token for Better Generalization}
+	The use of a distillation token plays a significant role in improving the model's learning capabilities and generalization:
+	
+	\begin{enumerate}
+		\item 
+		The distillation token helps the student model (Vision Transformer) learn from the teacher network (EfficientNet), which has been pretrained on the same dataset.
+		
+		\item 
+		During testing, the distillation token leads to better classification results than relying solely on the class token, improving the model's generalization to unseen data.
+	\end{enumerate}
+	This technique helps prevent overfitting and makes the model more adaptable to new, unseen deepfake videos.
+	
+	
+	
+	\subsection{Clearer Prediction of Fake Videos}
+	The paper includes a comparison of the model’s predictions with the previous SOTA model. The results show that the proposed model provides clearer and more confident predictions when identifying fake videos:
+	
+	\begin{enumerate}
+		\item 
+		The precision-recall curve shows that the proposed model consistently achieves better precision, meaning it is more confident when it identifies a video as fake.
+		
+		\item 
+		The ROC-AUC curve also demonstrates that the proposed model has a larger area under the curve, reflecting improved performance in distinguishing between real and fake videos.
+	\end{enumerate}
+	This indicates that the model is more reliable in its predictions, particularly when identifying deepfake content.
+	
+	
+	
+	\subsection{Better Loss Reduction in Training}
+	The paper compares the training and validation loss of the proposed model against the SOTA EfficientNet-based model:
+	\begin{enumerate}
+		\item 
+		The loss curves show that the proposed model achieves a lower validation loss for both real and fake videos, demonstrating that it is better at learning from the training data and generalizing to new examples.
+		
+		\item 
+		The lower loss indicates that the model is less prone to overfitting and performs better during testing.
+	\end{enumerate}
+	
+	
+	
+	\section{Overall Improvements:}
+	\begin{enumerate}
+		\item 
+		\textbf{Higher accuracy:} The model achieves a higher AUC score (0.978 vs. 0.972) and a better f1 score (91.9\% vs. 90.6\%) than the previous state-of-the-art model.
+		
+		\item 
+		\textbf{Robustness to deepfake videos:} The integration of Vision Transformer and EfficientNet improves the model's ability to detect deepfakes by capturing both local and global features.
+		
+		\item 
+		\textbf{Reduction in false negatives:} The model significantly reduces the number of false negatives, meaning it is better at identifying deepfake content and not misclassifying it as real.
+		
+		\item 
+		\textbf{Distillation token for better generalization:} The use of the distillation token enhances the model's learning process, helping it generalize better to unseen deepfake videos.
+		
+		\item 
+		\textbf{Clearer predictions:} The proposed model provides more confident and reliable predictions, as demonstrated by improved precision-recall and ROC-AUC curves.
+		
+		\item 
+		\textbf{Lower validation loss:} The model's lower training and validation loss indicates better learning and generalization, making it more robust in real-world deepfake detection scenarios.
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	\newpage
 	\bibliographystyle{IEEEtran}
 	\bibliography{refs}
