@@ -167,3 +167,4 @@
 \contentsline {subsection}{\numberline {12.5.4}Performance on Low-Quality vs. High-Quality Deepfakes}{57}{subsection.12.5.4}%
 \contentsline {subsection}{\numberline {12.5.5}Improvements for Future Detection Systems}{57}{subsection.12.5.5}%
 \contentsline {section}{\numberline {12.6}Overall Results and Improvements:}{58}{section.12.6}%
+\contentsline {chapter}{\numberline {13}Networks of spiking neurons: The third generation of neural network models \cite {maass1997networks}}{59}{chapter.13}%

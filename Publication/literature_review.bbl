@@ -106,4 +106,8 @@ P.~Korshunov and S.~Marcel, ``Deepfakes: a new threat to face recognition?
   Available: \url{http://arxiv.org/abs/1812.08685}
 \BIBentrySTDinterwordspacing
 
+\bibitem{maass1997networks}
+W.~Maass, ``Networks of spiking neurons: the third generation of neural network
+  models,'' \emph{Neural networks}, vol.~10, no.~9, pp. 1659--1671, 1997.
+
 \end{thebibliography}
