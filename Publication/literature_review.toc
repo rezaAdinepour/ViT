@@ -168,3 +168,13 @@
 \contentsline {subsection}{\numberline {12.5.5}Improvements for Future Detection Systems}{57}{subsection.12.5.5}%
 \contentsline {section}{\numberline {12.6}Overall Results and Improvements:}{58}{section.12.6}%
 \contentsline {chapter}{\numberline {13}Networks of spiking neurons: The third generation of neural network models \cite {maass1997networks}}{59}{chapter.13}%
+\contentsline {chapter}{\numberline {14}DeepFakes Evolution: Analysis of Facial Regions and Fake Detection Performance \cite {DBLP:journals/corr/abs-2004-07532}}{60}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Key Idea}{60}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Key Contributions}{60}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Results and Improvements}{61}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Improved Detection Using Facial Region Analysis}{61}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Comparison of First and Second Generation Deepfakes}{61}{subsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.3.3}Importance of Facial Artifacts in Detection}{62}{subsection.14.3.3}%
+\contentsline {subsection}{\numberline {14.3.4}Challenges with High-Quality Deepfakes}{62}{subsection.14.3.4}%
+\contentsline {subsection}{\numberline {14.3.5}Benchmarking and Dataset Evaluation}{62}{subsection.14.3.5}%
+\contentsline {section}{\numberline {14.4}Overall Results and Improvements}{62}{section.14.4}%
