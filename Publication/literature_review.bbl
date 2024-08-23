@@ -99,4 +99,11 @@ Y.~J. Heo, Y.~J. Choi, Y.~Lee, and B.~Kim, ``Deepfake detection scheme based on
   2021. [Online]. Available: \url{https://arxiv.org/abs/2104.01353}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/abs-1812-08685}
+\BIBentryALTinterwordspacing
+P.~Korshunov and S.~Marcel, ``Deepfakes: a new threat to face recognition?
+  assessment and detection,'' \emph{CoRR}, vol. abs/1812.08685, 2018. [Online].
+  Available: \url{http://arxiv.org/abs/1812.08685}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

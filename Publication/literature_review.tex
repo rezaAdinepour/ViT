@@ -1509,7 +1509,106 @@
 	
 	
 	
+	\chapter{DeepFakes: a New Threat to Face Recognition? Assessment and Detection \cite{DBLP:journals/corr/abs-1812-08685}}
 	
+	This paper explores the growing challenge that deepfake videos pose to face recognition systems. Deepfakes are videos created using generative adversarial networks (GANs) to swap one person's face with another's, often in a realistic and convincing way. This technology has led to serious concerns, especially due to its use in creating misleading and harmful content, such as fake videos of celebrities in inappropriate situations. The paper investigates how vulnerable current face recognition systems are to deepfakes and evaluates different methods for detecting these tampered videos.
+	
+	\section{Deepfake Video Generation:}
+	The authors used a GAN-based method to create deepfake videos by swapping faces in the publicly available VidTIMIT database. They generated both low-quality (64x64 pixels) and high-quality (128x128 pixels) versions of deepfakes, resulting in 620 deepfake videos. These videos are used to assess the impact on face recognition systems and to test the performance of detection methods.
+	
+	
+	
+	\section{Vulnerability of Face Recognition Systems:}
+	The paper shows that two popular face recognition systems, based on VGG and Facenet neural networks, are highly vulnerable to deepfake videos. These systems were fooled by high-quality deepfakes in 85-95\% of cases, showing that they often cannot distinguish real faces from fake ones in manipulated videos.
+	
+	
+	\section{Deepfake Detection Methods:}
+	Several baseline methods were tested for detecting deepfakes. The study found that simple audio-visual approaches, such as lip-sync inconsistency detection, were not effective in distinguishing real videos from deepfakes. However, image-based methods using Image Quality Metrics (IQM) combined with Support Vector Machine (SVM) classifiers performed better, especially on high-quality deepfakes, achieving an equal error rate (EER) of 8.97\%.
+	
+	
+	\section{Challenges for Detection Systems:}
+	The paper emphasizes that as deepfake technology continues to improve, it will become even harder to detect fake videos. The current detection methods, although promising, still face challenges, especially with high-quality deepfakes that are harder to detect.
+	
+	
+	
+	\section{Results and Improvements}
+	\subsection{Vulnerability of Face Recognition Systems}
+	The paper highlights that face recognition systems, particularly those based on VGG and Facenet neural networks, are highly vulnerable to deepfake videos:
+	
+	\begin{enumerate}
+		\item 
+		On high-quality deepfakes, the false acceptance rates (FAR) for VGG-based recognition was 85.62\%, and for Facenet-based recognition, it was even higher at 95.00\%.
+		
+		\item 
+		These results indicate that current face recognition systems are often unable to distinguish deepfake videos from real ones, demonstrating the need for improved detection mechanisms.
+	\end{enumerate}
+	
+	\subsection{Creation of a Public Deepfake Database}
+	One of the major contributions of this paper is the creation of a publicly available database of deepfake videos:
+	
+	\begin{enumerate}
+		\item 
+		The authors generated 620 deepfake videos from the VidTIMIT database using a GAN-based face-swapping approach. The database includes both low-quality (64x64 pixels) and high-quality (128x128 pixels) deepfakes, allowing researchers to evaluate the impact of deepfakes on face recognition systems and to develop new detection methods.
+		
+		\item 
+		This database is an important resource for the research community, providing a standardized dataset for benchmarking deepfake detection methods.
+	\end{enumerate}
+	
+	
+	\subsection{Deepfake Detection Methods}
+	Several baseline methods for detecting deepfakes were tested in the paper, with varying levels of success:
+	
+	\begin{enumerate}
+		\item 
+		Lip-syncing detection (detecting inconsistencies between lip movements and speech in the audio) was found to be ineffective for detecting deepfake videos, as GAN-generated videos are often good at mimicking realistic lip movements.
+		
+		\item 
+		The most effective method was based on image quality metrics (IQM) combined with a Support Vector Machine (SVM) classifier. This approach performed best for high-quality deepfakes, achieving an equal error rate (EER) of 8.97\%, which is considered a reasonably good detection result for such challenging cases.
+	\end{enumerate}
+	
+	
+	\subsection{Performance on Low-Quality vs. High-Quality Deepfakes}
+	The paper compares the effectiveness of detection methods on both low-quality and high-quality deepfakes:
+	
+	\begin{enumerate}
+		\item 
+		The IQM + SVM approach achieved better detection results for low-quality deepfakes, with an EER of 3.33\%, compared to 8.97\% for high-quality deepfakes.
+		
+		\item 
+		This shows that detecting high-quality deepfakes remains a more difficult challenge, even with the best-performing detection methods.
+	\end{enumerate}
+	
+	
+	\subsection{Improvements for Future Detection Systems}
+	The paper discusses the limitations of current detection methods and suggests that:
+	
+	\begin{enumerate}
+		\item 
+		As face-swapping and deepfake generation technology continues to improve, future detection methods will need to become more robust and generic to handle increasingly sophisticated deepfakes.
+		
+		\item 
+		The development of new databases with more complex deepfakes and advanced detection algorithms will be essential for keeping up with the evolution of this technology.
+	\end{enumerate}
+	
+	
+	
+	\section{Overall Results and Improvements:}
+	\begin{enumerate}
+		\item 
+		\textbf{High vulnerability of face recognition systems:} The paper demonstrates that current face recognition systems, such as VGG and Facenet, are highly vulnerable to high-quality deepfake videos, with false acceptance rates as high as 95%.
+		
+		\item 
+		\textbf{Public deepfake database:} The creation of a publicly available deepfake video database is a valuable resource for researchers to evaluate and develop deepfake detection methods.
+		
+		\item 
+		\textbf{Effectiveness of image-based detection methods:} The IQM + SVM method is the most effective approach for detecting deepfakes, particularly on low-quality deepfakes, with an EER of 3.33\% for low-quality videos and 8.97\% for high-quality videos.
+		
+		\item 
+		\textbf{Challenges with high-quality deepfakes:} The results show that detecting high-quality deepfakes is more challenging, and current detection methods still face difficulties with these more sophisticated fake videos.
+		
+		\item 
+		\textbf{Future directions for detection methods:} The paper highlights the need for more robust and advanced detection techniques to cope with future developments in deepfake generation technology.
+	\end{enumerate}
 	
 	
 	
