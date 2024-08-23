@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  23 AUG 2024 23:45
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  23 AUG 2024 23:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -539,31 +539,31 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [60
 
-] [61] [62] [63] (./literature_review.bbl [64
+] [61] [62] [63]
+Chapter 15.
 
-]) [65]
-(./literature_review.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1759.
+
+[64
+
+] (./literature_review.bbl [65
+
+]) [66] (./literature_review.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-Package rerunfilecheck Warning: File `literature_review.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `literature_review.out':
-(rerunfilecheck)             Before: E3B2E9D0C5BD21733C75139241215C56;43161
-(rerunfilecheck)             After:  613A1EB518D70AB00AE5FE45E6926B99;43388.
+Package rerunfilecheck Info: File `literature_review.out' has not changed.
+(rerunfilecheck)             Checksum: 59ED64582BFA056D323FE9FA6632492D;43870.
  ) 
 Here is how much of TeX's memory you used:
- 8789 strings out of 474878
- 138001 string characters out of 5762517
+ 8790 strings out of 474878
+ 138036 string characters out of 5762517
  1933627 words of memory out of 5000000
- 30739 multiletter control sequences out of 15000+600000
+ 30740 multiletter control sequences out of 15000+600000
  561574 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,79p,716b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review.pdf (66 pages).
+Output written on literature_review.pdf (67 pages).

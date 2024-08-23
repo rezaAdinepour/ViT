@@ -118,4 +118,11 @@ R.~Tolosana, S.~Romero{-}Tapiador, J.~Fi{\'{e}}rrez, and
   [Online]. Available: \url{https://arxiv.org/abs/2004.07532}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/abs-1811-00661}
+\BIBentryALTinterwordspacing
+X.~Yang, Y.~Li, and S.~Lyu, ``Exposing deep fakes using inconsistent head
+  poses,'' \emph{CoRR}, vol. abs/1811.00661, 2018. [Online]. Available:
+  \url{http://arxiv.org/abs/1811.00661}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

@@ -178,3 +178,4 @@
 \contentsline {subsection}{\numberline {14.3.4}Challenges with High-Quality Deepfakes}{62}{subsection.14.3.4}%
 \contentsline {subsection}{\numberline {14.3.5}Benchmarking and Dataset Evaluation}{62}{subsection.14.3.5}%
 \contentsline {section}{\numberline {14.4}Overall Results and Improvements}{62}{section.14.4}%
+\contentsline {chapter}{\numberline {15}Exposing Deep Fakes Using Inconsistent Head Poses \cite {DBLP:journals/corr/abs-1811-00661}}{64}{chapter.15}%
