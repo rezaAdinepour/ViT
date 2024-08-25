@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 18:37
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -592,10 +592,29 @@ Overfull \hbox (1.47002pt too wide) in paragraph at lines 2060--2061
 
 [75
 
-] [76] [77] [78] (./literature_review.bbl [79
+] [76] [77] [78]
+Chapter 19.
 
-]) [80]
-(./literature_review.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2177.
+
+
+Overfull \hbox (3.37201pt too wide) in paragraph at lines 2189--2190
+\TU/lmr/m/n/10 the method ensures that quantization errors are minimized, and t
+he model’s
+ []
+
+[79
+
+]
+Overfull \hbox (16.61201pt too wide) in paragraph at lines 2202--2203
+[]\TU/lmr/m/n/10 Post-training quantization often leads to a drop in performanc
+e, but RepQuant
+ []
+
+[80] [81] [82] (./literature_review.bbl [83
+
+]) [84] (./literature_review.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -607,16 +626,16 @@ Package rerunfilecheck Warning: File `literature_review.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `literature_review.out':
-(rerunfilecheck)             Before: 8BB8144FED0F97376092E791EB8A56A7;51919
-(rerunfilecheck)             After:  861B4C9553B1DD7D22F633EEE9A8B1AC;52146.
+(rerunfilecheck)             Before: D702444FDAC2DC381C1EFBAB087E1559;55003
+(rerunfilecheck)             After:  8D0820658998F6CEA8817BD39A6804DC;55237.
  ) 
 Here is how much of TeX's memory you used:
- 8800 strings out of 474878
- 138218 string characters out of 5762517
+ 8803 strings out of 474878
+ 138292 string characters out of 5762517
  1933627 words of memory out of 5000000
- 30750 multiletter control sequences out of 15000+600000
+ 30753 multiletter control sequences out of 15000+600000
  561574 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,6n,79p,754b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,910b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review.pdf (81 pages).
+Output written on literature_review.pdf (85 pages).

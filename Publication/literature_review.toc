@@ -211,3 +211,13 @@
 \contentsline {subsection}{\numberline {18.2.5}Post-Training Quantization Simplicity}{77}{subsection.18.2.5}%
 \contentsline {subsection}{\numberline {18.2.6}Potential for Future Extensions}{77}{subsection.18.2.6}%
 \contentsline {section}{\numberline {18.3}Overall Results and Improvements}{78}{section.18.3}%
+\contentsline {chapter}{\numberline {19}RepQuant: Towards Accurate Post-Training Quantization of Large Transformer Models via Scale Reparameterization \cite {li2024repquantaccurateposttrainingquantization}}{79}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Main Contributions}{79}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Results and Improvements}{80}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}Improved Accuracy in Post-Training Quantization}{80}{subsection.19.2.1}%
+\contentsline {subsection}{\numberline {19.2.2}Scale Reparameterization Technique}{80}{subsection.19.2.2}%
+\contentsline {subsection}{\numberline {19.2.3}Versatility Across Large Transformer Models}{81}{subsection.19.2.3}%
+\contentsline {subsection}{\numberline {19.2.4}Significant Reduction in Computational Complexity}{81}{subsection.19.2.4}%
+\contentsline {subsection}{\numberline {19.2.5}Hardware Compatibility and Efficiency}{81}{subsection.19.2.5}%
+\contentsline {subsection}{\numberline {19.2.6}Potential for Future Extensions}{82}{subsection.19.2.6}%
+\contentsline {subsection}{\numberline {19.2.7}Overall Results and Improvements}{82}{subsection.19.2.7}%

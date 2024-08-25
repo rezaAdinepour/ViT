@@ -147,4 +147,11 @@ W.~Huang, Y.~Liu, H.~Qin, Y.~Li, S.~Zhang, X.~Liu, M.~Magno, and X.~Qi,
   [Online]. Available: \url{https://arxiv.org/abs/2402.04291}
 \BIBentrySTDinterwordspacing
 
+\bibitem{li2024repquantaccurateposttrainingquantization}
+\BIBentryALTinterwordspacing
+Z.~Li, X.~Liu, J.~Zhang, and Q.~Gu, ``Repquant: Towards accurate post-training
+  quantization of large transformer models via scale reparameterization,''
+  2024. [Online]. Available: \url{https://arxiv.org/abs/2402.05628}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
