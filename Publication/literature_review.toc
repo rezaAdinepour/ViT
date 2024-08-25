@@ -240,3 +240,14 @@
 \contentsline {subsection}{\numberline {21.1.6}New Scaling Laws:}{89}{subsection.21.1.6}%
 \contentsline {subsection}{\numberline {21.1.7}Hardware Optimization Potential:}{89}{subsection.21.1.7}%
 \contentsline {section}{\numberline {21.2}Overall Improvements}{89}{section.21.2}%
+\contentsline {chapter}{\numberline {22}Root Mean Square Layer Normalization \cite {zhang2019rootmeansquarelayer}}{90}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Results and Improvements}{91}{section.22.1}%
+\contentsline {subsection}{\numberline {22.1.1}Reduction in Computational Overhead:}{91}{subsection.22.1.1}%
+\contentsline {subsection}{\numberline {22.1.2}Comparable Accuracy to LayerNorm:}{91}{subsection.22.1.2}%
+\contentsline {subsection}{\numberline {22.1.3}Efficiency in Machine Translation:}{91}{subsection.22.1.3}%
+\contentsline {subsection}{\numberline {22.1.4}Partial RMSNorm (pRMSNorm):}{91}{subsection.22.1.4}%
+\contentsline {subsection}{\numberline {22.1.5}Applicability Across Different Architectures:}{91}{subsection.22.1.5}%
+\contentsline {subsection}{\numberline {22.1.6}Robustness and Stability:}{92}{subsection.22.1.6}%
+\contentsline {subsection}{\numberline {22.1.7}Lower Energy and Memory Costs:}{92}{subsection.22.1.7}%
+\contentsline {section}{\numberline {22.2}Overall Improvements:}{92}{section.22.2}%
+\contentsline {chapter}{\numberline {23}}{93}{chapter.23}%

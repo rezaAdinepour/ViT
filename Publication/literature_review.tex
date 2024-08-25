@@ -2479,6 +2479,150 @@
 	
 	
 	
+	
+	
+	\chapter{Root Mean Square Layer Normalization \cite{zhang2019rootmeansquarelayer}}
+	This paper a new method designed to improve the efficiency of deep neural networks. The current widely used method, LayerNorm, helps stabilize training and improve performance but comes with a significant computational cost, particularly in larger models. The authors of this paper propose RMSNorm as a simpler and faster alternative that removes the re-centering step of LayerNorm, focusing only on re-scaling. This makes RMSNorm computationally more efficient while still stabilizing network training.
+	
+	
+	The key idea behind RMSNorm is that re-centering (adjusting inputs based on their mean) is not essential for model performance, while re-scaling (adjusting inputs based on their size) is the crucial factor. RMSNorm uses the root mean square of the inputs to normalize the data, which ensures that the model remains robust to changes in input size or weight scaling. The paper also proposes pRMSNorm, a variant of RMSNorm that estimates normalization based on only a subset of inputs, further reducing computational overhead.
+	
+	
+	Extensive experiments across various tasks like machine translation, image classification, and question answering demonstrate that RMSNorm performs on par with LayerNorm in terms of accuracy while providing significant speed improvements. Depending on the model and task, RMSNorm speeds up training by 7\% to 64\%, making it a promising alternative for improving the efficiency of neural networks without compromising performance.
+	
+	
+	In summary, this paper presents a simpler and faster normalization technique, RMSNorm, that maintains model performance while significantly reducing the computational costs associated with LayerNorm, making it ideal for larger and more complex networks.
+	
+	
+	\section{Results and Improvements}
+	\subsection{Reduction in Computational Overhead:}
+	\begin{enumerate}
+		\item 
+		RMSNorm simplifies the normalization process by removing the re-centering step, which is computationally expensive in LayerNorm.
+		
+		\item 
+		Across different models and tasks, RMSNorm reduces running time by 7\% to 64\%, depending on the architecture and task. This makes it a much more efficient option without sacrificing model performance.
+	\end{enumerate}
+	
+	
+	\subsection{Comparable Accuracy to LayerNorm:}
+	\begin{enumerate}
+		\item 
+		In terms of model accuracy, RMSNorm performs on par with LayerNorm across a range of tasks, including machine translation, image classification, and question answering.
+		
+		\item 
+		In tasks like machine translation, RMSNorm matches LayerNorm in BLEU scores while providing speed advantages. In the Transformer model, for instance, RMSNorm achieved similar accuracy to LayerNorm but with a 7\% to 9\% speedup.
+	\end{enumerate}
+	
+	
+	\subsection{Efficiency in Machine Translation:}
+	\begin{enumerate}
+		\item 
+		Experiments in neural machine translation showed that RMSNorm outperforms the baseline (without normalization) in terms of both convergence speed and test accuracy.
+		
+		\item 
+		In particular, RMSNorm reduced training time by about 25\% compared to LayerNorm in tasks using the RNNSearch model.
+	\end{enumerate}
+	
+	
+	\subsection{Partial RMSNorm (pRMSNorm):}
+	\begin{enumerate}
+		\item 
+		The paper introduces pRMSNorm, a variant of RMSNorm that estimates normalization from only a portion of the inputs, which further reduces computation.
+		
+		\item 
+		Although pRMSNorm can achieve additional speed-ups, the gains are dependent on implementation, with the model sometimes being slower due to non-optimal tensor slicing operations. Nonetheless, pRMSNorm reduces training time by around 33\% to 40\% in tasks like image-caption retrieval.
+	\end{enumerate}
+	
+	
+	\subsection{Applicability Across Different Architectures:}
+	\begin{enumerate}
+		\item 
+		RMSNorm is versatile and can be applied to various neural network architectures, including RNNs, CNNs, and Transformers. This makes it an effective drop-in replacement for LayerNorm across different types of models.
+		
+		\item 
+		For instance, in image-caption retrieval, RMSNorm accelerates training by 40.8\% to 63.9\% compared to LayerNorm while maintaining high recall scores.
+	\end{enumerate}
+	
+	
+	\subsection{Robustness and Stability:}
+	\begin{enumerate}
+		\item 
+		RMSNorm maintains stability in training despite not re-centering the inputs. It stabilizes layer activations effectively, ensuring that the output remains consistent even with variations in input scaling.
+		
+		\item 
+		Experiments also show that RMSNorm is more robust than LayerNorm when weight initialization is not optimal, further highlighting its stability during model training.
+	\end{enumerate}
+	
+	
+	\subsection{Lower Energy and Memory Costs:}
+	\begin{enumerate}
+		\item 
+		By eliminating unnecessary computational steps, RMSNorm reduces energy consumption and memory usage, making it more efficient, especially in larger models with multiple layers.
+	\end{enumerate}
+	
+	
+	
+	\section{Overall Improvements:}
+	\begin{enumerate}
+		\item 
+		Speed-up of 7\% to 64\% in various tasks and models.
+		
+		\item 
+		Comparable or improved performance in terms of accuracy and convergence, matching LayerNorm in most tasks.
+		
+		\item 
+		pRMSNorm provides additional computational savings by using only a subset of inputs for normalization.
+		
+		\item 
+		Robustness in handling weight initialization and stable training dynamics, ensuring broader applicability across different neural networks.
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	\newpage
 	\bibliographystyle{IEEEtran}
 	\bibliography{refs}

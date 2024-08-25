@@ -168,4 +168,10 @@ S.~Ma, H.~Wang, L.~Ma, L.~Wang, W.~Wang, S.~Huang, L.~Dong, R.~Wang, J.~Xue,
   bits,'' 2024. [Online]. Available: \url{https://arxiv.org/abs/2402.17764}
 \BIBentrySTDinterwordspacing
 
+\bibitem{zhang2019rootmeansquarelayer}
+\BIBentryALTinterwordspacing
+B.~Zhang and R.~Sennrich, ``Root mean square layer normalization,'' 2019.
+  [Online]. Available: \url{https://arxiv.org/abs/1910.07467}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

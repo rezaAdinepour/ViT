@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 19:32
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,9 +634,27 @@ Overfull \hbox (2.93001pt too wide) in paragraph at lines 2421--2422
 odels (FP16)
  []
 
-[88] [89] (./literature_review.bbl [90
+[88] [89]
+Chapter 22.
 
-]) [91] (./literature_review.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2484.
+
+
+Overfull \hbox (6.08002pt too wide) in paragraph at lines 2501--2502
+[]\TU/lmr/m/n/10 RMSNorm simplifies the normalization process by removing the r
+e-centering
+ []
+
+[90
+
+] [91] [92]
+Chapter 23.
+[93
+
+] (./literature_review.bbl [94
+
+]) [95] [96] (./literature_review.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -648,16 +666,16 @@ Package rerunfilecheck Warning: File `literature_review.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `literature_review.out':
-(rerunfilecheck)             Before: 3B96BDE7D7E77C2D54B0382B501CCAAB;59750
-(rerunfilecheck)             After:  2608A6C8F875DF5190BB6228C71DD61D;59911.
+(rerunfilecheck)             Before: 90B7DAD79FB5CB379639BBC6E9C7E146;62318
+(rerunfilecheck)             After:  B71C3ED180A603861D604A3E3AAEADAD;62356.
  ) 
 Here is how much of TeX's memory you used:
- 8809 strings out of 474878
- 138403 string characters out of 5762517
- 1934627 words of memory out of 5000000
- 30759 multiletter control sequences out of 15000+600000
+ 8812 strings out of 474878
+ 138459 string characters out of 5762517
+ 1935627 words of memory out of 5000000
+ 30762 multiletter control sequences out of 15000+600000
  561574 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,79p,910b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review.pdf (92 pages).
+Output written on literature_review.pdf (97 pages).
