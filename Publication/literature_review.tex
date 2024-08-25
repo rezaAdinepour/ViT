@@ -2367,13 +2367,108 @@
 	
 	
 	
+	\chapter{The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits \cite{ma2024era1bitllmslarge}}
+	
+	This paper introduces a breakthrough in optimizing large language models (LLMs) through a new approach called BitNet b1.58, a 1-bit variant of traditional LLMs. The goal is to significantly reduce the memory, energy, and computational costs of LLMs without sacrificing performance. Current LLMs use 16-bit precision for model parameters, which makes them resource-intensive and challenging to run on limited hardware like mobile devices or edge devices.
 	
 	
+	The proposed BitNet b1.58 uses a more efficient representation of weights, limiting them to {-1, 0, 1}, resulting in models that operate at 1.58-bit precision. This allows for much faster computations, reduced memory usage, and lower latency while maintaining the same level of accuracy as full-precision models (like FP16). The approach also enables energy-efficient matrix multiplication, which is a major cost factor in LLMs, offering substantial savings.
 	
 	
+	BitNet b1.58 matches or even surpasses the performance of LLaMA, a leading LLM, especially at larger model sizes. For example, the 3B parameter version of BitNet b1.58 outperforms its LLaMA counterpart while using significantly fewer resources. As the model scales up (7B, 13B, 70B), BitNet b1.58 offers even more efficiency, being 4.1 times faster and using 7 times less memory at the largest sizes.
 	
 	
+	The paper also calls for the development of new hardware optimized for 1-bit LLMs to further enhance performance and reduce costs, paving the way for highly efficient AI applications on a wide range of devices, including mobile and edge hardware. This innovation opens up possibilities for deploying powerful LLMs in more resource-constrained environments while maintaining high performance and reducing environmental impact.
 	
+	\section{Results and Improvements}
+	\subsection{Reduction in Memory Usage and Latency:}
+	\begin{enumerate}
+		\item 
+		BitNet b1.58 significantly reduces memory usage and latency compared to full-precision models like LLaMA.
+		
+		\item 
+		For instance, at 3B model size, BitNet b1.58 uses 3.55 times less GPU memory and is 2.71 times faster than the 3B LLaMA model.
+		
+		\item 
+		As the model scales up, the advantages become even more pronounced. At 70B model size, BitNet b1.58 is 4.1 times faster and consumes 7.16 times less memory compared to LLaMA.
+	\end{enumerate}
+	
+	\subsection{Energy Efficiency:}
+	\begin{enumerate}
+		\item 
+		BitNet b1.58 significantly improves energy efficiency due to its use of integer operations (INT8) instead of floating-point operations (FP16).
+		
+		\item 
+		On a 7nm chip, BitNet b1.58 reduces energy consumption by 71.4 times in terms of arithmetic operations compared to LLaMA.
+		
+		\item 
+		As models grow larger, BitNet b1.58 becomes increasingly efficient, offering up to 41.2 times lower energy consumption at 70B parameters.
+	\end{enumerate}
+	
+	\subsection{Throughput Improvement:}
+	\begin{enumerate}
+		\item 
+		At 70B model size, BitNet b1.58 offers an 8.9 times higher throughput and can support up to 11 times larger batch sizes than LLaMA on the same hardware (two 80GB A100 cards).
+		
+		\item 
+		This allows for more efficient large-scale inference, making BitNet b1.58 more suitable for demanding real-world applications.
+	\end{enumerate}
+	
+	
+	\subsection{Maintained Accuracy:}
+	\begin{enumerate}
+		\item 
+		BitNet b1.58 achieves performance parity with full-precision models (FP16) in terms of perplexity and zero-shot task accuracy.
+		
+		\item 
+		For example, the 3B BitNet b1.58 model matches the perplexity and accuracy of the 3B LLaMA model, while using fewer resources.
+		
+		\item 
+		The 3.9B version of BitNet b1.58 even outperforms the 3B LLaMA model with lower memory and latency costs.
+	\end{enumerate}
+	
+	
+	\subsection{Performance on Zero-Shot Tasks:}
+	\begin{enumerate}
+		\item 
+		The method shows excellent zero-shot performance across several tasks (ARC-Easy, Hellaswag, Winogrande, etc.), closing the gap between BitNet b1.58 and full-precision models as the model size increases.
+		
+		\item 
+		For instance, at 3.9B size, BitNet b1.58 performs better than the 3B LLaMA on various language benchmarks, further highlighting its effectiveness in natural language processing tasks.
+	\end{enumerate}
+	
+	
+	\subsection{New Scaling Laws:}
+	\begin{enumerate}
+		\item 
+		BitNet b1.58 introduces new scaling laws, showing that as model size increases, its efficiency improvements over traditional FP16 models become more significant.
+		
+		\item 
+		For example, a 13B BitNet b1.58 model is more efficient than a 3B FP16 model, and a 70B BitNet b1.58 model is more efficient than a 13B FP16 model in terms of memory usage, latency, and energy consumption.
+	\end{enumerate}
+	
+	
+	\subsection{Hardware Optimization Potential:}
+	\begin{enumerate}
+		\item 
+		The paper calls for the design of new hardware systems specifically optimized for 1-bit LLMs like BitNet b1.58. Such hardware could further reduce computation costs and enable even more efficient deployment of large models.
+	\end{enumerate}
+	
+	
+	\section{Overall Improvements}
+	\begin{enumerate}
+		\item 
+		2.71x faster inference with 3.55x less memory at the 3B model size.
+		
+		\item
+		71.4x reduction in arithmetic operations energy consumption.
+		
+		\item
+		Up to 11x larger batch sizes and 8.9x higher throughput at the 70B model size.
+		
+		\item
+		No compromise on accuracy, with performance parity with full-precision models.
+	\end{enumerate}
 	
 	
 	

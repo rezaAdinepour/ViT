@@ -161,4 +161,11 @@ Z.~Liu, Y.~Wang, K.~Han, S.~Ma, and W.~Gao, ``Post-training quantization for
   Available: \url{https://arxiv.org/abs/2106.14156}
 \BIBentrySTDinterwordspacing
 
+\bibitem{ma2024era1bitllmslarge}
+\BIBentryALTinterwordspacing
+S.~Ma, H.~Wang, L.~Ma, L.~Wang, W.~Wang, S.~Huang, L.~Dong, R.~Wang, J.~Xue,
+  and F.~Wei, ``The era of 1-bit llms: All large language models are in 1.58
+  bits,'' 2024. [Online]. Available: \url{https://arxiv.org/abs/2402.17764}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

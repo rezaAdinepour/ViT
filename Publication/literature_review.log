@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 19:23
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -297,19 +297,19 @@ Overfull \hbox (3.54012pt too wide) in paragraph at lines 58--58
 tion through 
  []
 
-[2] [3] [4] [5])
+[2] [3] [4] [5] [6])
 \tf@toc=\write4
 \openout4 = `literature_review.toc'.
 
- [6]
+ [7]
 Chapter 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 20.
 
-[7
+[8
 
-] [8] [9] [10]
+] [9] [10] [11]
 Overfull \hbox (21.13504pt too wide) in paragraph at lines 127--128
 []\TU/lmr/m/n/10 ReActNet (ResNet-34 backbone): Achieved 67.5% top-1 accuracy o
 n ImageNet-
@@ -321,39 +321,39 @@ Overfull \hbox (3.91838pt too wide) in paragraph at lines 149--150
 nsformations before resid-
  []
 
-[11] [12]
+[12] [13]
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 199.
 
-[13
+[14
 
-] [14] [15]
+] [15] [16]
 Overfull \hbox (0.67pt too wide) in paragraph at lines 289--290
 \TU/lmr/m/n/10 that specifically address the limitations of Vision Transformers
  on small datasets.
  []
 
-[16]
+[17]
 Overfull \hbox (1.82204pt too wide) in paragraph at lines 324--325
 \TU/lmr/m/n/10 datasets like ImageNet, although their primary benefit is seen i
 n smaller datasets. 
  []
 
-[17]
+[18]
 Overfull \hbox (3.50093pt too wide) in paragraph at lines 371--372
 \TU/lmr/m/n/10 several state-of-the-art (SOTA) models, including CNN-based mode
 ls like ResNet
  []
 
-[18]
+[19]
 Overfull \hbox (6.17871pt too wide) in paragraph at lines 394--395
 \TU/lmr/m/n/10 datasets, SPT and LSA also improve ViT performance on mid-sized 
 datasets
  []
 
-[19]
+[20]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -364,22 +364,22 @@ Overfull \hbox (8.85107pt too wide) in paragraph at lines 421--421
 []\TU/lmr/bx/n/14.4 Data Augmentation and Regularization (”Au-
  []
 
-[20
+[21
 
 ]
 Overfull \hbox (5.00629pt too wide) in paragraph at lines 438--438
 []\TU/lmr/bx/n/14.4 Trade-offs Between Data, Augmentation, and
  []
 
-[21] [22] [23] [24]
+[22] [23] [24] [25]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 541.
 
-[25
+[26
 
-] [26]
+] [27]
 Overfull \hbox (1.23201pt too wide) in paragraph at lines 588--589
 \TU/lmr/m/n/10 distillation process, making the transformer perform better on i
 mage recog-
@@ -391,13 +391,13 @@ Overfull \hbox (1.32004pt too wide) in paragraph at lines 596--597
 ources to achieve
  []
 
-[27]
+[28]
 Overfull \hbox (8.88892pt too wide) in paragraph at lines 627--628
 []\TU/lmr/bx/n/10 DeiT-S \TU/lmr/m/n/10 achieves higher throughput than many la
 rge CNNs like EfficientNet-
  []
 
-[28]
+[29]
 Overfull \hbox (5.11427pt too wide) in paragraph at lines 670--671
 \TU/lmr/bx/n/10 top-1 accuracy\TU/lmr/m/n/10 , surpassing many state-of-the-art
  CNN models like ResNet
@@ -408,12 +408,12 @@ Overfull \hbox (1.15201pt too wide) in paragraph at lines 676--676
 []\TU/lmr/bx/n/12 Distillation Through Attention Enhances Model Per-
  []
 
-[29]
+[30]
 Overfull \hbox (0.44402pt too wide) in paragraph at lines 689--689
 []\TU/lmr/bx/n/12 Improved Throughput and Computational Efficiency 
  []
 
-[30]
+[31]
 Overfull \hbox (0.70769pt too wide) in paragraph at lines 725--726
 []\TU/lmr/bx/n/10 DeiT-B achieves 99.1% accuracy on CIFAR-10, 91.4% on CIFAR-
  []
@@ -424,7 +424,7 @@ Overfull \hbox (8.57002pt too wide) in paragraph at lines 728--729
 sks and datasets
  []
 
-[31] [32]
+[32] [33]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -436,9 +436,9 @@ Overfull \hbox (5.52pt too wide) in paragraph at lines 804--805
 of \TU/lmr/bx/n/10 class-attention
  []
 
-[33
+[34
 
-] [34]
+] [35]
 Overfull \hbox (2.47536pt too wide) in paragraph at lines 865--866
 []\TU/lmr/bx/n/10 Faster convergence \TU/lmr/m/n/10 during training compared to
  traditional ViTs, thanks
@@ -450,7 +450,7 @@ Overfull \hbox (0.20201pt too wide) in paragraph at lines 881--882
 , the deeper
  []
 
-[35] [36]
+[36] [37]
 Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -462,31 +462,31 @@ Overfull \hbox (1.51202pt too wide) in paragraph at lines 907--908
 ly on self-attention
  []
 
-[37
+[38
 
-] [38]
+] [39]
 Chapter 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 946.
 
-[39
+[40
 
-] [40] [41] [42]
+] [41] [42] [43]
 Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1074.
 
-[43
+[44
 
-] [44] [45] [46]
+] [45] [46] [47]
 Chapter 9.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1207.
 
-[47
+[48
 
 ]
 Overfull \hbox (1.222pt too wide) in paragraph at lines 1256--1257
@@ -494,13 +494,13 @@ Overfull \hbox (1.222pt too wide) in paragraph at lines 1256--1257
 Mul-free model
  []
 
-[48] [49] [50]
+[49] [50] [51]
 Chapter 10.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1353.
 
-[51
+[52
 
 ]
 Chapter 11.
@@ -508,28 +508,28 @@ Chapter 11.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1371.
 
-[52
+[53
 
-] [53] [54] [55]
+] [54] [55] [56]
 Chapter 12.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1512.
 
-[56
+[57
 
-] [57]
+] [58]
 Overfull \hbox (7.85202pt too wide) in paragraph at lines 1570--1570
 []\TU/lmr/bx/n/12 Performance on Low-Quality vs. High-Quality Deep-
  []
 
-[58] [59]
+[59] [60]
 Chapter 13.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1622.
 
-[60
+[61
 
 ]
 Chapter 14.
@@ -537,22 +537,22 @@ Chapter 14.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1635.
 
-[61
+[62
 
-] [62] [63] [64]
+] [63] [64] [65]
 Chapter 15.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1759.
 
-[65
+[66
 
-] [66]
+] [67]
 Overfull \hbox (5.16005pt too wide) in paragraph at lines 1830--1830
 []\TU/lmr/bx/n/12 Potential for Integration with Other Detection Tech-
  []
 
-[67] [68]
+[68] [69]
 Chapter 16.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -564,9 +564,9 @@ Overfull \hbox (2.0284pt too wide) in paragraph at lines 1882--1883
 rs compare CNNs
  []
 
-[69
+[70
 
-] [70]
+] [71]
 Chapter 17.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -576,9 +576,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 1915.
 
-[71
+[72
 
-] [72] [73] [74]
+] [73] [74] [75]
 Chapter 18.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -590,9 +590,9 @@ Overfull \hbox (1.47002pt too wide) in paragraph at lines 2060--2061
  Models (LLMs)
  []
 
-[75
+[76
 
-] [76] [77] [78]
+] [77] [78] [79]
 Chapter 19.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -604,7 +604,7 @@ Overfull \hbox (3.37201pt too wide) in paragraph at lines 2189--2190
 he model’s
  []
 
-[79
+[80
 
 ]
 Overfull \hbox (16.61201pt too wide) in paragraph at lines 2202--2203
@@ -612,17 +612,31 @@ Overfull \hbox (16.61201pt too wide) in paragraph at lines 2202--2203
 e, but RepQuant
  []
 
-[80] [81] [82]
+[81] [82] [83]
 Chapter 20.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 2300.
 
-[83
+[84
 
-] [84] [85] (./literature_review.bbl [86
+] [85] [86]
+Chapter 21.
 
-]) [87] (./literature_review.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2370.
+
+[87
+
+]
+Overfull \hbox (2.93001pt too wide) in paragraph at lines 2421--2422
+[]\TU/lmr/m/n/10 BitNet b1.58 achieves performance parity with full-precision m
+odels (FP16)
+ []
+
+[88] [89] (./literature_review.bbl [90
+
+]) [91] (./literature_review.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -634,16 +648,16 @@ Package rerunfilecheck Warning: File `literature_review.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `literature_review.out':
-(rerunfilecheck)             Before: C90403E0FA9019C468A02CB946C0AAA0;56367
-(rerunfilecheck)             After:  88D52F3E7DD1A72FF4D6BB0947D4E02D;57646.
+(rerunfilecheck)             Before: 3B96BDE7D7E77C2D54B0382B501CCAAB;59750
+(rerunfilecheck)             After:  2608A6C8F875DF5190BB6228C71DD61D;59911.
  ) 
 Here is how much of TeX's memory you used:
- 8806 strings out of 474878
- 138353 string characters out of 5762517
- 1933627 words of memory out of 5000000
- 30756 multiletter control sequences out of 15000+600000
+ 8809 strings out of 474878
+ 138403 string characters out of 5762517
+ 1934627 words of memory out of 5000000
+ 30759 multiletter control sequences out of 15000+600000
  561574 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,79p,910b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review.pdf (88 pages).
+Output written on literature_review.pdf (92 pages).
