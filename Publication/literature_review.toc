@@ -221,3 +221,12 @@
 \contentsline {subsection}{\numberline {19.2.5}Hardware Compatibility and Efficiency}{81}{subsection.19.2.5}%
 \contentsline {subsection}{\numberline {19.2.6}Potential for Future Extensions}{82}{subsection.19.2.6}%
 \contentsline {subsection}{\numberline {19.2.7}Overall Results and Improvements}{82}{subsection.19.2.7}%
+\contentsline {chapter}{\numberline {20}Post-Training Quantization for Vision Transformer \cite {DBLP:journals/corr/abs-2106-14156}}{83}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Results and Improvements}{83}{section.20.1}%
+\contentsline {subsection}{\numberline {20.1.1}Mixed-Precision Quantization:}{83}{subsection.20.1.1}%
+\contentsline {subsection}{\numberline {20.1.2}Higher Accuracy on Quantized Models:}{84}{subsection.20.1.2}%
+\contentsline {subsection}{\numberline {20.1.3}Improved Performance on Smaller Models}{84}{subsection.20.1.3}%
+\contentsline {subsection}{\numberline {20.1.4}Bias Correction for Error Reduction:}{84}{subsection.20.1.4}%
+\contentsline {subsection}{\numberline {20.1.5}Ranking Loss for Attention Preservation:}{84}{subsection.20.1.5}%
+\contentsline {subsection}{\numberline {20.1.6}Memory and Computation Savings:}{84}{subsection.20.1.6}%
+\contentsline {subsection}{\numberline {20.1.7}Generalization to Object Detection:}{85}{subsection.20.1.7}%

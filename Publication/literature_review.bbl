@@ -154,4 +154,11 @@ Z.~Li, X.~Liu, J.~Zhang, and Q.~Gu, ``Repquant: Towards accurate post-training
   2024. [Online]. Available: \url{https://arxiv.org/abs/2402.05628}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/abs-2106-14156}
+\BIBentryALTinterwordspacing
+Z.~Liu, Y.~Wang, K.~Han, S.~Ma, and W.~Gao, ``Post-training quantization for
+  vision transformer,'' \emph{CoRR}, vol. abs/2106.14156, 2021. [Online].
+  Available: \url{https://arxiv.org/abs/2106.14156}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

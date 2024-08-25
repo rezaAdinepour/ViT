@@ -2297,6 +2297,69 @@
 	
 	
 	
+	\chapter{Post-Training Quantization for Vision Transformer \cite{DBLP:journals/corr/abs-2106-14156}}
+	The paper introduces a new approach to post-training quantization for vision transformers, aimed at making these models more efficient in terms of memory usage and computational speed without sacrificing accuracy. Vision transformers, while powerful, are resource-heavy, and this paper tackles the problem of reducing their complexity to allow deployment on devices with limited resources, such as mobile phones or embedded systems.
+	
+	
+	The proposed method adjusts the bit-widths of different layers based on their sensitivity, as measured by the nuclear norm of the attention maps and output features, rather than applying a uniform quantization across the model. The core of the approach involves finding optimal quantization intervals to minimize the difference between the original and quantized outputs. The researchers also introduce a ranking loss function to preserve the relative order of attention values, which is critical to the performance of transformers, and a bias correction mechanism to further reduce quantization errors.
+	
+	
+	Extensive experiments on several datasets show that this method significantly outperforms existing post-training quantization techniques, delivering better accuracy with lower memory and computational costs. This makes it easier to deploy vision transformers in real-world applications where hardware constraints are an issue.
+	
+	
+	
+	\section{Results and Improvements}
+	\subsection{Mixed-Precision Quantization:}
+	\begin{enumerate}
+		\item 
+		The method dynamically assigns different bit-widths to each layer based on the layer’s sensitivity, calculated using the nuclear norm of the attention map and output features.
+		
+		\item 
+		This approach results in higher compression rates while maintaining or improving accuracy, making the models more efficient in terms of memory and computation.
+	\end{enumerate}
+	
+	\subsection{Higher Accuracy on Quantized Models:}
+	\begin{enumerate}
+		\item 
+		The proposed method achieves a Top-1 accuracy of 81.29\% on the DeiT-B model (8-bit quantization) using the ImageNet dataset. This is comparable to the full-precision baseline and outperforms other quantization methods such as EasyQuant and Bit-Split.
+		
+		\item 
+		The proposed method achieves a Top-1 accuracy of 81.29\% on the DeiT-B model (8-bit quantization) using the ImageNet dataset. This is comparable to the full-precision baseline and outperforms other quantization methods such as EasyQuant and Bit-Split.
+		
+		\item 
+		On the ViT-B model, the 8-bit quantized version achieves 97.79\% accuracy on CIFAR-10 and 85.76\% on CIFAR-100, improving on existing quantization techniques by a significant margin.
+	\end{enumerate}
+	
+	\subsection{Improved Performance on Smaller Models}
+	\begin{enumerate}
+		\item 
+		For smaller models like DeiT-S, the proposed method reduces accuracy loss significantly when compared to percentile-based quantization, with accuracy losses of 5.22\% (6-bit) and 2.33\% (8-bit), improving model efficiency without major accuracy degradation.
+	\end{enumerate}
+	
+	\subsection{Bias Correction for Error Reduction:}
+	\begin{enumerate}
+		\item 
+		The paper introduces a bias correction mechanism to reduce accumulated quantization errors, which helps maintain the performance of quantized models close to their full-precision counterparts.
+	\end{enumerate}
+	
+	\subsection{Ranking Loss for Attention Preservation:}
+	\begin{enumerate}
+		\item 
+		A novel ranking loss function ensures that the quantization process maintains the correct order of attention values, which is crucial for the vision transformer's performance. This helps prevent significant drops in accuracy.
+	\end{enumerate}
+	
+	\subsection{Memory and Computation Savings:}
+	\begin{enumerate}
+		\item 
+		The mixed-precision quantization scheme saves about 25\% memory and 44\% computational costs compared to traditional post-training quantization methods, particularly on larger models like ViT-L.
+	\end{enumerate}
+	
+	\subsection{Generalization to Object Detection:}
+	\begin{enumerate}
+		\item 
+		The method also shows generalization capability for object detection tasks using the DETR model, with an improvement in mAP of 40.5 (6-bit) and 41.7 (8-bit) on the COCO2017 dataset, further proving its versatility across different tasks.
+	\end{enumerate}
+	
 	
 	
 	
