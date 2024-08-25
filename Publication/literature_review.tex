@@ -1863,6 +1863,211 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{Deepfake Detection with Deep Learning: Convolutional Neural Networks versus Transformers \cite{thing2023deepfakedetectiondeeplearning}}
+	
+	This paper investigates the effectiveness of two deep learning approaches—Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs)—in detecting deepfake videos. Deepfakes, which use AI to create realistic manipulated videos, pose a significant threat in spreading misinformation and harming individuals, making effective detection methods critical.
+	
+	\section{Key Ideas}
+	\begin{enumerate}
+		\item 
+		\textbf{Comparison of CNNs and Transformers:} The authors compare CNNs and ViTs to understand which method is more effective at identifying deepfakes. CNNs have traditionally been used in image and video analysis tasks, while transformers, initially popular in natural language processing, have recently shown promise in computer vision tasks, including deepfake detection.
+		
+		\item 
+		\textbf{Deepfake Datasets:} The study tests both CNN and Transformer models on several prominent deepfake datasets, including FaceForensics++ 2020 (FF++ 2020), Google DeepFake Detection (DFD), Celeb-DF, Deeper Forensics, and DeepFake Detection Challenge (DFDC). These datasets contain a variety of deepfake videos, from simpler to more sophisticated manipulations.
+		
+		\item 
+		\textbf{Evaluation Metrics:} The models' performance is evaluated based on accuracy and Area Under the Curve (AUC) scores. These metrics measure how well the models distinguish between real and fake videos.
+	\end{enumerate}
+	
+	\section{Key Findings:}
+	\begin{enumerate}
+		\item 
+		\textbf{CNNs vs. Transformers:} The study shows that while both CNNs and Transformers perform well, Vision Transformers (ViTs) tend to outperform CNNs in detecting deepfakes, particularly on newer and more complex datasets like Celeb-DF and DFDC. This indicates that transformers may be better at capturing subtle patterns in manipulated videos.
+		
+		\item 
+		\textbf{Best Detection Results:} The highest detection accuracies and AUC scores were achieved for various datasets, with 99.53\% accuracy and 100\% AUC for detecting deepfakes from the Google DFD dataset, and 99.73\% accuracy and 99.99\% AUC on the Deeper Forensics dataset, showing the models' high effectiveness in detecting manipulations.
+		
+		\item 
+		\textbf{Strengths of Each Model:} CNNs are still highly effective and faster in terms of computation, making them suitable for real-time detection on simpler datasets. However, Transformers demonstrate superior performance on more sophisticated deepfakes, suggesting that they are better at detecting subtle irregularities in the manipulated content.
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks \cite{Zhang_2016}}
+	This presents a method that combines face detection and facial landmark alignment in a single, unified framework. The authors propose using a cascaded structure of Convolutional Neural Networks (CNNs) to improve the accuracy and efficiency of both tasks. This approach is designed to handle challenging conditions such as various poses, lighting conditions, and occlusions.
+	
+	
+	\section{Main Idea}
+	The main idea is to jointly perform face detection and facial landmark alignment using a multi-task learning framework. By integrating these two tasks, the model can exploit their natural correlation, which leads to improved performance. The proposed framework is made up of three stages of CNNs:
+	\begin{enumerate}
+		\item 
+		\textbf{Stage 1:} A shallow CNN, called P-Net, quickly generates candidate face windows.
+		
+		\item 
+		\textbf{Stage 2:} The R-Net refines these candidates by rejecting false positives and further calibrating the bounding boxes.
+		
+		\item 
+		\textbf{Stage 3:} The O-Net outputs the final refined face bounding boxes and facial landmark locations.
+	\end{enumerate}
+	The method also introduces online hard sample mining, which automatically selects difficult samples during training to improve the model's robustness, without the need for manual sample selection.
+	
+	\section{Main Contributions}
+	\begin{enumerate}
+		\item 
+		\textbf{Unified Framework:} The authors propose a unified cascaded CNN framework that jointly performs face detection and facial landmark alignment, leveraging the inherent connection between these tasks.
+		
+		\item 
+		\textbf{Improved Performance:} The model significantly outperforms previous methods on key benchmarks such as FDDB and WIDER FACE for face detection, and AFLW for facial landmark alignment.
+		
+		\item 
+		\textbf{Efficiency:} The cascaded structure ensures that the model is lightweight and achieves real-time performance, making it suitable for practical applications.
+	\end{enumerate}
+	
+	
+	
+	
+	\section{Results and Improvements}
+	\subsection{Improved Accuracy on Challenging Benchmarks}
+	The proposed multi-task cascaded CNN framework achieves superior accuracy in both face detection and facial landmark alignment tasks. Key results include:
+	
+	\begin{enumerate}
+		\item 
+		On the FDDB (Face Detection Data Set and Benchmark) and WIDER FACE datasets for face detection, the method outperforms state-of-the-art techniques by a significant margin.
+		
+		\item 
+		For facial landmark alignment, the framework shows strong results on the AFLW (Annotated Facial Landmarks in the Wild) benchmark, where it consistently outperforms previous methods.
+	\end{enumerate}
+	These results demonstrate the model's robustness and ability to handle challenging real-world conditions like varying lighting, poses, and occlusions.
+	
+	\subsection{Joint Face Detection and Alignment Improves Both Tasks}
+	By combining face detection and facial landmark alignment into a single framework, the model leverages the inherent correlation between these tasks, leading to improvements in both areas:
+	
+	\begin{enumerate}
+		\item 
+		Face detection benefits from the additional information provided by facial landmarks, making the detection process more accurate.
+		
+		\item 
+		Facial landmark alignment is improved by the enhanced face detection process, which provides better bounding box localization for the landmarks.
+	\end{enumerate}
+	This joint approach enables the model to perform better in real-world scenarios, where detecting faces and aligning facial features simultaneously can boost accuracy.
+	
+	\subsection{Efficiency and Real-Time Performance}
+	The proposed cascaded CNN structure is designed to be lightweight and computationally efficient:
+	
+	\begin{enumerate}
+		\item 
+		The model achieves real-time performance, processing at 16 frames per second (fps) on a CPU and 99 fps on a GPU (Nvidia Titan Black).
+		
+		\item 
+		This efficiency makes the framework suitable for practical applications, where speed is critical, such as in facial recognition systems, video surveillance, or mobile device deployment.
+	\end{enumerate}
+	The model’s real-time performance is an important improvement over existing techniques, which often require significant computational resources and processing time.
+	
+	
+	\subsection{Online Hard Sample Mining}
+	The introduction of online hard sample mining during training improves the model's performance:
+	
+	\begin{enumerate}
+		\item 
+		The method automatically selects the hardest samples during the training process, focusing the learning on challenging cases. This reduces the need for manual sample selection and helps the model learn more effectively.
+		
+		\item 
+		As shown in experiments, this approach leads to better convergence and overall performance without the additional complexity of offline sample mining.
+	\end{enumerate}
+	The inclusion of this technique provides an important improvement in the model’s training efficiency and accuracy.
+	
+	
+	\subsection{Lightweight CNN Architecture}
+	The model's CNN architecture is specifically designed to balance performance and computational cost:
+	
+	\begin{enumerate}
+		\item 
+		By using smaller 3×3 filters instead of larger 5×5 filters, the model reduces the number of parameters and the overall computational complexity.
+		
+		\item 
+		This architecture allows for deeper networks without increasing the processing time, leading to better performance in both face detection and alignment tasks.
+	\end{enumerate}
+	The architectural improvements result in a model that is both more powerful and more efficient than previous designs.
+	
+	
+	\subsection{Versatility Across Multiple Datasets}
+	The framework has been tested across multiple benchmarks and datasets, showing its versatility:
+	
+	\begin{enumerate}
+		\item 
+		It performs well on both face detection benchmarks (FDDB and WIDER FACE) and facial landmark alignment benchmarks (AFLW), proving that it can generalize across different tasks and environments.
+		
+		\item 
+		The method handles various challenges, such as occlusions, pose variations, and extreme lighting conditions, making it highly adaptable to real-world scenarios.
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	\section{Overall Results and Improvements}
+	\begin{enumerate}
+		\item 
+		\textbf{Higher accuracy:} The model achieves state-of-the-art results in face detection and facial landmark alignment tasks on challenging datasets like FDDB, WIDER FACE, and AFLW.
+		
+		\item 
+		\textbf{Joint task improvement:} Combining face detection and facial landmark alignment improves the performance of both tasks, leveraging their inherent correlation.
+		
+		\item 
+		\textbf{Real-time performance:} The model is highly efficient, achieving up to 99 fps on a GPU, making it suitable for real-time applications.
+		
+		\item 
+		\textbf{Online hard sample mining:} This innovative technique improves the model's learning process by focusing on hard samples during training, leading to better accuracy without the need for manual intervention.
+		
+		\item 
+		\textbf{Efficient CNN architecture:} The lightweight CNN design with 3×3 filters provides a good balance between depth and computational efficiency, enhancing performance while reducing complexity.
+		
+		\item 
+		\textbf{Versatility across datasets:} The model performs well across a variety of datasets and conditions, making it adaptable to real-world face detection and alignment challenges.
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	\newpage
 	\bibliographystyle{IEEEtran}
 	\bibliography{refs}

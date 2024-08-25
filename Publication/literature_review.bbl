@@ -125,4 +125,19 @@ X.~Yang, Y.~Li, and S.~Lyu, ``Exposing deep fakes using inconsistent head
   \url{http://arxiv.org/abs/1811.00661}
 \BIBentrySTDinterwordspacing
 
+\bibitem{thing2023deepfakedetectiondeeplearning}
+\BIBentryALTinterwordspacing
+V.~L.~L. Thing, ``Deepfake detection with deep learning: Convolutional neural
+  networks versus transformers,'' 2023. [Online]. Available:
+  \url{https://arxiv.org/abs/2304.03698}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Zhang_2016}
+\BIBentryALTinterwordspacing
+K.~Zhang, Z.~Zhang, Z.~Li, and Y.~Qiao, ``Joint face detection and alignment
+  using multitask cascaded convolutional networks,'' \emph{IEEE Signal
+  Processing Letters}, vol.~23, no.~10, p. 1499–1503, Oct. 2016. [Online].
+  Available: \url{http://dx.doi.org/10.1109/LSP.2016.2603342}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
