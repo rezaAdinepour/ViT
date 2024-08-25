@@ -2055,6 +2055,116 @@
 	
 	
 	
+	\chapter{BiLLM: Pushing the Limit of Post-Training Quantization for LLMs \cite{huang2024billmpushinglimitposttraining}}
+	
+	This paper focuses on improving the efficiency of Large Language Models (LLMs) through a process called post-training quantization. As LLMs like GPT, BERT, and others continue to grow in size and computational requirements, deploying these models on devices with limited resources, such as mobile phones and edge devices, becomes challenging. Quantization is a method used to reduce the size and computational cost of these models by compressing their parameters, typically by reducing the precision of the numerical data used to represent them (for example, converting 32-bit floating-point numbers to 8-bit integers).
+	
+	The main goal of this paper is to push the limits of post-training quantization for LLMs without sacrificing accuracy. BiLLM introduces new techniques that allow for aggressive quantization, making it possible to run large models on smaller devices while maintaining competitive performance.
+	
+	\section{Main Contributions}
+	\begin{enumerate}
+		\item 
+		\textbf{Improved Post-Training Quantization:} The paper presents a new approach to quantizing LLMs after they have been trained, which is different from quantization-aware training that happens during the training process. By focusing on post-training quantization, the authors aim to make it easier to apply to models that have already been trained.
+		
+		\item 
+		\textbf{Maintaining Model Accuracy:} A major challenge with quantization is the loss of accuracy that can occur when reducing precision. The authors propose techniques that minimize the impact of quantization on model performance, ensuring that LLMs can still deliver high-quality results even after being compressed.
+		
+		\item 
+		\textbf{Wide Applicability:} The BiLLM method is designed to be applied to various LLM architectures, meaning it can work across different types of models, making it a versatile solution for reducing computational requirements in a wide range of applications.
+	\end{enumerate}
+	
+	
+	
+	
+	
+	\section{Results and Improvements}
+	\subsection{Significant Model Size Reduction}
+	The BiLLM method achieves substantial model size reduction by applying aggressive post-training quantization:
+	\begin{enumerate}
+		\item 
+		The paper demonstrates that BiLLM can compress LLMs by reducing the precision of the weights from 32-bit to lower-bit representations (such as 8-bit or even lower), dramatically decreasing the model's memory footprint.
+		
+		\item 
+		This reduction enables the deployment of large language models on devices with limited resources, such as mobile phones, edge devices, or low-powered hardware, making LLMs more accessible for real-world applications.
+	\end{enumerate}
+	
+	\subsection{Minimal Accuracy Loss}
+	One of the key improvements of BiLLM is that it achieves this compression with minimal loss in accuracy:
+	
+	\begin{enumerate}
+		\item 
+		The paper shows that despite aggressive quantization, the accuracy drop is small, allowing the models to maintain high-quality performance even after compression.
+		
+		\item 
+		BiLLM achieves this through techniques that carefully handle the quantization process, ensuring that the critical information in the model is preserved while reducing less significant elements.
+	\end{enumerate}
+	This is a crucial improvement over traditional quantization methods, where the performance drop can often be significant, making BiLLM a more effective solution for practical use.
+	
+	
+	\subsection{Wide Applicability Across Model Architectures}
+	The BiLLM method is designed to be versatile and applicable to various large language models:
+	\begin{enumerate}
+		\item 
+		The authors tested BiLLM on different LLM architectures, and the results show that the method works across a wide range of models, making it a general solution for compressing LLMs.
+		
+		\item 
+		Whether applied to transformer-based models like BERT, GPT, or other types of architectures, BiLLM consistently provides compression with minimal performance degradation.
+	\end{enumerate}
+	This wide applicability makes BiLLM a robust technique for optimizing LLMs in diverse settings.
+	
+	
+	\subsection{Improved Computational Efficiency}
+	In addition to reducing model size, BiLLM significantly improves the computational efficiency of LLMs:
+	\begin{enumerate}
+		\item 
+		With fewer bits required to represent the model parameters, the quantized models can be processed faster, leading to reduced computational load and quicker inference times.
+		
+		\item 
+		This improvement is especially beneficial for real-time applications or scenarios where latency is critical, such as in mobile applications or cloud-based services with limited computational resources.
+	\end{enumerate}
+	The increased efficiency in terms of both speed and resource usage makes BiLLM an attractive option for deploying LLMs in practical environments.
+	
+	\subsection{Post-Training Quantization Simplicity}
+	The paper highlights that BiLLM focuses on post-training quantization, which simplifies the process of optimizing LLMs:
+	\begin{enumerate}
+		\item 
+		Since the method is applied after the model has been trained, it can be easily implemented on any pretrained model without modifying the training process. This is a significant advantage over quantization-aware training, which requires adjusting the model during the training phase.
+		
+		\item 
+		This simplicity makes BiLLM a more flexible and convenient method for compressing existing large language models, offering a straightforward way to reduce their size and improve efficiency without retraining.
+	\end{enumerate}
+	
+	\subsection{Potential for Future Extensions}
+	The paper concludes with the potential for further extensions of BiLLM:
+	\begin{enumerate}
+		\item 
+		The authors suggest that the method can be further refined to push the limits of quantization even more, exploring lower-bit precision and more sophisticated techniques for maintaining accuracy while aggressively reducing the model's size.
+		
+		\item 
+		This opens up possibilities for future research to improve the scalability and effectiveness of post-training quantization for increasingly larger and more complex models.
+	\end{enumerate}
+	
+	
+	\section{Overall Results and Improvements}
+	\begin{enumerate}
+		\item 
+		\textbf{Significant size reduction}: BiLLM achieves substantial compression of large language models by applying aggressive post-training quantization, reducing memory usage and enabling deployment on resource-constrained devices.
+		
+		\item
+		\textbf{Minimal accuracy loss:} Despite the aggressive quantization, BiLLM maintains high model performance with only a small drop in accuracy, making it a reliable method for compressing LLMs without sacrificing quality.
+		
+		\item
+		\textbf{Versatility across models:} The method is effective on a wide range of LLM architectures, making it a general solution for post-training quantization that can be applied to various transformer-based and other models.
+		
+		\item
+		\textbf{Improved computational efficiency:} BiLLM reduces computational load and speeds up inference times, providing practical benefits for real-time and latency-sensitive applications.
+		
+		\item
+		\textbf{Simplicity of post-training quantization:} The method can be applied to pretrained models without modifying the training process, making it easy to use and implement.
+		
+		\item
+		\textbf{Future potential:} The paper highlights opportunities for further optimization, including exploring more aggressive quantization techniques to push the limits of model compression.
+	\end{enumerate}
 	
 	
 	

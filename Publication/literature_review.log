@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 17:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,9 +578,23 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [71
 
-] [72] [73] [74] (./literature_review.bbl [75
+] [72] [73] [74]
+Chapter 18.
 
-]) [76]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2058.
+
+
+Overfull \hbox (1.47002pt too wide) in paragraph at lines 2060--2061
+\TU/lmr/m/n/10 This paper focuses on improving the efficiency of Large Language
+ Models (LLMs)
+ []
+
+[75
+
+] [76] [77] [78] (./literature_review.bbl [79
+
+]) [80]
 (./literature_review.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -593,16 +607,16 @@ Package rerunfilecheck Warning: File `literature_review.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `literature_review.out':
-(rerunfilecheck)             Before: 9AA023E7678F7E321FDFBBF9B91A11D8;47591
-(rerunfilecheck)             After:  A376125DF359C54BF22FCF5E302AAB1A;49568.
+(rerunfilecheck)             Before: 8BB8144FED0F97376092E791EB8A56A7;51919
+(rerunfilecheck)             After:  861B4C9553B1DD7D22F633EEE9A8B1AC;52146.
  ) 
 Here is how much of TeX's memory you used:
- 8796 strings out of 474878
- 138138 string characters out of 5762517
+ 8800 strings out of 474878
+ 138218 string characters out of 5762517
  1933627 words of memory out of 5000000
- 30746 multiletter control sequences out of 15000+600000
+ 30750 multiletter control sequences out of 15000+600000
  561574 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,79p,754b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review.pdf (77 pages).
+Output written on literature_review.pdf (81 pages).

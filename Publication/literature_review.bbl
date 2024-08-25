@@ -140,4 +140,11 @@ K.~Zhang, Z.~Zhang, Z.~Li, and Y.~Qiao, ``Joint face detection and alignment
   Available: \url{http://dx.doi.org/10.1109/LSP.2016.2603342}
 \BIBentrySTDinterwordspacing
 
+\bibitem{huang2024billmpushinglimitposttraining}
+\BIBentryALTinterwordspacing
+W.~Huang, Y.~Liu, H.~Qin, Y.~Li, S.~Zhang, X.~Liu, M.~Magno, and X.~Qi,
+  ``Billm: Pushing the limit of post-training quantization for llms,'' 2024.
+  [Online]. Available: \url{https://arxiv.org/abs/2402.04291}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
