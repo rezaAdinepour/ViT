@@ -2667,8 +2667,22 @@
 	
 	
 	
-	\chapter{}
+	\chapter{Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics \cite{li2020celebdflargescalechallengingdataset}}
 	
+	This paper presents Celeb-DF, a large-scale, challenging dataset designed for improving the detection of DeepFake videos. DeepFakes, which use artificial intelligence (AI) to swap faces in videos, pose a serious threat to the reliability of online information, making it critical to develop better detection methods. Existing DeepFake datasets, while useful, often contain poor-quality videos that do not reflect the more sophisticated forgeries found on the internet. This gap limits the effectiveness of current detection models when deployed in real-world scenarios.
+	
+	\section{Main Contributions}
+	\subsection{High-Quality Dataset:}
+	Celeb-DF is a dataset that contains 5,639 high-quality DeepFake videos of celebrities, generated using an improved synthesis method. This method enhances the realism of the fake videos by reducing common visual artifacts such as color mismatches and splicing boundaries, which are common in older datasets.
+	
+	\subsection{Diverse Real-World Scenarios:}
+	The dataset is based on real YouTube videos of 59 celebrities with diverse genders, ages, and ethnic backgrounds. This diversity increases the dataset’s relevance to real-world applications, making it more challenging for detection models to identify DeepFakes.
+	
+	\subsection{Improved Visual Quality:}
+	The new synthesis technique used in Celeb-DF improves the visual quality of fake videos by increasing the resolution of the synthesized faces to 256x256 pixels, applying better color correction, and using more accurate face masks. These improvements make the fake videos in Celeb-DF much harder to detect compared to previous datasets.
+	
+	\subsection{Comprehensive Benchmarking:}
+	The authors conducted extensive evaluations of existing DeepFake detection methods using the Celeb-DF dataset. The results show that even though current detection models perform well on older, lower-quality datasets, they struggle with the more realistic forgeries in Celeb-DF, highlighting the need for further advancements in detection techniques.
 	
 	
 	

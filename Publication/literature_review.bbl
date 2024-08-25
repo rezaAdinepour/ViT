@@ -188,4 +188,11 @@ L.~Jiang, R.~Li, W.~Wu, C.~Qian, and C.~C. Loy, ``Deeperforensics-1.0: A
   Available: \url{https://arxiv.org/abs/2001.03024}
 \BIBentrySTDinterwordspacing
 
+\bibitem{li2020celebdflargescalechallengingdataset}
+\BIBentryALTinterwordspacing
+Y.~Li, X.~Yang, P.~Sun, H.~Qi, and S.~Lyu, ``Celeb-df: A large-scale
+  challenging dataset for deepfake forensics,'' 2020. [Online]. Available:
+  \url{https://arxiv.org/abs/1909.12962}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
