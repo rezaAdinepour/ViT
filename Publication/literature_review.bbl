@@ -174,4 +174,11 @@ B.~Zhang and R.~Sennrich, ``Root mean square layer normalization,'' 2019.
   [Online]. Available: \url{https://arxiv.org/abs/1910.07467}
 \BIBentrySTDinterwordspacing
 
+\bibitem{wang2023bitnetscaling1bittransformers}
+\BIBentryALTinterwordspacing
+H.~Wang, S.~Ma, L.~Dong, S.~Huang, H.~Wang, L.~Ma, F.~Yang, R.~Wang, Y.~Wu, and
+  F.~Wei, ``Bitnet: Scaling 1-bit transformers for large language models,''
+  2023. [Online]. Available: \url{https://arxiv.org/abs/2310.11453}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

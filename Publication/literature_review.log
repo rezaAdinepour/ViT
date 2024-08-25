@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 19:41
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 19:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -650,11 +650,15 @@ e-centering
 
 ] [91] [92]
 Chapter 23.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2589.
+
 [93
 
-] (./literature_review.bbl [94
+] [94] (./literature_review.bbl [95
 
-]) [95] [96] (./literature_review.aux)
+] [96]) [97] (./literature_review.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -666,16 +670,16 @@ Package rerunfilecheck Warning: File `literature_review.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `literature_review.out':
-(rerunfilecheck)             Before: 90B7DAD79FB5CB379639BBC6E9C7E146;62318
-(rerunfilecheck)             After:  B71C3ED180A603861D604A3E3AAEADAD;62356.
+(rerunfilecheck)             Before: 05F036DC48A47BB8CC06BC97EB6F579F;62878
+(rerunfilecheck)             After:  118489B7C5E675055136370F24B3D97E;63956.
  ) 
 Here is how much of TeX's memory you used:
- 8812 strings out of 474878
- 138459 string characters out of 5762517
+ 8813 strings out of 474878
+ 138498 string characters out of 5762517
  1935627 words of memory out of 5000000
- 30762 multiletter control sequences out of 15000+600000
+ 30763 multiletter control sequences out of 15000+600000
  561574 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,79p,910b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review.pdf (97 pages).
+Output written on literature_review.pdf (98 pages).

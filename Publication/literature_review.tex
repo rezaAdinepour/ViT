@@ -2586,8 +2586,46 @@
 	
 	
 	
-	\chapter{}
+	\chapter{BitNet: Scaling 1-bit Transformers for Large Language Models \cite{wang2023bitnetscaling1bittransformers}}
 	
+	This paper introduces BitNet, a novel architecture designed to efficiently scale large language models (LLMs) by using 1-bit weights in transformers. The main problem addressed is the growing computational and energy costs associated with increasingly large LLMs, which make them difficult to deploy and environmentally taxing. Traditional approaches, such as post-training quantization and full-precision models (like FP16), still consume significant resources and can degrade in performance when heavily quantized.
+	
+	
+	The key innovation of BitNet is its ability to train models with 1-bit weights from scratch, significantly reducing the memory and computational footprint. Instead of using floating-point representations (FP16 or FP32), BitNet applies binarization, meaning model weights are represented with just +1 or -1 values. It also includes BitLinear, a custom matrix multiplication method designed to handle 1-bit weights efficiently. Despite this extreme quantization, BitNet retains high precision for critical operations such as gradients and optimizer states during training, ensuring model stability and accuracy.
+	
+	\section{Main Contributions}
+	\subsection{Reduced Energy and Memory Costs:}
+	\begin{enumerate}
+		\item 
+		BitNet significantly reduces energy consumption and memory requirements compared to FP16 transformers, especially as model sizes scale up.
+		
+		\item 
+		Energy savings increase with model size, offering up to 38.8 times lower energy consumption for large models (30B parameters) compared to FP16 counterparts.
+	\end{enumerate}
+	
+	\subsection{Competitive Performance:}
+	\begin{enumerate}
+		\item 
+		Despite the drastic reduction in precision, BitNet performs competitively in both language modeling and downstream tasks (e.g., Hellaswag, Winogrande, Winograd, StoryCloze), achieving accuracy similar to models using full-precision methods.
+	\end{enumerate}
+	
+	\subsection{Efficient Scaling:}
+	\begin{enumerate}
+		\item 
+		BitNet follows a similar scaling law to full-precision transformers, meaning it continues to scale efficiently as model size increases, without losing performance benefits.
+	\end{enumerate}
+	
+	\subsection{Stability in Training:}
+	\begin{enumerate}
+		\item 
+		BitNet demonstrates better training stability compared to FP16 models, allowing it to handle larger learning rates and faster convergence during training. This stability comes from techniques like LayerNorm and optimized weight quantization methods.
+	\end{enumerate}
+	
+	\subsection{Group Quantization:}
+	\begin{enumerate}
+		\item 
+		The paper also introduces Group Quantization, which improves model parallelism by splitting large weight matrices into smaller groups and independently estimating quantization parameters, reducing communication overhead in distributed training.
+	\end{enumerate}
 	
 	
 	
