@@ -2639,6 +2639,25 @@
 	
 	
 	
+	\chapter{DeeperForensics-1.0: A Large-Scale Dataset for Real-World Face Forgery Detection \cite{jiang2020deeperforensics10largescaledatasetrealworld}}
+	
+	This paper introduces DeeperForensics-1.0, a large-scale dataset designed to improve real-world face forgery detection. With the rise of "deepfakes" and other face-swapping technologies, there is an increasing need for reliable detection systems to identify manipulated videos. Current datasets, while useful, often lack the scale, quality, and diversity required to effectively train detection models that can handle the complexities of real-world scenarios.
+	
+	\section{Main Contributions}
+	\subsection{Large-Scale Dataset:}
+	DeeperForensics-1.0 is the largest face forgery detection dataset to date, comprising 60,000 videos with a total of 17.6 million frames. This is significantly larger than existing datasets, providing a more comprehensive set of data for training models.
+	
+	\subsection{Real-World Relevance:}
+	The dataset incorporates a wide range of real-world perturbations, such as compression, noise, and blurring, which mimic conditions often found in videos uploaded to the internet. This makes the dataset more realistic and useful for developing models that can detect forgeries in real-world applications.
+	
+	\subsection{High-Quality Video Collection:}
+	The authors carefully curated high-resolution videos of 100 paid actors with diverse appearances, under controlled lighting and camera setups, to ensure high-quality source material. These videos are then used to generate fake videos using a novel DeepFake Variational Auto-Encoder (DF-VAE), which improves the quality of the manipulated content.
+	
+	\subsection{Improved Detection:}
+	DeeperForensics-1.0 includes not only manipulated videos but also a hidden test set of highly deceptive fake videos, specifically designed to challenge detection models. This test set contains videos that have fooled a majority of human participants in user studies, making it a robust tool for evaluating the effectiveness of detection models.
+	
+	\subsection{Benchmarking:}
+	The authors also benchmark several existing face forgery detection methods on the DeeperForensics-1.0 dataset. The results show that while existing methods perform well on clean datasets, they struggle with the more challenging, real-world-like conditions presented in DeeperForensics-1.0. This highlights the need for further advancements in detection techniques.
 	
 	
 	
@@ -2648,8 +2667,7 @@
 	
 	
 	
-	
-	
+	\chapter{}
 	
 	
 	

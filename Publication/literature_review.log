@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 19:49
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  25 AUG 2024 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,9 +656,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [93
 
-] [94] (./literature_review.bbl [95
+] [94]
+Chapter 24.
 
-] [96]) [97] (./literature_review.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 2642.
+
+[95
+
+] [96] (./literature_review.bbl [97
+
+] [98]) [99] (./literature_review.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -670,16 +678,16 @@ Package rerunfilecheck Warning: File `literature_review.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `literature_review.out':
-(rerunfilecheck)             Before: 05F036DC48A47BB8CC06BC97EB6F579F;62878
-(rerunfilecheck)             After:  118489B7C5E675055136370F24B3D97E;63956.
+(rerunfilecheck)             Before: A6CE6CA96C412E30100E702BE36DFB55;64694
+(rerunfilecheck)             After:  841BB3399A2A8BF4014F3437FFBFCBEC;65700.
  ) 
 Here is how much of TeX's memory you used:
- 8813 strings out of 474878
- 138498 string characters out of 5762517
+ 8816 strings out of 474878
+ 138578 string characters out of 5762517
  1935627 words of memory out of 5000000
- 30763 multiletter control sequences out of 15000+600000
+ 30766 multiletter control sequences out of 15000+600000
  561574 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,79p,910b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review.pdf (98 pages).
+Output written on literature_review.pdf (100 pages).

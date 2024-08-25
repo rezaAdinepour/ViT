@@ -181,4 +181,11 @@ H.~Wang, S.~Ma, L.~Dong, S.~Huang, H.~Wang, L.~Ma, F.~Yang, R.~Wang, Y.~Wu, and
   2023. [Online]. Available: \url{https://arxiv.org/abs/2310.11453}
 \BIBentrySTDinterwordspacing
 
+\bibitem{jiang2020deeperforensics10largescaledatasetrealworld}
+\BIBentryALTinterwordspacing
+L.~Jiang, R.~Li, W.~Wu, C.~Qian, and C.~C. Loy, ``Deeperforensics-1.0: A
+  large-scale dataset for real-world face forgery detection,'' 2020. [Online].
+  Available: \url{https://arxiv.org/abs/2001.03024}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
