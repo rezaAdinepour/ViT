@@ -367,6 +367,59 @@
 		
 		
 		
+		\maketitle
+		
+		
+		\section{Introduction}
+		In recent years, the rise of AI-generated deepfakes has posed significant challenges to the integrity of digital media, making it increasingly important to develop reliable detection methods. Traditional approaches, such as Convolutional Neural Networks (CNNs), have been instrumental in detecting manipulated media by focusing on local features within images. However, as deepfake technology evolves, these methods are proving inadequate for capturing the more sophisticated manipulations that are now possible. Recognizing this limitation, I turned my attention to Vision Transformers (ViTs), which offer a more advanced capability by analyzing images as sequences of patches, thereby allowing for both local and global feature extraction. The core objective of this research is to explore how Vision Transformers can be effectively utilized for deepfake detection while addressing their inherent computational demands. To achieve this, I propose a novel integration of ViTs with BitLinear layers, a quantization technique that significantly reduces the model's computational complexity without sacrificing accuracy. This approach is particularly relevant for real-time applications and resource-constrained environments, where both performance and efficiency are critical.
+		
+		
+		
+		\section{literature review}
+		
+		\subsection{CNNs}
+		Convolutional Neural Networks (CNNs) have long been the foundation of many deepfake detection models due to their success in image classification tasks. However, as deepfake technology advances, the limitations of CNN-based models become more pronounced, particularly in their ability to handle the increasingly sophisticated manipulations present in second-generation deepfakes.
+		
+		One of the major drawbacks of CNNs is their reliance on local feature extraction, which, while effective for detecting low-level artifacts in earlier deepfakes, often fails when dealing with high-quality forgeries. The paper by Li and Lyu [17], for instance, highlights how traditional CNN models, even when enhanced with advanced architectures like ResNet, struggle to detect deepfakes when the manipulations involve subtle, high-resolution adjustments that do not produce obvious artifacts.
+		
+		Moreover, the study by Korshunov and Marcel [22] demonstrates that CNN-based systems, such as those relying on VGG or Facenet architectures, are particularly vulnerable to high-quality deepfakes. The research shows that these systems were easily deceived by deepfakes in 85-95\% of cases, underscoring their inadequacy in maintaining high accuracy when faced with realistic forgeries.
+		
+		The inherent architecture of CNNs also limits their capacity to capture global context within an image, which is increasingly important as deepfakes become more sophisticated. For example, CNNs typically process images by focusing on small, localized regions, which makes them less effective at recognizing broader inconsistencies that span across an entire image or video frame. This limitation is evident when comparing CNNs with Vision Transformers (ViTs), which excel at capturing both local and global features by treating an image as a sequence of patches. The combination of CNNs with ViTs in models like the Convolutional Vision Transformer (CViT) shows significant improvement in detection accuracy, indicating that CNNs alone are insufficient for handling the complexity of modern deepfakes [35].
+		
+		Another critical issue with CNN-based models is their generalization capability. As shown in the literature, CNNs often require extensive fine-tuning when applied to different datasets, which reduces their practicality in real-world applications where deepfake characteristics can vary widely. The reliance on specific dataset characteristics makes CNNs less adaptable to new or unseen deepfake variations, as demonstrated in several studies where CNNs performed well on training data but failed to generalize to more challenging, unseen examples [40].
+		
+		In conclusion, while CNNs have been instrumental in the early stages of deepfake detection, their limitations in handling advanced manipulations, capturing global image context, and generalizing across different datasets highlight the need for more robust approaches. The integration of Vision Transformers and quantization techniques, as proposed in this thesis, addresses many of these shortcomings by providing a more comprehensive and efficient solution for deepfake detection.
+		
+		
+		
+		
+		\subsection{Vision Transformers in Deepfake Detection}
+		Vision Transformers (ViTs) have been pivotal in advancing deepfake detection. ViTs process images by dividing them into patches, treating each patch as a token in a sequence, similar to words in a sentence in natural language processing tasks. This approach allows ViTs to capture complex relationships across different parts of an image, making them particularly effective for detecting subtle manipulations typical in deepfakes.
+		
+		The thesis proposes the LinViT and BitViT architectures, which leverage ViTs for feature extraction combined with quantization techniques to optimize performance. This is comparable to the work by Coccomini et al. \cite{ref1}, who used a hybrid approach by combining EfficientNet with Vision Transformers. In their model, EfficientNet handles local feature extraction while the ViT captures global features, similar to how the thesis integrates ViTs with quantization for efficiency.
+		
+		
+		Another study by Heo et al. \cite{ref2} explored the use of a Data-Efficient Image Transformer (DeiT) as the primary feature extractor for deepfake detection. This model was optimized through a student-teacher distillation process, allowing the ViT to learn more efficiently from a larger CNN-based model. The thesis’s approach of using BitLinear layers can be seen as an alternative efficiency improvement, focusing on reducing the computational overhead during both training and inference, while Heo’s model emphasizes efficient training through distillation.
+		
+		
+		
+		\subsection{Quantization Techniques}
+		Quantization is critical for deploying large models like Vision Transformers in real-world applications, especially in environments with limited computational resources. Quantization reduces the bit-width of model weights, thus lowering memory usage and speeding up inference. However, this often comes at the cost of reduced accuracy, particularly in models requiring fine-grained analysis, such as those used for deepfake detection.
+		
+		
+		This paper employs BitLinear layers, which are a form of quantization that uses ternary weights {−1, 0, +1}, allowing for substantial reductions in model size and computational requirements without significant loss in accuracy. This approach is particularly novel compared to standard Post-Training Quantization (PTQ) methods, which map high-precision weights to lower bit-widths after training. As discussed by Wang et al. [76] in their work on BitNet, this method allows the model to maintain performance comparable to full-precision models while being much more efficient.
+		
+		The literature also discusses Quantization-Aware Training (QAT), a technique that quantizes the model during training to allow it to adapt to lower precision weights. While QAT generally results in better accuracy retention compared to PTQ, it is also more resource-intensive. The paper’s use of BitLinear layers offers a middle ground, providing many of the benefits of QAT without the associated training overhead. This is evident when comparing the performance of the BitViT model proposed in the paper with models from the literature that use QAT, such as the work by Dettmers et al. [22], where the trade-offs between resource usage and accuracy are clear.
+		
+		The proposed BitViT model in the thesis is evaluated on standard deepfake detection benchmarks, such as the Celeb-DF dataset. The thesis reports competitive accuracy rates, which align well with those achieved by other state-of-the-art models that also utilize Vision Transformers.
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		% use for special paper notices
 		%\IEEEspecialpapernotice{(Invited Paper)}
@@ -375,7 +428,7 @@
 		
 		
 		% make the title area
-		\maketitle
+		
 		
 		% As a general rule, do not put math, special symbols or citations
 		% in the abstract
@@ -400,87 +453,6 @@
 		
 		
 		
-		\section{Introduction}
-		\subsection{Advances in AI and Deepfakes}
-		The development of Artificial Intelligence (AI) and deep learning technologies has significantly advanced computer vision and image generation capabilities. A key outcome of these advancements is the enhancement of deepfakes, which are AI-generated images and videos that can swap faces with a high degree of realism. While this technology has brought value to creative fields such as filmmaking and special effects, it has also raised ethical concerns. The ability to manipulate videos to make people appear to say or do things they never did presents serious risks to privacy, security, and trust in digital media. Therefore, detecting and mitigating deepfakes has become essential to protect potential victims of such manipulations.
-		
-		\subsection{Early Approaches in Deepfake Detection}
-		Initially, Convolutional Neural Networks (CNNs) were used to identify deepfakes, as they had proven successful in various computer vision tasks. Early CNN-based models showed effectiveness in identifying first-generation deepfakes. However, as datasets became larger and more complex, these models required further advancements to improve both their accuracy and capacity to handle diverse and sophisticated deepfakes.
-		
-		\subsection{Shifting to Transformers in Vision Research}
-		In 2020, researchers began exploring the potential of transformer-based models for computer vision tasks, inspired by their success in Natural Language Processing (NLP). Transformers, particularly those with the self-attention mechanism, became a preferred model due to their ability to capture long-range dependencies within data. The Vision Transformer (ViT) was introduced as an alternative architecture that, unlike CNNs, processes images as a series of patches rather than pixel-based grids. This novel approach leveraged large datasets and pre-training, allowing ViTs to perform on par or even better than state-of-the-art CNN models in some cases.
-		
-		\subsection{Challenges with Vision Transformers in Deepfake Detection}
-		Despite their success, Vision Transformer-based models still face certain challenges in deepfake detection, particularly in terms of resource requirements. ViTs often demand high computational power and memory, which becomes problematic in real-time or resource-constrained environments, such as on edge devices. To address these bottlenecks, researchers continue to explore methods that balance accuracy with efficiency.
-		
-		\subsection{Model Compression Techniques}
-		Recent efforts have focused on reducing the computational cost of models through techniques like quantization, knowledge distillation, and pruning. These approaches compress model sizes by lowering the precision of weights without significantly altering the architecture. Among these, post-training quantization (PTQ) has been widely adopted due to its simplicity and its ability to minimize memory use while speeding up model inference. However, these methods often lead to some loss in accuracy, especially at lower precision levels.
-		
-		\subsection{Quantization-Aware Training (QAT)}
-		To mitigate the loss of accuracy, Quantization-Aware Training (QAT) has been introduced. This approach allows models to adapt to reduced precision during the training phase itself, leading to better performance during inference, albeit with higher resource demands during training.
-		
-		\subsection{BitLinear Layer and Efficient Deepfake Detection}
-		More recently, BitNet introduced the BitLinear layer, which replaces traditional linear layers with ternary-weighted layers (-1, 0, +1). This innovation reduces both memory and energy consumption, making transformers more scalable and efficient. Motivated by the need for more resource-efficient models, this thesis investigates how BitLinear layers can enhance Vision Transformers for deepfake detection, especially in resource-constrained settings.
-		
-		\subsection{Key Research Questions}
-		This work seeks to address the following questions:
-		\begin{enumerate}
-			\item How can Vision Transformers be adapted to effectively detect deepfakes in environments with limited resources?
-			
-			\item What impact do BitLinear layers have on the performance, size, and speed of Vision Transformers?
-			
-			\item How do quantization-aware models compare to post-training quantized models in deepfake detection tasks?
-		\end{enumerate}
-		
-		\subsection{Contributions of This Thesis}
-		To answer these questions, this thesis aims to:
-		\begin{enumerate}
-			\item Implement the BitLinear layer in custom networks, building on the BitNet framework.
-			
-			\item Pre-train two Vision Transformer models, one using full-precision linear layers and another utilizing BitLinear layers, on ImageNet-1k.
-			
-			\item Fine-tune these models on multiple deepfake datasets (e.g., FF++, Celeb-DF), and compare their detection performance.
-			
-			\item Quantize a baseline model to evaluate the effectiveness of QAT and PTQ techniques in the context of deepfake detection.
-		\end{enumerate}
-		
-		
-		
-		\section{Literature review}
-		
-		\subsection{Dataset}
-		Modern deepfake generation techniques have evolved from early methods like 3D morphable models and autoencoders to more advanced techniques, including GANs (e.g., StyleGAN, FSGAN) and diffusion models, which have significantly improved the realism of synthetic faces. To support the advancement of deepfake detection, various datasets have been developed over time, categorized into three generations. The first generation includes small datasets like UADFV, DF-TIMIT, and FaceForensics++, which provided early benchmarks. The second generation, featuring Google DFD, DFDC Preview, and Celeb-DF, introduced higher-quality deepfakes, with Celeb-DF being one of the most widely used. The third generation, including the DeepFake Detection Challenge (DFDC) and Deeper Forensics, expanded the dataset size and diversity, addressing limitations such as the number of swapped identities.
-		
-		
-		\subsection{CNNs}
-		Deepfake detection is fundamentally an image classification task, requiring models to distinguish between real and manipulated faces. Early research primarily used Convolutional Neural Networks (CNNs) due to their success in image classification, with MesoNet being one of the first deep learning methods developed for this purpose in 2018. MesoNet's compact architecture targets mid-level features for efficient detection, while MesoInception extended its capabilities by capturing multiscale features.
-		
-		Li and Lyu advanced detection by using larger CNN models (e.g., ResNet) to identify warping artifacts in deepfake videos. They trained their models on UADFV and DF-TIMIT datasets, showing that ResNet50 performed best. Another notable approach involved combining VGGFace with ResNet50, achieving high accuracy on datasets like FF++ and Celeb-DF.
-		
-		Recent work has also compared models using full-face inputs versus specific facial regions. Results consistently show that models using entire face inputs outperform region-based models. Finally, the DeepFake Detection Challenge revealed that ensemble learning and frame-by-frame classification generally produce better results. Top-performing solutions utilized models like EfficientNet and XceptionNet, with techniques such as augmentations and MixUp for improved accuracy.
-		
-		\subsection{Transformer}
-		The Transformer architecture, introduced in 2017, was primarily designed for Natural Language Processing (NLP) tasks. It leveraged a self-attention mechanism to capture long-range dependencies in data. However, initial applications in computer vision were limited due to the computational demands of applying self-attention to high-dimensional data like images.
-		
-		
-		In 2020, Dosovitskiy and colleagues introduced Vision Transformers (ViT), building on the successes of transformers in NLP. ViT processes images by splitting them into patches, treating each patch as a token. This patch-based approach enabled the efficient application of self-attention, allowing the model to capture complex relationships in the image while maintaining computational feasibility. ViTs rely heavily on pre-training with large datasets to address the lack of inductive biases (like locality) found in CNNs, achieving performance comparable to CNNs on various image benchmarks.
-		
-		
-		Vision Transformers are utilized in deepfake detection in two primary ways: either following CNNs as feature extractors or fully replacing CNNs. The CViT model combines CNN and ViT elements, utilizing CNNs for local feature learning and ViTs for global features, enhancing the detection of complex relationships. CrossViT further improves performance by using a multiscale approach, processing both small and large image patches.
-		
-		
-		DeiT (Data-Efficient Image Transformer) incorporates a student-teacher strategy with distillation tokens to speed up training and improve performance with limited data. Additionally, self-supervised learning (SSL) has been explored to further enhance ViT’s capabilities in deepfake detection, particularly in cases where labeled data is scarce.
-		
-		\subsection{Quantization}
-		As Transformer architectures scale in size and complexity, their computational and memory requirements also increase, posing challenges for real-world applications, particularly in resource-constrained environments. To address these issues, various model compression techniques have been explored, such as knowledge distillation (e.g., DeiT), weight pruning, and quantization.
-		
-		Quantization, a process that reduces model precision by mapping high-precision weights to lower bit-widths, is particularly effective for compressing Transformer models. PTQ is widely adopted as it allows for quantization without retraining, although it often results in accuracy loss, especially with lower bit-widths (e.g., 3 bits or fewer).
-		
-		QAT mitigates the accuracy loss seen in PTQ by training the model with quantization in mind from the start. Although it maintains higher accuracy at inference, it demands greater computational resources and longer training times. QAT also requires retraining the model from scratch, making it more resource-intensive than PTQ.
-		
-		In efforts to improve power efficiency and reduce memory consumption, binary and ternary quantization schemes are employed. These methods simplify computations by replacing expensive floating-point operations with efficient bitwise ones. For example, Binary and Ternary Neural Networks (BNNs and TNNs) are utilized in vision tasks to further optimize model performance.
-		
-		In the domain of language models, BitNet demonstrated the scalability of 1-bit quantization. The BitLinear layer combines 8-bit activation quantization with binary weights trained using QAT, replacing all linear layers in the model. More recently, BitNet b1.58 introduced ternary weights, maintaining performance while improving computational efficiency. These advancements hold promise for applying BitLinear layers to Vision Transformer (ViT) models, potentially making them more efficient while retaining high classification accuracy.
 		
 		
 		
@@ -626,14 +598,27 @@
 		% <OR> manually copy in the resultant .bbl file
 		% set second argument of \begin to the number of references
 		% (used to reserve space for the reference number labels box)
+		
+		
+		
 		\begin{thebibliography}{1}
+			
 			
 			\bibitem{IEEEhowto:kopka}
 			H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 			0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 			
+			\bibitem{ref1}
+			D.~A Coccomini, N. Messina, C. Gennaro, and F. Falchi. Combining EfficientNet and Vision Transformers for Video Deepfake Detection
+			
+			
+			\bibitem{ref2}
+			Young-Jin Heo, Young-Ju Choi, Young-Woon Lee, and Byung-Gyu Kim. Deepfake de-
+			tection scheme based on vision transformer and distillation
+			
 		\end{thebibliography}
 		
+		\textbf{I have not written all the references}
 		
 		
 		
