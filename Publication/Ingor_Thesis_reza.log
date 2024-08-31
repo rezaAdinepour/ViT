@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.4)  18 AUG 2024 20:47
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  31 AUG 2024 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -13,71 +13,35 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpdimenA=\dimen140
 \@IEEEtrantmpdimenB=\dimen141
 \@IEEEtrantmpdimenC=\dimen142
-\@IEEEtrantmpcountA=\count187
-\@IEEEtrantmpcountB=\count188
-\@IEEEtrantmpcountC=\count189
+\@IEEEtrantmpcountA=\count183
+\@IEEEtrantmpcountB=\count184
+\@IEEEtrantmpcountC=\count185
 \@IEEEtrantmptoksA=\toks17
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
-03.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 50
+3.
+LaTeX Font Info:    No file TUptm.fd. on input line 503.
+
+LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 503.
+
 -- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
+-- Using DVI output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
 -- This is a 10 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen144
 \CLASSINFOnormalsizeunitybaselineskip=\dimen145
 \IEEEnormaljot=\dimen146
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 1090.
 
 \IEEEquantizedlength=\dimen147
 \IEEEquantizedlengthdiff=\dimen148
@@ -91,32 +55,35 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEiednormlabelsep=\dimen156
 \IEEEiedmathlabelsep=\dimen157
 \IEEEiedtopsep=\skip48
-\c@section=\count190
-\c@subsection=\count191
-\c@subsubsection=\count192
-\c@paragraph=\count193
-\c@IEEEsubequation=\count194
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@IEEEsubequation=\count190
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\c@figure=\count195
-\c@table=\count196
-\@IEEEeqnnumcols=\count197
-\@IEEEeqncolcnt=\count198
-\@IEEEsubeqnnumrollback=\count199
+\c@figure=\count191
+\c@table=\count192
+\@IEEEeqnnumcols=\count193
+\@IEEEeqncolcnt=\count194
+\@IEEEsubeqnnumrollback=\count195
 \@IEEEquantizeheightA=\dimen158
 \@IEEEquantizeheightB=\dimen159
 \@IEEEquantizeheightC=\dimen160
 \@IEEEquantizeprevdepth=\dimen161
-\@IEEEquantizemultiple=\count266
+\@IEEEquantizemultiple=\count196
 \@IEEEquantizeboxA=\box51
 \@IEEEtmpitemindent=\dimen162
 \IEEEPARstartletwidth=\dimen163
-\c@IEEEbiography=\count267
+\c@IEEEbiography=\count197
 \@IEEEtranrubishbin=\box52
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count268
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
+\g__graphics_track_int=\count198
 \l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count199
+\g__pdf_backend_annotation_int=\count266
+\g__pdf_backend_link_int=\count267
 )
 (./Ingor_Thesis_reza.aux)
 \openout1 = `Ingor_Thesis_reza.aux'.
@@ -130,22 +97,125 @@ LaTeX Font Info:    ... okay on input line 314.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 314.
 LaTeX Font Info:    ... okay on input line 314.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 314.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+14.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 314.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 314.
 LaTeX Font Info:    ... okay on input line 314.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 314.
 LaTeX Font Info:    ... okay on input line 314.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 314.
 LaTeX Font Info:    ... okay on input line 314.
 
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 314.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 314.
+
 -- Lines per column: 56 (exact).
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-78.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texm
-f-dist/fonts/enc/dvips/base/8r.enc}
+LaTeX Font Info:    Trying to load font information for TU+pcr on input line 37
+8.
+LaTeX Font Info:    No file TUpcr.fd. on input line 378.
+
+LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 378.
 
 
-] [2]
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 382.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/sc' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 403.
+
+[1
+
+
+]
+Underfull \hbox (badness 3930) in paragraph at lines 442--443
+[]\TU/pcr/m/n/10 Fine-tune these models on multiple deepfake
+ []
+
+[2]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 632.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -171,24 +241,18 @@ Before submitting the final camera ready copy, remember to:
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 1329 strings out of 474222
- 26415 string characters out of 5748734
- 1939975 words of memory out of 5000000
- 23634 multiletter control sequences out of 15000+600000
- 593109 words of font info for 97 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 36i,8n,50p,926b,299s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on Ingor_Thesis_reza.pdf (3 pages, 69635 bytes).
-PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1288 strings out of 474878
+ 27035 string characters out of 5762517
+ 1944627 words of memory out of 5000000
+ 23391 multiletter control sequences out of 15000+600000
+ 559980 words of font info for 53 fonts, out of 8000000 for 9000
+ 1351 hyphenation exceptions out of 8191
+ 35i,8n,50p,926b,300s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+Output written on Ingor_Thesis_reza.pdf (3 pages).
