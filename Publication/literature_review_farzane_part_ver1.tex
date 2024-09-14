@@ -94,6 +94,63 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	\chapter{Exploring Self-Supervised Vision Transformers for Deepfake Detection: A Comparative Analysis \cite{nguyen2024exploringselfsupervisedvisiontransformers}}
+	
+	\section{Main Idea}
+	The main idea is to assess the potential of self-supervised Vision Transformers (ViTs) in detecting deepfakes, comparing them against both supervised ViTs and ConvNets. The authors examine two approaches: using frozen ViT backbones as feature extractors and partially fine-tuning the final transformer blocks. They show that SSL pre-trained ViTs, particularly DINO and MAE models, achieve superior performance in deepfake detection compared to conventional ConvNets and supervised ViTs. The use of SSL on ViTs offers improved generalizability, robustness, and explainability of the detection process, making them more effective with smaller training datasets.
+	
+	\section{Contributions}
+	\begin{enumerate}
+		\item 
+		Comparative Analysis: The paper provides a thorough comparison of SSL pre-trained ViTs, supervised ViTs, and ConvNets for deepfake detection. It highlights the advantages of SSL pre-training, especially in improving performance and explainability when working with limited data.
+		
+		\item 
+		Two Approaches for ViTs: The authors propose and evaluate two methods for using ViTs in deepfake detection: (1) using frozen ViT backbones as multi-level feature extractors with simple classifiers, and (2) partially fine-tuning the last transformer blocks for better adaptation to the task.
+		
+		\item 
+		Improved Generalization and Explainability: Through fine-tuning, SSL pre-trained ViTs, particularly DINOv2 and MAE, demonstrate better generalization across various deepfake datasets. The attention mechanism of transformers also enables better explainability by identifying relevant regions of the face, such as the eyes, nose, and mouth, where deepfake artifacts are often found.
+		
+		\item 
+		Experimental Validation: The paper validates its findings through extensive experiments on multiple deepfake datasets, showing that SSL pre-trained ViTs outperform ConvNets and supervised ViTs in both seen and unseen test sets. They also perform well in cross-dataset evaluations, demonstrating robustness to different deepfake generation techniques.
+		
+		\item 
+		Insight into Self-Supervised Learning: The study shows that SSL methods like DINO and MAE produce strong feature representations for deepfake detection, even when pre-trained on datasets unrelated to deepfakes, underscoring the importance of SSL in vision tasks.
+	\end{enumerate}
+	
+	\section{Conclusion}
+	The paper concludes that SSL pre-trained ViTs are highly effective for deepfake detection, outperforming traditional ConvNets and supervised ViTs in generalizability and explainability. By fine-tuning the last few transformer blocks, these models adapt well to deepfake detection tasks and provide more interpretable results, making them a valuable tool for digital forensics and media security.
+	
+	
+	\section{Summrize in one paragraph}
+	The paper "Exploring Self-Supervised Vision Transformers for Deepfake Detection: A Comparative Analysis" investigates the effectiveness of self-supervised Vision Transformers (ViTs) compared to supervised ViTs and ConvNets for detecting deepfakes. It shows that self-supervised pre-trained ViTs, particularly models like DINO and MAE, offer superior generalization and explainability for deepfake detection, especially when fine-tuned on small datasets. The study evaluates two approaches: using frozen ViTs as feature extractors and partially fine-tuning their final layers. Experimental results demonstrate that self-supervised ViTs outperform ConvNets and supervised ViTs, providing better performance and more interpretable results by focusing on relevant facial regions where deepfake artifacts typically occur.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	\newpage
 	\bibliographystyle{IEEEtran}
 	\bibliography{refs}

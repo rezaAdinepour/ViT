@@ -35,4 +35,11 @@ S.~Das, S.~Seferbekov, A.~Datta, M.~S. Islam, and M.~R. Amin, ``Towards solving
   dynamic face augmentation,'' in \emph{Proceedings of the IEEE/CVF
   International Conference on Computer Vision}, 2021, pp. 3776--3785.
 
+\bibitem{nguyen2024exploringselfsupervisedvisiontransformers}
+\BIBentryALTinterwordspacing
+H.~H. Nguyen, J.~Yamagishi, and I.~Echizen, ``Exploring self-supervised vision
+  transformers for deepfake detection: A comparative analysis,'' 2024.
+  [Online]. Available: \url{https://arxiv.org/abs/2405.00355}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

@@ -8,3 +8,8 @@
 \contentsline {section}{\numberline {2.2}Contributions}{5}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Conclusion}{6}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Summrize in one paragraph}{7}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Exploring Self-Supervised Vision Transformers for Deepfake Detection: A Comparative Analysis \cite {nguyen2024exploringselfsupervisedvisiontransformers}}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Main Idea}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Contributions}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Conclusion}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Summrize in one paragraph}{9}{section.3.4}%
