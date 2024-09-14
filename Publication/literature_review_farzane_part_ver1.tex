@@ -178,9 +178,37 @@
 	
 	
 	
+	\chapter{Very Deep Convolutional Networks for Large-Scale Image Recognition \cite{simonyan2015deepconvolutionalnetworkslargescale}}
 	
+	\section{Main Idea}
+	The main idea of the paper is to explore how increasing the depth of ConvNets while using small 3x3 convolution filters can improve image classification performance. By stacking more convolution layers with smaller filters, the model can capture more complex patterns in the data, while maintaining a reasonable number of parameters. This deeper architecture, with layers ranging from 16 to 19, proved to be highly effective for large-scale image recognition tasks, demonstrating that depth plays a critical role in the success of ConvNets.
 	
+	\section{Contributions}
+	\begin{enumerate}
+		\item 
+		Deeper ConvNet Architecture (VGGNet): The paper introduces a family of deeper ConvNet architectures with 16 and 19 layers, which outperform shallower networks used in previous models. These architectures use small 3x3 convolution filters throughout the network to capture fine details in images while keeping the model's complexity manageable. This deep architecture was critical in achieving state-of-the-art performance in image recognition.
+		
+		\item 
+		Use of Small 3x3 Convolutions: Instead of using larger convolution filters (such as 7x7 or 11x11, as in previous models), the authors use multiple 3x3 convolution layers stacked together. This design increases the non-linearity of the model while allowing it to effectively capture both local and global image features, leading to improved accuracy without a dramatic increase in parameters.
+		
+		\item 
+		Residual Insights on Architecture Design: The paper systematically increases network depth and demonstrates that deeper models consistently outperform shallower ones, provided that they are appropriately regularized and trained on large datasets. The results suggest that depth is a crucial factor in ConvNet performance, leading to better feature representation and improved classification accuracy.
+		
+		\item 
+		State-of-the-Art Results on ImageNet: VGGNet achieved state-of-the-art results in the ImageNet 2014 challenge, securing second place in the classification task with a top-5 error rate of 7.3\% and first place in the localization task. The model's ability to generalize well to other datasets, such as PASCAL VOC and Caltech, further validated its efficacy.
+		
+		\item 
+		Public Availability of Models: To promote further research, the authors made their best-performing ConvNet models publicly available. This allowed the broader computer vision community to build on the success of VGGNet, facilitating its adoption and adaptation for various tasks.
+		
+		\item 
+		Feature Transfer to Other Tasks: The paper also demonstrates that the deep features learned by the VGGNet models transfer well to other image classification tasks. Even without fine-tuning, these features perform exceptionally well on datasets like PASCAL VOC and Caltech-101/256, further proving the versatility of deep representations.
+	\end{enumerate}
 	
+	\section{Conclusion}
+	The paper concludes that increasing the depth of convolutional networks with small convolution filters leads to substantial improvements in image classification accuracy. The proposed VGGNet architecture set new benchmarks in large-scale image recognition, outperforming previous state-of-the-art models. The success of these deep networks underscored the importance of depth in deep learning and established VGGNet as a foundational architecture in the field of computer vision.
+	
+	\section{Summrize in one paragraph}
+	The paper "Very Deep Convolutional Networks for Large-Scale Image Recognition" by Karen Simonyan and Andrew Zisserman introduces the VGGNet architecture, which significantly improves image classification performance by increasing the depth of convolutional neural networks (up to 19 layers) using small 3x3 convolution filters throughout the network. This deeper architecture, designed to capture complex patterns while maintaining a manageable number of parameters, outperformed previous models, securing top positions in the ImageNet 2014 competition. The paper demonstrates that depth is crucial for improving image classification accuracy and that the features learned by these deep networks transfer well to other tasks like object detection and localization. The success of VGGNet has made it a widely adopted architecture in computer vision research.
 	
 	
 	\newpage

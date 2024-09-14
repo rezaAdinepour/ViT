@@ -49,4 +49,11 @@ F.~Chollet, ``Xception: Deep learning with depthwise separable convolutions,''
   \url{http://arxiv.org/abs/1610.02357}
 \BIBentrySTDinterwordspacing
 
+\bibitem{simonyan2015deepconvolutionalnetworkslargescale}
+\BIBentryALTinterwordspacing
+K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
+  large-scale image recognition,'' 2015. [Online]. Available:
+  \url{https://arxiv.org/abs/1409.1556}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
