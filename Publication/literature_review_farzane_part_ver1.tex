@@ -17,12 +17,79 @@
 	\maketitle
 	\tableofcontents
 		
+	 
+	 
+	 \chapter{Combining EfficientNet and Vision Transformers for Video Deepfake Detection \cite{DBLP:journals/corr/abs-2107-02612}}
+	 
+	 \section{Main Idea}
+	 The core idea of the paper is to combine the strengths of EfficientNet, a convolutional neural network (CNN), and Vision Transformers (ViTs) to enhance the ability to detect deepfakes in videos, particularly focusing on faces, which are often the main target of manipulation. The authors argue that CNNs, like EfficientNet, are effective for capturing local features (such as spatial patterns in images), while Vision Transformers are better suited for modeling global information and patterns in larger patches of images. By combining these two architectures, the method can effectively detect subtle visual anomalies introduced by deepfake generation techniques.
+	 
+	 \section{Contributions}
+	 \begin{enumerate}
+	 	\item 
+	 	EfficientNet-ViT Hybrid Models: The paper proposes two mixed convolutional-transformer architectures, namely the Efficient ViT and Convolutional Cross ViT, which combine CNNs (EfficientNet) and ViTs. These models process video frames to detect manipulations in faces and classify them as real or fake.
+	 	\begin{enumerate}
+	 		\item 
+	 		Efficient ViT uses EfficientNet B0 as a feature extractor for low-level image features, which are then processed by a Vision Transformer to detect anomalies in face images.
+	 		
+	 		\item 
+	 		Convolutional Cross ViT introduces a multi-scale approach by processing both small and large patches using two branches. The outputs from these branches are combined via cross-attention to better capture both local and global artifacts in deepfake videos.
+	 	\end{enumerate}
+	 	\item
+	 	Simplified Inference Procedure: A voting-based inference mechanism is introduced to handle multiple faces within a video. Instead of averaging predictions for all faces, the model aggregates scores by actor, and a video is classified as fake if any actor's face is detected as manipulated. This procedure improves robustness in videos where only some actors’ faces may have been altered.
+	 	
+	 	\item
+	 	No Distillation or Ensemble Methods: Unlike state-of-the-art deepfake detection models, the proposed methods do not rely on complex techniques like model distillation (transferring knowledge from a larger model to a smaller one) or ensemble methods (using multiple models to make predictions). This simplifies the training and inference process, while still achieving competitive results.
+	 	
+	 	\item 
+	 	Performance: The models were tested on two widely-used datasets, including the DeepFake Detection Challenge (DFDC) and FaceForensics++. The proposed models achieved high accuracy and F1-scores, approaching state-of-the-art performance. Specifically, the Convolutional Cross ViT with EfficientNet B0 achieved an AUC of 0.951 and an F1 score of 88.0\% on the DFDC dataset, close to the best results from more complex models.
+	 	
+	 	\item 
+	 	Public Availability: The authors made the code and model implementations publicly available, allowing others in the research community to reproduce and extend their results.
+	 \end{enumerate}
+	 
+	 \section{Conclusion:}
+	 The paper demonstrates that combining EfficientNet with Vision Transformers results in an efficient and effective deepfake detection method. The mixed architecture allows for improved detection by addressing both local and global image features, and the simplified inference mechanism enhances the robustness of the model in real-world scenarios. Despite being simpler than state-of-the-art models, the proposed approach achieves nearly competitive performance without relying on distillation or ensemble techniques.
+	
+	
+	\section{Summrize in one paragraph}
+	The paper "Combining EfficientNet and Vision Transformers for Video Deepfake Detection" introduces a novel deepfake detection method that combines EfficientNet, a CNN, with Vision Transformers (ViTs) to capture both local and global image features. The authors propose two architectures: Efficient ViT and Convolutional Cross ViT, which process video frames of faces to detect manipulations. A voting-based inference mechanism improves the handling of multiple faces in videos. Without relying on complex techniques like distillation or ensemble methods, the models achieve near state-of-the-art performance on datasets like DFDC, with an AUC of 0.951 and F1 score of 88.0\%. The approach is efficient and publicly available, making it accessible for further research.
 	
 	
 	
 	
+	\chapter{Towards Solving the DeepFake Problem : An Analysis on Improving DeepFake Detection using Dynamic Face Augmentation \cite{das2021towards}}
+	
+	\section{Main Idea}
+	The main idea of the paper is to improve the performance of deepfake detection models by addressing the problem of overfitting caused by oversampled datasets. To achieve this, the authors propose a new data augmentation technique called Face-Cutout, which dynamically removes parts of the face during training based on facial landmarks. This method helps the model focus on relevant regions of the face where manipulation is more likely to occur, improving its ability to generalize and detect deepfakes across different datasets. The paper also introduces guidelines for face clustering and dataset preprocessing to prevent data leakage and ensure that models are evaluated more accurately.
+	
+	\section{Contributions}
+	\begin{enumerate}
+		\item 
+		Identification of Dataset Issues: The authors perform a detailed analysis of popular deepfake datasets, including DFDC, FaceForensics++, and Celeb-DF, highlighting that these datasets are oversampled and suffer from a lack of variation in real faces. They show that this leads to overfitting, where models memorize faces rather than learning to detect deepfake features.
+		
+		\item 
+		Face-Cutout Augmentation Technique: The core contribution of the paper is the introduction of Face-Cutout, a novel data augmentation method that selectively cuts out regions of the face based on facial landmarks. This technique focuses on areas where deepfake manipulations are more likely to occur, helping to improve the model's ability to learn and detect manipulated features rather than irrelevant areas of the face. This method significantly reduces overfitting and improves model generalization.
+		
+		\item 
+		Improved Training Preprocessing: The authors propose a preprocessing guideline that involves face clustering before training deepfake detection models. Instead of randomly splitting datasets into training and test sets, they suggest splitting the data based on unique faces to avoid data leakage. This ensures that the models do not train and test on the same faces, improving the robustness of evaluation results.
+		
+		\item 
+		Quantitative Improvements: The paper presents experimental results showing that models trained with Face-Cutout achieve significant improvements in performance across multiple datasets (DFDC, FaceForensics++, and Celeb-DF). Face-Cutout reduces LogLoss by 15.2\% to 35.3\% compared to baseline models and other occlusion-based augmentation methods like Random-Erasing. The method enhances both EfficientNet-B4 and Xception models, increasing their ability to generalize to unseen data.
+		
+		\item 
+		Interpretability of Models: To validate their claims of reduced overfitting, the authors use Grad-CAM to visualize how the models focus on different regions of the face. The results show that models trained with Face-Cutout successfully focus on manipulated areas of the face, while baseline models often highlight irrelevant regions, indicating overfitting.
+		
+		\item 
+		Generalization Across Datasets: The authors demonstrate that Face-Cutout is effective across different datasets, improving performance on both individual and combined datasets. They also show that it can be integrated into existing deepfake detection pipelines without requiring significant changes to the models.
+	\end{enumerate}
+	
+	\section{Conclusion}
+	The paper contributes to solving the deepfake detection problem by identifying the root causes of overfitting in current models and proposing an effective solution through Face-Cutout augmentation. The method improves the generalizability of deepfake detection models, reduces overfitting, and enhances their ability to detect manipulated faces across different datasets. The authors also provide practical preprocessing guidelines to prevent data leakage and ensure more robust evaluation. The proposed method is shown to be effective across various architectures and datasets, making it a valuable addition to deepfake detection techniques.
 	
 	
+	\section{Summrize in one paragraph}
+	The paper "Towards Solving the DeepFake Problem: An Analysis on Improving DeepFake Detection Using Dynamic Face Augmentation" addresses the issue of overfitting in deepfake detection models caused by oversampled datasets with limited facial variation. To solve this, the authors propose a new data augmentation method called Face-Cutout, which selectively removes regions of the face based on facial landmarks to help models focus on areas likely to be manipulated. They also introduce a preprocessing guideline using face clustering to prevent data leakage during training. Experimental results show that Face-Cutout significantly improves model performance, reducing overfitting and increasing generalizability across multiple datasets. The method can be easily integrated into existing deepfake detection pipelines, leading to more robust and accurate detection.
 	
 	
 	

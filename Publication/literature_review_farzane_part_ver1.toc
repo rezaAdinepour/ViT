@@ -1,0 +1,10 @@
+\contentsline {chapter}{\numberline {1}Combining EfficientNet and Vision Transformers for Video Deepfake Detection \cite {DBLP:journals/corr/abs-2107-02612}}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Main Idea}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Contributions}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Conclusion:}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Summrize in one paragraph}{3}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Towards Solving the DeepFake Problem : An Analysis on Improving DeepFake Detection using Dynamic Face Augmentation \cite {das2021towards}}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Main Idea}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Contributions}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Conclusion}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Summrize in one paragraph}{7}{section.2.4}%

@@ -8,49 +8,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refs.bib
+Warning--I didn't find a database entry for "das202"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 25 entries,
+You've used 2 entries,
             4087 wiz_defined-function locations,
-            963 strings with 13236 characters,
-and the built_in function-call counts, 14943 in all, are:
-= -- 1162
-> -- 507
-< -- 39
-+ -- 248
-- -- 116
-* -- 761
-:= -- 2492
-add.period$ -- 50
-call.type$ -- 25
-change.case$ -- 25
-chr.to.int$ -- 60
-cite$ -- 25
-duplicate$ -- 1127
-empty$ -- 1173
-format.name$ -- 139
-if$ -- 3333
+            835 strings with 7916 characters,
+and the built_in function-call counts, 1719 in all, are:
+= -- 124
+> -- 48
+< -- 12
++ -- 26
+- -- 9
+* -- 99
+:= -- 264
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 30
+cite$ -- 2
+duplicate$ -- 113
+empty$ -- 133
+format.name$ -- 11
+if$ -- 380
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 257
-newline$ -- 144
-num.names$ -- 25
-pop$ -- 688
+int.to.str$ -- 2
+missing$ -- 21
+newline$ -- 31
+num.names$ -- 2
+pop$ -- 53
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1123
+skip$ -- 125
 stack$ -- 0
-substring$ -- 187
-swap$ -- 799
-text.length$ -- 19
+substring$ -- 72
+swap$ -- 90
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 25
+type$ -- 2
 warning$ -- 0
-while$ -- 34
-width$ -- 27
-write$ -- 300
+while$ -- 6
+width$ -- 3
+write$ -- 43
+(There was 1 warning)

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  14 SEP 2024 21:06
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  14 SEP 2024 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -285,37 +285,83 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 ]
-(./literature_review_farzane_part_ver1.toc)
+(./literature_review_farzane_part_ver1.toc
+Overfull \hbox (7.40346pt too wide) in paragraph at lines 1--1
+  [][][]\TU/lmr/bx/n/10 Combining EfficientNet and Vision Transformers for Vide
+o Deep- 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
 \tf@toc=\write4
 \openout4 = `literature_review_farzane_part_ver1.toc'.
 
  [1
 
 ]
-(./literature_review_farzane_part_ver1.bbl
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 33.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 33.
- [2
+Chapter 1.
 
-] [3]) [4]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 22.
+
+
+Overfull \hbox (19.56393pt too wide) in paragraph at lines 30--31
+[]\TU/lmr/m/n/10 EfficientNet-ViT Hybrid Models: The paper proposes two mixed c
+onvolutional-
+ []
+
+[2
+
+] [3] [4]
+Chapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 61.
+
+[5
+
+]
+Overfull \hbox (3.78503pt too wide) in paragraph at lines 78--79
+[]\TU/lmr/m/n/10 Quantitative Improvements: The paper presents experimental res
+ults show-
+ []
+
+
+Overfull \hbox (6.05502pt too wide) in paragraph at lines 84--85
+[]\TU/lmr/m/n/10 Generalization Across Datasets: The authors demonstrate that F
+ace-Cutout
+ []
+
+[6] [7] (./literature_review_farzane_part_ver1.bbl) [8
+
+]
 (./literature_review_farzane_part_ver1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `literature_review_farzane_part_ver1.out' has
- not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package rerunfilecheck Warning: File `literature_review_farzane_part_ver1.out' 
+has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `literature_review_farzane_part_ver1
+.out':
+(rerunfilecheck)             Before: 647189621A3290E54C3A517AEE263557;2241
+(rerunfilecheck)             After:  F6F7F1F595522EF1C44C24B0A178BB12;2383.
  ) 
 Here is how much of TeX's memory you used:
- 8740 strings out of 474878
- 137981 string characters out of 5762517
- 1936627 words of memory out of 5000000
- 30697 multiletter control sequences out of 15000+600000
- 561526 words of font info for 53 fonts, out of 8000000 for 9000
+ 8737 strings out of 474878
+ 137569 string characters out of 5762517
+ 1927627 words of memory out of 5000000
+ 30688 multiletter control sequences out of 15000+600000
+ 561566 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,6n,79p,277b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,927b,489s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review_farzane_part_ver1.pdf (5 pages).
+Output written on literature_review_farzane_part_ver1.pdf (9 pages).
