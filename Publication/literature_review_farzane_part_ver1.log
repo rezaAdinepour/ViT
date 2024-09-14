@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  14 SEP 2024 23:17
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.4)  14 SEP 2024 23:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,7 +343,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [8
 
-] [9] (./literature_review_farzane_part_ver1.bbl) [10
+] [9]
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 146.
+
+[10
+
+] [11] [12] (./literature_review_farzane_part_ver1.bbl) [13
 
 ]
 (./literature_review_farzane_part_ver1.aux)
@@ -353,15 +361,15 @@ L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `literature_review_farzane_part_ver1.out' has
  not changed.
-(rerunfilecheck)             Checksum: F8C08084E6F0391C09C61E22394B68ED;3694.
+(rerunfilecheck)             Checksum: 34A796B94BAD87270EA4995DEAC723A9;4726.
  ) 
 Here is how much of TeX's memory you used:
- 8739 strings out of 474878
- 137633 string characters out of 5762517
+ 8741 strings out of 474878
+ 137675 string characters out of 5762517
  1927627 words of memory out of 5000000
- 30690 multiletter control sequences out of 15000+600000
+ 30692 multiletter control sequences out of 15000+600000
  561566 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,6n,79p,927b,489s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on literature_review_farzane_part_ver1.pdf (11 pages).
+Output written on literature_review_farzane_part_ver1.pdf (14 pages).

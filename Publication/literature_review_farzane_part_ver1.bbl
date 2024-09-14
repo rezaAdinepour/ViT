@@ -42,4 +42,11 @@ H.~H. Nguyen, J.~Yamagishi, and I.~Echizen, ``Exploring self-supervised vision
   [Online]. Available: \url{https://arxiv.org/abs/2405.00355}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DBLP:journals/corr/Chollet16a}
+\BIBentryALTinterwordspacing
+F.~Chollet, ``Xception: Deep learning with depthwise separable convolutions,''
+  \emph{CoRR}, vol. abs/1610.02357, 2016. [Online]. Available:
+  \url{http://arxiv.org/abs/1610.02357}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
