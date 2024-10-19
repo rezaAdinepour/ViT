@@ -1,0 +1,40 @@
+---
+MainSourceFile:  'C:/OneDrive/Desktop/ViT/Weight_quantization/solution1/.autopilot/db/weight_quant.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_12_1:  '
+    FileOffset:      12
+    FilePath:        'C:\OneDrive\Desktop\ViT\Weight_quantization\src\weight_quant.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp'
+        Offset:          111070
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_12_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_14_2:  '
+    FileOffset:      14
+    FilePath:        'C:\OneDrive\Desktop\ViT\Weight_quantization\src\weight_quant.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp'
+        Offset:          111112
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_14_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_1:  '
+    FileOffset:      15
+    FilePath:        'C:\OneDrive\Desktop\ViT\Weight_quantization\src\weight_quant.cpp'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp'
+        Offset:          112010
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_18_2:  '
+    FileOffset:      18
+    FilePath:        'C:\OneDrive\Desktop\ViT\Weight_quantization\src\weight_quant.cpp'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp'
+        Offset:          112064
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_18_2: '
+...

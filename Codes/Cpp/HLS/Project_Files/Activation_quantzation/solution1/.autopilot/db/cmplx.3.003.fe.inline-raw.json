@@ -1,0 +1,78 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 2 2 1 3 4 1 3 4 1 3 4 2 2 2 1 3 4 1 3 4 1 3 4 2 2 2 1 3 4 1 3 4 1 3 4",
+    "file": "activation_quant.cpp",
+    "fileloc": 10,
+    "instructions": 133,
+    "loads": {
+      "T": 18
+    },
+    "name": "activation_quant",
+    "stores": {
+      "T": 9
+    },
+    "total_instructions": 4489
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 159,
+    "instructions": 147,
+    "loads": {
+      "G": 2,
+      "L": 19
+    },
+    "name": "generic_round<float>",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 147
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fabsfloat.cpp",
+    "fileloc": 7,
+    "instructions": 54,
+    "loads": {
+      "L": 5
+    },
+    "name": "fabsf",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 54
+  },
+  "3": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 143,
+    "loads": {
+      "L": 17
+    },
+    "name": "generic_fmax<float>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 143
+  },
+  "4": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "hls_fmin.h",
+    "fileloc": 19,
+    "instructions": 140,
+    "loads": {
+      "L": 16
+    },
+    "name": "generic_fmin<float>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 140
+  }
+}

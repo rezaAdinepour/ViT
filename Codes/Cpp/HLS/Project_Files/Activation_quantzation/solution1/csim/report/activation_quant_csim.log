@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../src/activation_quant.cpp in debug mode
+   Generating csim.exe
+
+Input matrix: 
+0.8823 0.9150 0.3829 
+0.9593 0.3904 0.6009 
+0.2566 0.7936 0.9408 
+
+activation quant matrix: 
+0.8790 0.9150 0.3819 
+0.9593 0.3928 0.6043 
+0.2593 0.7926 0.9408 
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

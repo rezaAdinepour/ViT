@@ -1,0 +1,141 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "8 5 2",
+    "file": "bit_linear.cpp",
+    "fileloc": 4,
+    "instructions": 8,
+    "name": "bit_linear",
+    "total_instructions": 5811
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fabsfloat.cpp",
+    "fileloc": 7,
+    "instructions": 54,
+    "loads": {
+      "L": 5
+    },
+    "name": "fabsf",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 54
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "bit_linear.h",
+    "fileloc": 92,
+    "instructions": 73,
+    "loads": {
+      "L": 16
+    },
+    "name": "matrix_multiply",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 73
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "bit_linear.h",
+    "fileloc": 29,
+    "instructions": 34,
+    "loads": {
+      "L": 8
+    },
+    "name": "abs_mean",
+    "total_instructions": 466
+  },
+  "4": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 143,
+    "loads": {
+      "L": 17
+    },
+    "name": "generic_fmax<float>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 143
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "3 6 6 6 6 6 6 6 6",
+    "file": "bit_linear.h",
+    "fileloc": 72,
+    "instructions": 95,
+    "loads": {
+      "L": 8
+    },
+    "name": "weight_quant",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 1737
+  },
+  "6": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 159,
+    "instructions": 147,
+    "loads": {
+      "G": 2,
+      "L": 19
+    },
+    "name": "generic_round<float>",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 147
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1",
+    "file": "bit_linear.h",
+    "fileloc": 13,
+    "instructions": 20,
+    "loads": {
+      "L": 4
+    },
+    "name": "find_max_abs",
+    "total_instructions": 236
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "7 6 4 9 6 4 9 6 4 9 6 4 9 7 6 4 9 6 4 9 6 4 9 6 4 9",
+    "file": "bit_linear.h",
+    "fileloc": 50,
+    "instructions": 81,
+    "loads": {
+      "L": 8
+    },
+    "name": "activation_quant",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 3993
+  },
+  "9": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "hls_fmin.h",
+    "fileloc": 19,
+    "instructions": 140,
+    "loads": {
+      "L": 16
+    },
+    "name": "generic_fmin<float>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 140
+  }
+}

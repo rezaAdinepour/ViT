@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="activation_quant.cpp" path="C:\OneDrive\Desktop\ViT\Activation_quantzation\src\activation_quant.cpp"/>
+    <originFiles name="activation_quant.h" path="C:\OneDrive\Desktop\ViT\Activation_quantzation\src\activation_quant.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_activation_quant.cpp" path="C:\OneDrive\Desktop\ViT\Activation_quantzation\src\tb_activation_quant.cpp"/>
+    <originFiles name="tb_activation_quant.h" path="C:\OneDrive\Desktop\ViT\Activation_quantzation\src\tb_activation_quant.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

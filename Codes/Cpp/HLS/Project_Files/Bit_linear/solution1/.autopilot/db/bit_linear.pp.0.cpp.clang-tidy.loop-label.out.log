@@ -1,0 +1,75 @@
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:4764:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:4764:7: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:5738:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:5738:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:5752:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:5752:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:5766:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:5766:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:7395:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:7395:7: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9175:2: warning: Added loop label VITIS_LOOP_17_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < length; ++i)
+ ^~~
+ VITIS_LOOP_17_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9175:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9191:2: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 4; i++)
+ ^~~
+ VITIS_LOOP_33_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9191:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9194:2: warning: Added loop label VITIS_LOOP_36_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < 2; j++)
+ ^~~
+ VITIS_LOOP_36_2: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9194:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9211:2: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 2; ++i)
+ ^~~
+ VITIS_LOOP_53_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9211:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9218:9: warning: Added loop label VITIS_LOOP_60_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 4; ++j)
+        ^~~
+        VITIS_LOOP_60_2: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9218:9: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9236:2: warning: Added loop label VITIS_LOOP_78_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 4; i++)
+ ^~~
+ VITIS_LOOP_78_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9236:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9239:2: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < 2; j++)
+ ^~~
+ VITIS_LOOP_81_2: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9239:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9253:2: warning: Added loop label VITIS_LOOP_95_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 2; i++)
+ ^~~
+ VITIS_LOOP_95_1: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9253:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9256:2: warning: Added loop label VITIS_LOOP_98_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < 2; j++)
+ ^~~
+ VITIS_LOOP_98_2: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9256:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9261:13: warning: Added loop label VITIS_LOOP_103_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < 4; k++)
+            ^~~
+            VITIS_LOOP_103_3: 
+C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp:9261:13: note: FIX-IT applied suggested code changes

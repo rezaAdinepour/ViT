@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'weight_quant'" level="0">
+<item name = "Date">Sun Jul 28 14:59:32 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">Weight_quantization</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.297 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">64, 64, 0.640 us, 0.640 us, 2, 2, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_generic_round_float_s_fu_288">generic_round_float_s, 1, 1, 10.000 ns, 10.000 ns, 1, 1, yes</column>
+<column name="grp_generic_round_float_s_fu_297">generic_round_float_s, 1, 1, 10.000 ns, 10.000 ns, 1, 1, yes</column>
+<column name="grp_generic_round_float_s_fu_306">generic_round_float_s, 1, 1, 10.000 ns, 10.000 ns, 1, 1, yes</column>
+<column name="grp_generic_round_float_s_fu_315">generic_round_float_s, 1, 1, 10.000 ns, 10.000 ns, 1, 1, yes</column>
+<column name="grp_generic_round_float_s_fu_324">generic_round_float_s, 1, 1, 10.000 ns, 10.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

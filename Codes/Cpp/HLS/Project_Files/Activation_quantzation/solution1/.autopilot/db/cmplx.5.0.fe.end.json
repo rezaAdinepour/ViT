@@ -1,0 +1,38 @@
+{
+    "1": {
+        "name": "generic_fmax<float>",
+        "file": "hls_fmax.h",
+        "fileloc": "19",
+        "instructions": "14",
+        "total_instructions": "14",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "activation_quant",
+        "file": "activation_quant.cpp",
+        "fileloc": "10",
+        "instructions": "357",
+        "total_instructions": "717",
+        "calls": "2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1",
+        "basicblocks": "1",
+        "loads": {
+            "T": "9"
+        },
+        "stores": {
+            "T": "9"
+        }
+    },
+    "2": {
+        "name": "generic_round<float>",
+        "file": "hls_round.h",
+        "fileloc": "159",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "2"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+---
+MainSourceFile:  'C:/OneDrive/Desktop/ViT/Activation_quantzation/solution1/.autopilot/db/activation_quant.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
+    FilePath:        'C:\OneDrive\Desktop\ViT\Activation_quantzation\src\activation_quant.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp'
+        Offset:          111158
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_1:  '
+    FileOffset:      16
+    FilePath:        'C:\OneDrive\Desktop\ViT\Activation_quantzation\src\activation_quant.cpp'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp'
+        Offset:          112095
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_23_2:  '
+    FileOffset:      23
+    FilePath:        'C:\OneDrive\Desktop\ViT\Activation_quantzation\src\activation_quant.cpp'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp'
+        Offset:          112255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_23_2: '
+...

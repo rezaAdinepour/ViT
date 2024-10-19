@@ -1,0 +1,107 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 12,965       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |  8,556       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  5,789       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  5,811       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  1,403       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |  1,447       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  1,395       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  1,395       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  1,395       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  1,395       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |  1,387       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  1,297       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  1,297       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  1,297       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |  1,333       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  1,337       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++----------------------------------+-------------------+-----------------+----------------+----------------+-----------------+-----------------+
+| Function                         | Location          | Compile/Link    | Unroll/Inline  | Array/Struct   | Performance     | HW Transforms   |
++----------------------------------+-------------------+-----------------+----------------+----------------+-----------------+-----------------+
+| + bit_linear                     | bit_linear.cpp:4  | 12,965          | 1,403          | 1,395          | 1,297           | 1,337           |
+|  + activation_quant              | bit_linear.h:50   | 9,306           |  809           |  803           |                 |                 |
+|   + find_max_abs                 | bit_linear.h:13   |   957           |  104 (2 calls) |   98 (2 calls) |                 |                 |
+|    + fabsf                       | fabsfloat.cpp:7   |   938           |   64 (8 calls) |   64 (8 calls) |                 |                 |
+|     + generic_fabs<float>        | hls_fabs.h:12     |   936           |                |                |                 |                 |
+|      + generic_copysign<float>   | hls_copysign.h:10 |   934           |                |                |                 |                 |
+|         fp_struct                | x_hls_utils.h:283 |   622 (2 calls) |                |                |                 |                 |
+|       + to_ieee                  | x_hls_utils.h:346 |   294           |                |                |                 |                 |
+|        + to_float                | x_hls_utils.h:322 |   292           |                |                |                 |                 |
+|           data                   | x_hls_utils.h:309 |   274           |                |                |                 |                 |
+|     clamp                        | bit_linear.h:45   |     6           |                |                |                 |                 |
+|   + roundf                       | roundfloat.cpp:6  | 2,563           |                |                |                 |                 |
+|    + generic_round<float>        | hls_round.h:159   | 2,561           |                |                |                 |                 |
+|       init_mask_table<float>     | hls_round.h:20    |    18           |                |                |                 |                 |
+|       init_one_half_table<float> | hls_round.h:32    |    18           |                |                |                 |                 |
+|       fp_struct                  | x_hls_utils.h:283 |   311           |                |                |                 |                 |
+|     + generic_copysign<float>    | hls_copysign.h:10 |   934           |                |                |                 |                 |
+|        fp_struct                 | x_hls_utils.h:283 |   622 (2 calls) |                |                |                 |                 |
+|      + to_ieee                   | x_hls_utils.h:346 |   294           |                |                |                 |                 |
+|       + to_float                 | x_hls_utils.h:322 |   292           |                |                |                 |                 |
+|          data                    | x_hls_utils.h:309 |   274           |                |                |                 |                 |
+|       data                       | x_hls_utils.h:309 |   274           |                |                |                 |                 |
+|       fp_struct                  | x_hls_utils.h:298 |   281           |                |                |                 |                 |
+|     + to_ieee                    | x_hls_utils.h:346 |   294           |                |                |                 |                 |
+|      + to_float                  | x_hls_utils.h:322 |   292           |                |                |                 |                 |
+|         data                     | x_hls_utils.h:309 |   274           |                |                |                 |                 |
+|   + fmaxf                        | fmaxfloat.cpp:6   | 2,870           |                |                |                 |                 |
+|    + generic_fmax<float>         | hls_fmax.h:19     | 2,868           |                |                |                 |                 |
+|       fp_struct                  | x_hls_utils.h:283 |   622 (2 calls) |                |                |                 |                 |
+|     + generic_isnan<float>       | hls_isnan.h:16    | 1,146 (3 calls) |                |                |                 |                 |
+|        fp_struct                 | x_hls_utils.h:283 |   933 (3 calls) |                |                |                 |                 |
+|     + to_ieee                    | x_hls_utils.h:346 |   294           |                |                |                 |                 |
+|      + to_float                  | x_hls_utils.h:322 |   292           |                |                |                 |                 |
+|         data                     | x_hls_utils.h:309 |   274           |                |                |                 |                 |
+|     + to_int                     | x_hls_utils.h:319 |   566 (2 calls) |                |                |                 |                 |
+|        data                      | x_hls_utils.h:309 |   548 (2 calls) |                |                |                 |                 |
+|   + fminf                        | fminfloat.cpp:6   | 2,870           |                |                |                 |                 |
+|    + generic_fmin<float>         | hls_fmin.h:19     | 2,868           |                |                |                 |                 |
+|       fp_struct                  | x_hls_utils.h:283 |   622 (2 calls) |                |                |                 |                 |
+|     + generic_isnan<float>       | hls_isnan.h:16    | 1,146 (3 calls) |                |                |                 |                 |
+|        fp_struct                 | x_hls_utils.h:283 |   933 (3 calls) |                |                |                 |                 |
+|     + to_ieee                    | x_hls_utils.h:346 |   294           |                |                |                 |                 |
+|      + to_float                  | x_hls_utils.h:322 |   292           |                |                |                 |                 |
+|         data                     | x_hls_utils.h:309 |   274           |                |                |                 |                 |
+|     + to_int                     | x_hls_utils.h:319 |   566 (2 calls) |                |                |                 |                 |
+|        data                      | x_hls_utils.h:309 |   548 (2 calls) |                |                |                 |                 |
+|     generic_round<float>         | hls_round.h:159   |                 |  320 (8 calls) |  320 (8 calls) |                 |                 |
+|     generic_fmax<float>          | hls_fmax.h:19     |                 |  160 (8 calls) |  160 (8 calls) |                 |                 |
+|     generic_fmin<float>          | hls_fmin.h:19     |                 |  144 (8 calls) |  144 (8 calls) |                 |                 |
+|  + weight_quant                  | bit_linear.h:72   | 3,587           |  513           |  513           |                 |                 |
+|     abs_mean                     | bit_linear.h:29   |   969           |   98           |   98           |                 |                 |
+|     clamp                        | bit_linear.h:45   |     6           |                |                |                 |                 |
+|     generic_round<float>         | hls_round.h:159   |                 |  320 (8 calls) |  320 (8 calls) |                 |                 |
+|    matrix_multiply               | bit_linear.h:92   |    51           |   73           |   73           |                 |                 |
+|  + find_max_abs                  | bit_linear.h:13   |                 |                |                |   90 (2 calls)  |   92 (2 calls)  |
+|     fabsf                        | fabsfloat.cpp:7   |                 |                |                |   64 (8 calls)  |   64 (8 calls)  |
+|    generic_round<float>          | hls_round.h:159   |                 |                |                |  640 (16 calls) |  640 (16 calls) |
+|    generic_fmax<float>           | hls_fmax.h:19     |                 |                |                |  160 (8 calls)  |  160 (8 calls)  |
+|    generic_fmin<float>           | hls_fmin.h:19     |                 |                |                |  144 (8 calls)  |  144 (8 calls)  |
++----------------------------------+-------------------+-----------------+----------------+----------------+-----------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

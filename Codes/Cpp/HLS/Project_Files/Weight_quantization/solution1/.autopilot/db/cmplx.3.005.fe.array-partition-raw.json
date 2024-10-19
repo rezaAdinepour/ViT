@@ -1,0 +1,29 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1 1 1 1 1 1",
+    "file": "weight_quant.cpp",
+    "fileloc": 6,
+    "instructions": 160,
+    "loads": {
+      "T": 9
+    },
+    "name": "weight_quant",
+    "stores": {
+      "T": 9
+    },
+    "total_instructions": 592
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 159,
+    "instructions": 40,
+    "loads": {
+      "G": 2
+    },
+    "name": "generic_round<float>",
+    "total_instructions": 40
+  }
+}

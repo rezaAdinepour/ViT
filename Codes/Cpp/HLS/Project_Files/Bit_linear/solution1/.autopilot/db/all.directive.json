@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "bit_linear",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "bit_linear"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/OneDrive/Desktop/ViT/Bit_linear/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "bit_linear",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "bit_linear"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/OneDrive/Desktop/ViT/Bit_linear/solution1/csynth.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

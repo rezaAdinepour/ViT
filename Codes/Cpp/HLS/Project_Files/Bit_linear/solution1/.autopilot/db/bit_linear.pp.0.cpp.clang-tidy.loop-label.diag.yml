@@ -1,0 +1,139 @@
+---
+MainSourceFile:  'C:/OneDrive/Desktop/ViT/Bit_linear/solution1/.autopilot/db/bit_linear.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          156596
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          383920
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          384384
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          384849
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          668131
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_17_1:  '
+    FileOffset:      17
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1035886
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_17_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1036154
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_2:  '
+    FileOffset:      36
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1036208
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_53_1:  '
+    FileOffset:      53
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1036506
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_53_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_2:  '
+    FileOffset:      60
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1036666
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_1:  '
+    FileOffset:      78
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1037124
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_2:  '
+    FileOffset:      81
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1037178
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_1:  '
+    FileOffset:      95
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1037509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_98_2:  '
+    FileOffset:      98
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1037563
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_98_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_103_3:  '
+    FileOffset:      103
+    FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h'
+    Replacements:    
+      - FilePath:        'C:\OneDrive\Desktop\ViT\Bit_linear\solution1\.autopilot\db\bit_linear.pp.0.cpp'
+        Offset:          1037652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_103_3: '
+...

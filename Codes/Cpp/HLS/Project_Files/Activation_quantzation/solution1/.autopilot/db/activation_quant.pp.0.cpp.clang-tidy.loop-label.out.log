@@ -1,0 +1,15 @@
+C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp:3613:5: warning: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < length; ++i)
+    ^~~
+    VITIS_LOOP_13_1: 
+C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp:3613:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp:3649:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 3; ++i)
+ ^~~
+ VITIS_LOOP_16_1: 
+C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp:3649:2: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp:3656:9: warning: Added loop label VITIS_LOOP_23_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 3; ++j)
+        ^~~
+        VITIS_LOOP_23_2: 
+C:\OneDrive\Desktop\ViT\Activation_quantzation\solution1\.autopilot\db\activation_quant.pp.0.cpp:3656:9: note: FIX-IT applied suggested code changes

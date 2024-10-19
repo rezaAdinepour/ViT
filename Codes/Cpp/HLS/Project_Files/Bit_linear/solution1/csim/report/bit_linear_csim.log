@@ -1,0 +1,20 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../src/bit_linear.cpp in debug mode
+   Generating csim.exe
+Input Tensor:
+1.0000 -1.0000 2.0000 -2.0000 
+0.5000 -0.5000 1.0000 -1.0000 
+
+Initial weight:
+0.2000 0.8000 
+0.5000 -0.1000 
+-0.3000 0.4000 
+0.1000 -0.5000 
+
+Output Tensor:
+-0.7250 1.8154 
+-0.3625 0.9077 
+
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

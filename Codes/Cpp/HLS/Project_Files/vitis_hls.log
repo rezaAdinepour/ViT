@@ -1,0 +1,77 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'User1' on host 'desktop-a2lg1n2' (Windows NT_amd64 version 6.2) on Mon Jul 29 22:46:09 +0330 2024
+INFO: [HLS 200-10] In directory 'C:/OneDrive/Desktop/ViT'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'C:/OneDrive/Desktop/ViT/Bit_linear/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source C:/OneDrive/Desktop/ViT/Bit_linear/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project Bit_linear 
+INFO: [HLS 200-10] Opening project 'C:/OneDrive/Desktop/ViT/Bit_linear'.
+INFO: [HLS 200-1510] Running: set_top bit_linear 
+INFO: [HLS 200-1510] Running: add_files Bit_linear/src/bit_linear.cpp 
+INFO: [HLS 200-10] Adding design file 'Bit_linear/src/bit_linear.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files Bit_linear/src/bit_linear.h 
+INFO: [HLS 200-10] Adding design file 'Bit_linear/src/bit_linear.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb Bit_linear/src/tb_bit_linear.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'Bit_linear/src/tb_bit_linear.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb Bit_linear/src/tb_bit_linear.h -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'Bit_linear/src/tb_bit_linear.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/OneDrive/Desktop/ViT/Bit_linear/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=sysgen
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xcvu11p-flga2577-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format sysgen -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./Bit_linear/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name bit_linear bit_linear 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../src/bit_linear.cpp in debug mode
+   Generating csim.exe
+In file included from C:/Xilinx/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h:150:0,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/hls_fpo.h:140,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h:19,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/hls_half.h:26,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_private.h:52,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h:666,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h:10,
+                 from ../../../src/bit_linear.h:2,
+                 from ../../../src/bit_linear.cpp:1:
+C:/Xilinx/Vitis_HLS/2023.2/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx/Vitis_HLS/2023.2/include/hls_fpo.h:140:0,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/etc/hls_half_fpo.h:19,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/hls_half.h:26,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_private.h:52,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/etc/ap_common.h:666,
+                 from C:/Xilinx/Vitis_HLS/2023.2/include/ap_int.h:10,
+                 from ../../../src/bit_linear.h:2,
+                 from ../../../src/bit_linear.cpp:1:
+C:/Xilinx/Vitis_HLS/2023.2/include/floating_point_v7_1_bitacc_cmodel.h:142:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+Input Tensor:
+1.0000 -1.0000 2.0000 -2.0000 
+0.5000 -0.5000 1.0000 -1.0000 
+
+Initial weight:
+0.2000 0.8000 
+0.5000 -0.1000 
+-0.3000 0.4000 
+0.1000 -0.5000 
+
+Output Tensor:
+-0.7250 1.8154 
+-0.3625 0.9077 
+
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.108 seconds; current allocated memory: 0.367 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.753 seconds; peak allocated memory: 212.508 MB.

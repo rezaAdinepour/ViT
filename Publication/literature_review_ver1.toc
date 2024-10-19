@@ -1,0 +1,272 @@
+\contentsline {chapter}{\numberline {1}BinaryViT \cite {le2023binaryvit}}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Proposed Model}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Global Average Pooling Layer}{9}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Multiple Pooling Branches}{10}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Affine Transformation Before Residual Connections}{10}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Pyramid Structure}{10}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Binary Fully-Connected Layers with Enhanced Attention}{11}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Distillation from Full-Precision Models}{11}{subsection.1.2.6}%
+\contentsline {section}{\numberline {1.3}Impact of the Changes}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Results and Improvements}{12}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Performance Improvement on ImageNet-1k}{12}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Efficiency in Terms of Operations and Parameters}{12}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Comparisons with State-of-the-Art (SOTA) Binary Models}{13}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Impact of Architectural Enhancements}{13}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Reduction in Computational Complexity}{13}{subsection.1.4.5}%
+\contentsline {subsubsection}{Comparison Between Full-Precision and Binary Versions}{14}{section*.2}%
+\contentsline {section}{\numberline {1.5}Overall Improvements}{14}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Vision Transformer for Small-Size Datasets \cite {DBLP:journals/corr/abs-2112-13492}}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Shifted Patch Tokenization (SPT)}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Previous Approach:}{15}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Proposed Change:}{16}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Locality Self-Attention (LSA)}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Previous Approach:}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Proposed Change:}{16}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Comparison to Other Data-Efficient ViTs}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Efficiency vs. Performance Trade-offs}{18}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Previous Models:}{18}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Proposed Model:}{18}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Performance Gains}{18}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Overall Impact of the Proposed Changes}{18}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Results and Improvements}{19}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Performance Improvements on Small Datasets}{19}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Improvements in ImageNet Performance}{19}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Efficiency and Computational Overhead}{19}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}Ablation Study Results}{20}{subsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.7.5}Qualitative Improvements}{20}{subsection.2.7.5}%
+\contentsline {subsection}{\numberline {2.7.6}Comparison with State-of-the-Art (SOTA) Models}{20}{subsection.2.7.6}%
+\contentsline {section}{\numberline {2.8}Key Takeaways:}{21}{section.2.8}%
+\contentsline {chapter}{\numberline {3}How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers \cite {DBLP:journals/corr/abs-2106-10270}}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Augmentation and Regularization ("AugReg")}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Previous Works:}{22}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Proposed Changes}{23}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Trade-offs Between Data, Augmentation, and Compute Budget}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Previous Works:}{23}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Proposed Changes:}{23}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Regularization Techniques and Their Impact}{24}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Previous Works:}{24}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Proposed Changes:}{24}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Impact of Model Size}{24}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Previous Works:}{24}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Proposed Changes:}{24}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Pre-training and Transfer Learning}{25}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Previous Works:}{25}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Proposed Changes:}{25}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Practical Recommendations}{25}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Overall Impact of Changes}{25}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Training data-efficient image transformers \& distillation through attention \cite {DBLP:journals/corr/abs-2012-12877}}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Data-Efficient Image Transformers (DeiT)}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Previous Works:}{27}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Proposed Changes:}{28}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Distillation Through Attention}{28}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Previous Works:}{28}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Proposed Changes:}{29}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Smaller and More Efficient Models (DeiT-S and DeiT-Ti)}{29}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Previous Works:}{29}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Proposed Changes:}{29}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Performance and Efficiency Gains}{30}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Previous Works:}{30}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Proposed Changes:}{30}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Transfer Learning and Generalization}{30}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Previous Works:}{31}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Proposed Changes:}{31}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Results and Improvements}{31}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Competitive Performance with Smaller Datasets}{31}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Distillation Through Attention Enhances Model Performance}{32}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Improved Throughput and Computational Efficiency}{32}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.4}Smaller Models with Comparable Accuracy}{32}{subsection.4.6.4}%
+\contentsline {subsection}{\numberline {4.6.5}Transfer Learning and Generalization}{33}{subsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.6.6}Training Time Reduction}{33}{subsection.4.6.6}%
+\contentsline {subsection}{\numberline {4.6.7}Distillation from CNNs Is More Effective than from Transformers}{33}{subsection.4.6.7}%
+\contentsline {section}{\numberline {4.7}Overall Improvements}{34}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Going deeper with Image Transformers \cite {DBLP:journals/corr/abs-2103-17239}}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Key Ideas:}{35}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Deeper Vision Transformers (ViTs):}{35}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Class-Attention Mechanism:}{35}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Distillation with Class-Attention:}{35}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Efficient Training and Generalization:}{36}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Performance on Benchmarks:}{36}{subsection.5.1.5}%
+\contentsline {section}{\numberline {5.2}Results and Improvements}{36}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Performance Improvement with Depth}{36}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Introduction of Class-Attention Layers}{36}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Hard-Label Distillation for Faster Convergence}{37}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Training Efficiency and Generalization}{37}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Benchmark Results and Competitive Performance}{37}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Improved Attention Mechanism for Class Prediction}{38}{subsection.5.2.6}%
+\contentsline {chapter}{\numberline {6}Attention is All you need \cite {DBLP:journals/corr/VaswaniSPUJGKP17}}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Transformer Architecture:}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Self-Attention and Multi-Head Attention:}{39}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Positional Encoding:}{40}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Advantages of Transformers:}{40}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Results:}{40}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Summary}{40}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Deepfake Video Detection Using Convolutional Vision Transformer \cite {DBLP:journals/corr/abs-2102-11126}}{41}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Key Components of the Model}{41}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Feature Learning through CNNs:}{41}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Global Feature Understanding through ViTs:}{41}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Comprehensive Data Preprocessing:}{42}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Testing and Results:}{42}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}Results and Improvements}{42}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}High Accuracy in Deepfake Detection}{42}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}AUC and Loss Metrics}{42}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Combination of CNN and ViT for Local and Global Feature Learning}{42}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Generalized Model for Different Deepfake Scenarios}{43}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Comparison with Other Models}{43}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Data Preprocessing and Face Extraction}{43}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.2.7}Future Improvements and Expansion}{44}{subsection.7.2.7}%
+\contentsline {section}{\numberline {7.3}Summary of Improvements:}{44}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Visual Transformer Pruning \cite {DBLP:journals/corr/abs-2104-08500}}{45}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Key Components of the Approach}{45}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Results and Improvements}{46}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Significant Reduction in Parameters and Computation Costs}{46}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Maintaining High Accuracy with Minimal Loss}{46}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Effectiveness on Large Datasets}{47}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Flexibility of Pruning Rates}{47}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Simplicity and Efficiency of the Pruning Process}{47}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6}Promising Future Improvements}{48}{subsection.8.2.6}%
+\contentsline {section}{\numberline {8.3}Overall Improvements:}{48}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Scalable MatMul-free Language Modeling \cite {zhu2024scalablematmulfreelanguagemodeling}}{49}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Key Contributions}{49}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Bitlinear Layers:}{49}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Ternary Weights:}{49}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Scalability and Efficiency:}{50}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Experimental Results:}{50}{subsection.9.1.4}%
+\contentsline {section}{\numberline {9.2}Results and Improvements}{50}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Reduction in Computational Complexity}{50}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Memory Efficiency}{50}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Comparable Performance with Traditional Models}{50}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Faster Inference Times}{51}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Scalability Across Model Sizes}{51}{subsection.9.2.5}%
+\contentsline {subsection}{\numberline {9.2.6}Potential for Further Optimization Through Quantization}{51}{subsection.9.2.6}%
+\contentsline {subsection}{\numberline {9.2.7}Wider Applicability Beyond Language Modeling}{52}{subsection.9.2.7}%
+\contentsline {section}{\numberline {9.3}Overall Improvements:}{52}{section.9.3}%
+\contentsline {chapter}{\numberline {10}SpikeGPT: Generative Pre-trained Language Model with Spiking Neural Networks \cite {zhu2024spikegptgenerativepretrainedlanguage}}{53}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Deepfake Detection Scheme Based on Vision Transformer and Distillation \cite {DBLP:journals/corr/abs-2104-01353}}{54}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Main Components}{54}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Vision Transformer and EfficientNet Combination:}{54}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Distillation Token:}{55}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.3}Performance Comparison:}{55}{subsection.11.1.3}%
+\contentsline {section}{\numberline {11.2}Results and Improvements}{55}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Higher Accuracy and Better Performance Metrics}{55}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Improved Deepfake Detection Robustness}{55}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Reduction in False Negatives (Improved Detection of Fake Videos)}{56}{subsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.2.4}Distillation Token for Better Generalization}{56}{subsection.11.2.4}%
+\contentsline {subsection}{\numberline {11.2.5}Clearer Prediction of Fake Videos}{56}{subsection.11.2.5}%
+\contentsline {subsection}{\numberline {11.2.6}Better Loss Reduction in Training}{57}{subsection.11.2.6}%
+\contentsline {section}{\numberline {11.3}Overall Improvements:}{57}{section.11.3}%
+\contentsline {chapter}{\numberline {12}DeepFakes: a New Threat to Face Recognition? Assessment and Detection \cite {DBLP:journals/corr/abs-1812-08685}}{58}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Deepfake Video Generation:}{58}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Vulnerability of Face Recognition Systems:}{58}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Deepfake Detection Methods:}{59}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Challenges for Detection Systems:}{59}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Results and Improvements}{59}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Vulnerability of Face Recognition Systems}{59}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}Creation of a Public Deepfake Database}{59}{subsection.12.5.2}%
+\contentsline {subsection}{\numberline {12.5.3}Deepfake Detection Methods}{60}{subsection.12.5.3}%
+\contentsline {subsection}{\numberline {12.5.4}Performance on Low-Quality vs. High-Quality Deepfakes}{60}{subsection.12.5.4}%
+\contentsline {subsection}{\numberline {12.5.5}Improvements for Future Detection Systems}{60}{subsection.12.5.5}%
+\contentsline {section}{\numberline {12.6}Overall Results and Improvements:}{61}{section.12.6}%
+\contentsline {chapter}{\numberline {13}Networks of spiking neurons: The third generation of neural network models \cite {maass1997networks}}{62}{chapter.13}%
+\contentsline {chapter}{\numberline {14}DeepFakes Evolution: Analysis of Facial Regions and Fake Detection Performance \cite {DBLP:journals/corr/abs-2004-07532}}{63}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Key Idea}{63}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Key Contributions}{63}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Results and Improvements}{64}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Improved Detection Using Facial Region Analysis}{64}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Comparison of First and Second Generation Deepfakes}{64}{subsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.3.3}Importance of Facial Artifacts in Detection}{65}{subsection.14.3.3}%
+\contentsline {subsection}{\numberline {14.3.4}Challenges with High-Quality Deepfakes}{65}{subsection.14.3.4}%
+\contentsline {subsection}{\numberline {14.3.5}Benchmarking and Dataset Evaluation}{65}{subsection.14.3.5}%
+\contentsline {section}{\numberline {14.4}Overall Results and Improvements}{65}{section.14.4}%
+\contentsline {chapter}{\numberline {15}Exposing Deep Fakes Using Inconsistent Head Poses \cite {DBLP:journals/corr/abs-1811-00661}}{67}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Method}{67}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Results and Improvements}{68}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}Effective Detection of Deepfakes Using Head Pose Inconsistencies}{68}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}High Detection Accuracy}{68}{subsection.15.2.2}%
+\contentsline {subsection}{\numberline {15.2.3}Simplicity and Efficiency}{68}{subsection.15.2.3}%
+\contentsline {subsection}{\numberline {15.2.4}Applicability Across Different Types of Deepfakes}{69}{subsection.15.2.4}%
+\contentsline {subsection}{\numberline {15.2.5}Potential for Integration with Other Detection Techniques}{69}{subsection.15.2.5}%
+\contentsline {section}{\numberline {15.3}Overall Results and Improvements}{69}{section.15.3}%
+\contentsline {chapter}{\numberline {16}Deepfake Detection with Deep Learning: Convolutional Neural Networks versus Transformers \cite {thing2023deepfakedetectiondeeplearning}}{71}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Key Ideas}{71}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Key Findings:}{72}{section.16.2}%
+\contentsline {chapter}{\numberline {17}Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks \cite {Zhang_2016}}{73}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Main Idea}{73}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Main Contributions}{74}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Results and Improvements}{74}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Improved Accuracy on Challenging Benchmarks}{74}{subsection.17.3.1}%
+\contentsline {subsection}{\numberline {17.3.2}Joint Face Detection and Alignment Improves Both Tasks}{74}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Efficiency and Real-Time Performance}{75}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.4}Online Hard Sample Mining}{75}{subsection.17.3.4}%
+\contentsline {subsection}{\numberline {17.3.5}Lightweight CNN Architecture}{75}{subsection.17.3.5}%
+\contentsline {subsection}{\numberline {17.3.6}Versatility Across Multiple Datasets}{76}{subsection.17.3.6}%
+\contentsline {section}{\numberline {17.4}Overall Results and Improvements}{76}{section.17.4}%
+\contentsline {chapter}{\numberline {18}BiLLM: Pushing the Limit of Post-Training Quantization for LLMs \cite {huang2024billmpushinglimitposttraining}}{77}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Main Contributions}{77}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Results and Improvements}{78}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Significant Model Size Reduction}{78}{subsection.18.2.1}%
+\contentsline {subsection}{\numberline {18.2.2}Minimal Accuracy Loss}{78}{subsection.18.2.2}%
+\contentsline {subsection}{\numberline {18.2.3}Wide Applicability Across Model Architectures}{78}{subsection.18.2.3}%
+\contentsline {subsection}{\numberline {18.2.4}Improved Computational Efficiency}{79}{subsection.18.2.4}%
+\contentsline {subsection}{\numberline {18.2.5}Post-Training Quantization Simplicity}{79}{subsection.18.2.5}%
+\contentsline {subsection}{\numberline {18.2.6}Potential for Future Extensions}{79}{subsection.18.2.6}%
+\contentsline {section}{\numberline {18.3}Overall Results and Improvements}{80}{section.18.3}%
+\contentsline {chapter}{\numberline {19}RepQuant: Towards Accurate Post-Training Quantization of Large Transformer Models via Scale Reparameterization \cite {li2024repquantaccurateposttrainingquantization}}{81}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Main Contributions}{81}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Results and Improvements}{82}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}Improved Accuracy in Post-Training Quantization}{82}{subsection.19.2.1}%
+\contentsline {subsection}{\numberline {19.2.2}Scale Reparameterization Technique}{82}{subsection.19.2.2}%
+\contentsline {subsection}{\numberline {19.2.3}Versatility Across Large Transformer Models}{83}{subsection.19.2.3}%
+\contentsline {subsection}{\numberline {19.2.4}Significant Reduction in Computational Complexity}{83}{subsection.19.2.4}%
+\contentsline {subsection}{\numberline {19.2.5}Hardware Compatibility and Efficiency}{83}{subsection.19.2.5}%
+\contentsline {subsection}{\numberline {19.2.6}Potential for Future Extensions}{84}{subsection.19.2.6}%
+\contentsline {subsection}{\numberline {19.2.7}Overall Results and Improvements}{84}{subsection.19.2.7}%
+\contentsline {chapter}{\numberline {20}Post-Training Quantization for Vision Transformer \cite {DBLP:journals/corr/abs-2106-14156}}{85}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Results and Improvements}{85}{section.20.1}%
+\contentsline {subsection}{\numberline {20.1.1}Mixed-Precision Quantization:}{85}{subsection.20.1.1}%
+\contentsline {subsection}{\numberline {20.1.2}Higher Accuracy on Quantized Models:}{86}{subsection.20.1.2}%
+\contentsline {subsection}{\numberline {20.1.3}Improved Performance on Smaller Models}{86}{subsection.20.1.3}%
+\contentsline {subsection}{\numberline {20.1.4}Bias Correction for Error Reduction:}{86}{subsection.20.1.4}%
+\contentsline {subsection}{\numberline {20.1.5}Ranking Loss for Attention Preservation:}{86}{subsection.20.1.5}%
+\contentsline {subsection}{\numberline {20.1.6}Memory and Computation Savings:}{86}{subsection.20.1.6}%
+\contentsline {subsection}{\numberline {20.1.7}Generalization to Object Detection:}{87}{subsection.20.1.7}%
+\contentsline {chapter}{\numberline {21}The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits \cite {ma2024era1bitllmslarge}}{88}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Results and Improvements}{89}{section.21.1}%
+\contentsline {subsection}{\numberline {21.1.1}Reduction in Memory Usage and Latency:}{89}{subsection.21.1.1}%
+\contentsline {subsection}{\numberline {21.1.2}Energy Efficiency:}{89}{subsection.21.1.2}%
+\contentsline {subsection}{\numberline {21.1.3}Throughput Improvement:}{89}{subsection.21.1.3}%
+\contentsline {subsection}{\numberline {21.1.4}Maintained Accuracy:}{89}{subsection.21.1.4}%
+\contentsline {subsection}{\numberline {21.1.5}Performance on Zero-Shot Tasks:}{90}{subsection.21.1.5}%
+\contentsline {subsection}{\numberline {21.1.6}New Scaling Laws:}{90}{subsection.21.1.6}%
+\contentsline {subsection}{\numberline {21.1.7}Hardware Optimization Potential:}{90}{subsection.21.1.7}%
+\contentsline {section}{\numberline {21.2}Overall Improvements}{90}{section.21.2}%
+\contentsline {chapter}{\numberline {22}Root Mean Square Layer Normalization \cite {zhang2019rootmeansquarelayer}}{91}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Results and Improvements}{92}{section.22.1}%
+\contentsline {subsection}{\numberline {22.1.1}Reduction in Computational Overhead:}{92}{subsection.22.1.1}%
+\contentsline {subsection}{\numberline {22.1.2}Comparable Accuracy to LayerNorm:}{92}{subsection.22.1.2}%
+\contentsline {subsection}{\numberline {22.1.3}Efficiency in Machine Translation:}{92}{subsection.22.1.3}%
+\contentsline {subsection}{\numberline {22.1.4}Partial RMSNorm (pRMSNorm):}{92}{subsection.22.1.4}%
+\contentsline {subsection}{\numberline {22.1.5}Applicability Across Different Architectures:}{92}{subsection.22.1.5}%
+\contentsline {subsection}{\numberline {22.1.6}Robustness and Stability:}{93}{subsection.22.1.6}%
+\contentsline {subsection}{\numberline {22.1.7}Lower Energy and Memory Costs:}{93}{subsection.22.1.7}%
+\contentsline {section}{\numberline {22.2}Overall Improvements:}{93}{section.22.2}%
+\contentsline {chapter}{\numberline {23}BitNet: Scaling 1-bit Transformers for Large Language Models \cite {wang2023bitnetscaling1bittransformers}}{94}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Main Contributions}{94}{section.23.1}%
+\contentsline {subsection}{\numberline {23.1.1}Reduced Energy and Memory Costs:}{94}{subsection.23.1.1}%
+\contentsline {subsection}{\numberline {23.1.2}Competitive Performance:}{95}{subsection.23.1.2}%
+\contentsline {subsection}{\numberline {23.1.3}Efficient Scaling:}{95}{subsection.23.1.3}%
+\contentsline {subsection}{\numberline {23.1.4}Stability in Training:}{95}{subsection.23.1.4}%
+\contentsline {subsection}{\numberline {23.1.5}Group Quantization:}{95}{subsection.23.1.5}%
+\contentsline {chapter}{\numberline {24}DeeperForensics-1.0: A Large-Scale Dataset for Real-World Face Forgery Detection \cite {jiang2020deeperforensics10largescaledatasetrealworld}}{96}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Main Contributions}{96}{section.24.1}%
+\contentsline {subsection}{\numberline {24.1.1}Large-Scale Dataset:}{96}{subsection.24.1.1}%
+\contentsline {subsection}{\numberline {24.1.2}Real-World Relevance:}{96}{subsection.24.1.2}%
+\contentsline {subsection}{\numberline {24.1.3}High-Quality Video Collection:}{97}{subsection.24.1.3}%
+\contentsline {subsection}{\numberline {24.1.4}Improved Detection:}{97}{subsection.24.1.4}%
+\contentsline {subsection}{\numberline {24.1.5}Benchmarking:}{97}{subsection.24.1.5}%
+\contentsline {chapter}{\numberline {25}Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics \cite {li2020celebdflargescalechallengingdataset}}{98}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Main Contributions}{98}{section.25.1}%
+\contentsline {subsection}{\numberline {25.1.1}High-Quality Dataset:}{98}{subsection.25.1.1}%
+\contentsline {subsection}{\numberline {25.1.2}Diverse Real-World Scenarios:}{98}{subsection.25.1.2}%
+\contentsline {subsection}{\numberline {25.1.3}Improved Visual Quality:}{99}{subsection.25.1.3}%
+\contentsline {subsection}{\numberline {25.1.4}Comprehensive Benchmarking:}{99}{subsection.25.1.4}%

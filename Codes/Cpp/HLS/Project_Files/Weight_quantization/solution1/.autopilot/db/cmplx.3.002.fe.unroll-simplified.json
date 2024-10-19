@@ -1,0 +1,159 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6 7",
+    "file": "weight_quant.cpp",
+    "fileloc": 6,
+    "instructions": 105,
+    "loads": {
+      "T": 9
+    },
+    "name": "weight_quant",
+    "stores": {
+      "T": 9
+    },
+    "total_instructions": 1919
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "4 2 9 3 10",
+    "file": "hls_round.h",
+    "fileloc": 159,
+    "instructions": 56,
+    "loads": {
+      "G": 2,
+      "L": 5
+    },
+    "name": "generic_round<float>",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 142
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "x_hls_utils.h",
+    "fileloc": 346,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 15
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "fabsfloat.cpp",
+    "fileloc": 7,
+    "instructions": 2,
+    "name": "fabsf",
+    "total_instructions": 49
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "roundfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "roundf",
+    "total_instructions": 144
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "4 4 10",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 12,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_copysign<float>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 45
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 298,
+    "instructions": 9,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 9
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 283,
+    "instructions": 9,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 9
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "generic_fabs<float>",
+    "total_instructions": 47
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weight_quant.h",
+    "fileloc": 9,
+    "instructions": 38,
+    "loads": {
+      "L": 9
+    },
+    "name": "abs_mean",
+    "total_instructions": 497
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weight_quant.h",
+    "fileloc": 21,
+    "instructions": 3,
+    "name": "clamp",
+    "total_instructions": 3
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "x_hls_utils.h",
+    "fileloc": 322,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_float",
+    "total_instructions": 13
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 309,
+    "instructions": 8,
+    "loads": {
+      "L": 3
+    },
+    "name": "data",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 8
+  }
+}

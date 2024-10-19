@@ -1,0 +1,223 @@
+
+
+================================================================
+== Synthesis Summary Report of 'weight_quant'
+================================================================
++ General Information: 
+    * Date:           Sun Jul 28 14:59:33 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        Weight_quantization
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+------------+------------+-----+
+    |          Modules         | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |          |            |            |     |
+    |          & Loops         | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF     |     LUT    | URAM|
+    +--------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+------------+------------+-----+
+    |+ weight_quant            |     -|  0.00|       64|  640.000|         -|        2|     -|       yes|     -|  25 (~0%)|  4820 (~0%)|  5019 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|   115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|   115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|   115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|   115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|   115 (~0%)|   209 (~0%)|    -|
+    +--------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-------------------+-----------+----------+
+| Port              | Direction | Bitwidth |
++-------------------+-----------+----------+
+| input_0_address0  | out       | 2        |
+| input_0_address1  | out       | 2        |
+| input_0_q0        | in        | 32       |
+| input_0_q1        | in        | 32       |
+| input_1_address0  | out       | 2        |
+| input_1_address1  | out       | 2        |
+| input_1_q0        | in        | 32       |
+| input_1_q1        | in        | 32       |
+| input_2_address0  | out       | 2        |
+| input_2_address1  | out       | 2        |
+| input_2_q0        | in        | 32       |
+| input_2_q1        | in        | 32       |
+| output_0_address0 | out       | 2        |
+| output_0_address1 | out       | 2        |
+| output_0_d0       | out       | 32       |
+| output_0_d1       | out       | 32       |
+| output_1_address0 | out       | 2        |
+| output_1_address1 | out       | 2        |
+| output_1_d0       | out       | 32       |
+| output_1_d1       | out       | 32       |
+| output_2_address0 | out       | 2        |
+| output_2_address1 | out       | 2        |
+| output_2_d0       | out       | 32       |
+| output_2_d1       | out       | 32       |
++-------------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| input    | in        | float*   |
+| output   | out       | float*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+-------------------+---------+----------+
+| Argument | HW Interface      | HW Type | HW Usage |
++----------+-------------------+---------+----------+
+| input    | input_0_address0  | port    | offset   |
+| input    | input_0_ce0       | port    |          |
+| input    | input_0_q0        | port    |          |
+| input    | input_0_address1  | port    | offset   |
+| input    | input_0_ce1       | port    |          |
+| input    | input_0_q1        | port    |          |
+| input    | input_1_address0  | port    | offset   |
+| input    | input_1_ce0       | port    |          |
+| input    | input_1_q0        | port    |          |
+| input    | input_1_address1  | port    | offset   |
+| input    | input_1_ce1       | port    |          |
+| input    | input_1_q1        | port    |          |
+| input    | input_2_address0  | port    | offset   |
+| input    | input_2_ce0       | port    |          |
+| input    | input_2_q0        | port    |          |
+| input    | input_2_address1  | port    | offset   |
+| input    | input_2_ce1       | port    |          |
+| input    | input_2_q1        | port    |          |
+| output   | output_0_address0 | port    | offset   |
+| output   | output_0_ce0      | port    |          |
+| output   | output_0_we0      | port    |          |
+| output   | output_0_d0       | port    |          |
+| output   | output_0_address1 | port    | offset   |
+| output   | output_0_ce1      | port    |          |
+| output   | output_0_we1      | port    |          |
+| output   | output_0_d1       | port    |          |
+| output   | output_1_address0 | port    | offset   |
+| output   | output_1_ce0      | port    |          |
+| output   | output_1_we0      | port    |          |
+| output   | output_1_d0       | port    |          |
+| output   | output_1_address1 | port    | offset   |
+| output   | output_1_ce1      | port    |          |
+| output   | output_1_we1      | port    |          |
+| output   | output_1_d1       | port    |          |
+| output   | output_2_address0 | port    | offset   |
+| output   | output_2_ce0      | port    |          |
+| output   | output_2_we0      | port    |          |
+| output   | output_2_d0       | port    |          |
+| output   | output_2_address1 | port    | offset   |
+| output   | output_2_ce1      | port    |          |
+| output   | output_2_we1      | port    |          |
+| output   | output_2_d1       | port    |          |
++----------+-------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+| Name                                                        | DSP | Pragma | Variable     | Op   | Impl    | Latency |
++-------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+| + weight_quant                                              | 25  |        |              |      |         |         |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U4                         | 2   |        | sum          | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U4                         | 2   |        | sum_1        | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U5                         | 2   |        | sum_2        | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U5                         | 2   |        | sum_3        | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U6                         | 2   |        | sum_4        | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U6                         | 2   |        | sum_5        | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U7                         | 2   |        | sum_6        | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U7                         | 2   |        | sum_7        | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U8                         | 2   |        | sum_8        | fadd | fulldsp | 2       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U14                          |     |        | mean         | fdiv | fabric  | 6       |
+|   ddiv_64ns_64ns_64_13_no_dsp_1_U31                         |     |        | div          | ddiv | fabric  | 12      |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U9                          | 3   |        | p_x_assign_9 | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U15                          |     |        | div1         | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U10                         | 3   |        | p_x_assign_s | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U16                          |     |        | div16_s      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U11                         | 3   |        | p_x_assign_1 | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U17                          |     |        | div16_3      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U12                         | 3   |        | p_x_assign_2 | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U18                          |     |        | div16_1      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U13                         | 3   |        | p_x_assign_3 | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U14                          |     |        | div16_1_1    | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U9                          | 3   |        | p_x_assign_4 | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U15                          |     |        | div16_1_2    | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U10                         | 3   |        | p_x_assign_5 | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U16                          |     |        | div16_2      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U11                         | 3   |        | p_x_assign_6 | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U17                          |     |        | div16_2_1    | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U12                         | 3   |        | p_x_assign_7 | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U18                          |     |        | div16_2_2    | fdiv | fabric  | 6       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_288) | 0   |        |              |      |         |         |
+|    data_fu_133_p2                                           |     |        | data         | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_297) | 0   |        |              |      |         |         |
+|    data_fu_133_p2                                           |     |        | data         | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_306) | 0   |        |              |      |         |         |
+|    data_fu_133_p2                                           |     |        | data         | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_315) | 0   |        |              |      |         |         |
+|    data_fu_133_p2                                           |     |        | data         | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_324) | 0   |        |              |      |         |         |
+|    data_fu_133_p2                                           |     |        | data         | add  | fabric  | 0       |
++-------------------------------------------------------------+-----+--------+--------------+------+---------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------------------------------------+--------+------+------+------+--------+----------------+------+---------+------------------+
+| Name                                                        | Usage  | Type | BRAM | URAM | Pragma | Variable       | Impl | Latency | Bitwidth, Depth, |
+|                                                             |        |      |      |      |        |                |      |         | Banks            |
++-------------------------------------------------------------+--------+------+------+------+--------+----------------+------+---------+------------------+
+| + weight_quant                                              |        |      | 0    | 0    |        |                |      |         |                  |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_288) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_297) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_306) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_315) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_324) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
++-------------------------------------------------------------+--------+------+------+------+--------+----------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+--------------------------------+--------------------------------------------------------------------+
+| Type            | Options                        | Location                                                           |
++-----------------+--------------------------------+--------------------------------------------------------------------+
+| array_partition | variable=input complete dim=2  | Weight_quantization/src/weight_quant.cpp:8 in weight_quant, input  |
+| array_partition | variable=output complete dim=2 | Weight_quantization/src/weight_quant.cpp:9 in weight_quant, output |
+| pipeline        | II=2                           | Weight_quantization/src/weight_quant.cpp:10 in weight_quant        |
+| unroll          |                                | Weight_quantization/src/weight_quant.cpp:17 in weight_quant        |
+| unroll          |                                | Weight_quantization/src/weight_quant.cpp:20 in weight_quant        |
++-----------------+--------------------------------+--------------------------------------------------------------------+
+
+

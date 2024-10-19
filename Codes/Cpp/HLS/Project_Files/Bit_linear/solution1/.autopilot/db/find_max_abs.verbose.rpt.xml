@@ -1,0 +1,173 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'find_max_abs'" level="0">
+<item name = "Date">Mon Jul 29 22:45:43 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">Bit_linear</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.260 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">4, 4, 40.000 ns, 40.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 471, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 14, -</column>
+<column name="Register">-, -, 577, 32, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">4032, 9216, 2592000, 1296000, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="fcmp_32ns_32ns_1_2_no_dsp_0_U1">fcmp_32ns_32ns_1_2_no_dsp_0, 0, 0, 0, 0, 0</column>
+<column name="fcmp_32ns_32ns_1_2_no_dsp_0_U2">fcmp_32ns_32ns_1_2_no_dsp_0, 0, 0, 0, 0, 0</column>
+<column name="fcmp_32ns_32ns_1_2_no_dsp_0_U3">fcmp_32ns_32ns_1_2_no_dsp_0, 0, 0, 0, 0, 0</column>
+<column name="fcmp_32ns_32ns_1_2_no_dsp_0_U4">fcmp_32ns_32ns_1_2_no_dsp_0, 0, 0, 0, 0, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="and_ln22_1_fu_225_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln22_2_fu_231_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln22_3_fu_329_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln22_4_fu_335_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln22_5_fu_433_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln22_6_fu_439_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln22_fu_126_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln22_10_fu_382_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="icmp_ln22_11_fu_388_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln22_12_fu_415_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="icmp_ln22_13_fu_421_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln22_1_fu_116_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln22_2_fu_174_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="icmp_ln22_3_fu_180_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln22_4_fu_207_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="icmp_ln22_5_fu_213_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln22_6_fu_278_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="icmp_ln22_7_fu_284_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln22_8_fu_311_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="icmp_ln22_9_fu_317_p2">icmp, 0, 0, 30, 23, 1</column>
+<column name="icmp_ln22_fu_110_p2">icmp, 0, 0, 15, 8, 2</column>
+<column name="or_ln22_1_fu_203_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln22_2_fu_219_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln22_3_fu_307_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln22_4_fu_323_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln22_5_fu_411_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln22_6_fu_427_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln22_fu_122_p2">or, 0, 0, 2, 1, 1</column>
+<column name="grp_fu_63_p1">select, 0, 0, 32, 1, 32</column>
+<column name="grp_fu_67_p1">select, 0, 0, 32, 1, 32</column>
+<column name="grp_fu_71_p1">select, 0, 0, 32, 1, 32</column>
+<column name="max_val_7_fu_445_p3">select, 0, 0, 32, 1, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_return">14, 3, 32, 96</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="abs_val_1_reg_489">31, 0, 32, 1</column>
+<column name="abs_val_2_reg_512">31, 0, 32, 1</column>
+<column name="abs_val_3_reg_535">31, 0, 32, 1</column>
+<column name="abs_val_reg_466">31, 0, 32, 1</column>
+<column name="ap_ce_reg">1, 0, 1, 0</column>
+<column name="ap_return_int_reg">31, 0, 32, 1</column>
+<column name="arr_0_val_int_reg">32, 0, 32, 0</column>
+<column name="arr_1_val_int_reg">32, 0, 32, 0</column>
+<column name="arr_1_val_read_reg_461">32, 0, 32, 0</column>
+<column name="arr_2_val_int_reg">32, 0, 32, 0</column>
+<column name="arr_2_val_read_reg_456">32, 0, 32, 0</column>
+<column name="arr_2_val_read_reg_456_pp0_iter1_reg">32, 0, 32, 0</column>
+<column name="arr_3_val_int_reg">32, 0, 32, 0</column>
+<column name="arr_3_val_read_reg_451">32, 0, 32, 0</column>
+<column name="icmp_ln22_10_reg_541">1, 0, 1, 0</column>
+<column name="icmp_ln22_11_reg_546">1, 0, 1, 0</column>
+<column name="icmp_ln22_1_reg_477">1, 0, 1, 0</column>
+<column name="icmp_ln22_2_reg_495">1, 0, 1, 0</column>
+<column name="icmp_ln22_3_reg_500">1, 0, 1, 0</column>
+<column name="icmp_ln22_6_reg_518">1, 0, 1, 0</column>
+<column name="icmp_ln22_7_reg_523">1, 0, 1, 0</column>
+<column name="icmp_ln22_reg_472">1, 0, 1, 0</column>
+<column name="max_val_1_reg_482">31, 0, 32, 1</column>
+<column name="max_val_3_reg_505">31, 0, 32, 1</column>
+<column name="max_val_5_reg_528">31, 0, 32, 1</column>
+<column name="arr_3_val_read_reg_451">64, 32, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, find_max_abs, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, find_max_abs, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, find_max_abs, return value</column>
+<column name="ap_ce">in, 1, ap_ctrl_hs, find_max_abs, return value</column>
+<column name="arr_0_val">in, 32, ap_none, arr_0_val, scalar</column>
+<column name="arr_1_val">in, 32, ap_none, arr_1_val, scalar</column>
+<column name="arr_2_val">in, 32, ap_none, arr_2_val, scalar</column>
+<column name="arr_3_val">in, 32, ap_none, arr_3_val, scalar</column>
+</table>
+</item>
+</section>
+</profile>

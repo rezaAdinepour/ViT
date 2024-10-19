@@ -1,0 +1,97 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 9,308        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 6,715        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 4,501        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 4,489        | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   892        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |   928        | user array partition pragmas are applied                                               |
+|               | (2) simplification          |   892        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |   892        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |   892        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |   892        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |   892        | loop and instruction simplification                                                    |
+|               | (2) parallelization         |   892        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |   892        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |   892        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |   922        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |   924        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++---------------------------------+-------------------------+-----------------+---------------+---------------+---------------+---------------+
+| Function                        | Location                | Compile/Link    | Unroll/Inline | Array/Struct  | Performance   | HW Transforms |
++---------------------------------+-------------------------+-----------------+---------------+---------------+---------------+---------------+
+| + activation_quant              | activation_quant.cpp:10 | 9,308           | 892           | 892           | 892           | 924           |
+|  + find_max_abs                 | activation_quant.h:10   |  957            |               |               |               |               |
+|   + fabsf                       | fabsfloat.cpp:7         |  938            |               |               |               |               |
+|    + generic_fabs<float>        | hls_fabs.h:12           |  936            |               |               |               |               |
+|     + generic_copysign<float>   | hls_copysign.h:10       |  934            |               |               |               |               |
+|        fp_struct                | x_hls_utils.h:283       |  622 (2 calls)  |               |               |               |               |
+|      + to_ieee                  | x_hls_utils.h:346       |  294            |               |               |               |               |
+|       + to_float                | x_hls_utils.h:322       |  292            |               |               |               |               |
+|          data                   | x_hls_utils.h:309       |  274            |               |               |               |               |
+|    clamp                        | activation_quant.h:23   |    6            |               |               |               |               |
+|  + roundf                       | roundfloat.cpp:6        | 2,563           |               |               |               |               |
+|   + generic_round<float>        | hls_round.h:159         | 2,561           |               |               |               |               |
+|      init_mask_table<float>     | hls_round.h:20          |   18            |               |               |               |               |
+|      init_one_half_table<float> | hls_round.h:32          |   18            |               |               |               |               |
+|      fp_struct                  | x_hls_utils.h:283       |  311            |               |               |               |               |
+|    + generic_copysign<float>    | hls_copysign.h:10       |  934            |               |               |               |               |
+|       fp_struct                 | x_hls_utils.h:283       |  622 (2 calls)  |               |               |               |               |
+|     + to_ieee                   | x_hls_utils.h:346       |  294            |               |               |               |               |
+|      + to_float                 | x_hls_utils.h:322       |  292            |               |               |               |               |
+|         data                    | x_hls_utils.h:309       |  274            |               |               |               |               |
+|      data                       | x_hls_utils.h:309       |  274            |               |               |               |               |
+|      fp_struct                  | x_hls_utils.h:298       |  281            |               |               |               |               |
+|    + to_ieee                    | x_hls_utils.h:346       |  294            |               |               |               |               |
+|     + to_float                  | x_hls_utils.h:322       |  292            |               |               |               |               |
+|        data                     | x_hls_utils.h:309       |  274            |               |               |               |               |
+|  + fmaxf                        | fmaxfloat.cpp:6         | 2,870           |               |               |               |               |
+|   + generic_fmax<float>         | hls_fmax.h:19           | 2,868           |               |               |               |               |
+|      fp_struct                  | x_hls_utils.h:283       |  622 (2 calls)  |               |               |               |               |
+|    + generic_isnan<float>       | hls_isnan.h:16          | 1,146 (3 calls) |               |               |               |               |
+|       fp_struct                 | x_hls_utils.h:283       |  933 (3 calls)  |               |               |               |               |
+|    + to_ieee                    | x_hls_utils.h:346       |  294            |               |               |               |               |
+|     + to_float                  | x_hls_utils.h:322       |  292            |               |               |               |               |
+|        data                     | x_hls_utils.h:309       |  274            |               |               |               |               |
+|    + to_int                     | x_hls_utils.h:319       |  566 (2 calls)  |               |               |               |               |
+|       data                      | x_hls_utils.h:309       |  548 (2 calls)  |               |               |               |               |
+|  + fminf                        | fminfloat.cpp:6         | 2,870           |               |               |               |               |
+|   + generic_fmin<float>         | hls_fmin.h:19           | 2,868           |               |               |               |               |
+|      fp_struct                  | x_hls_utils.h:283       |  622 (2 calls)  |               |               |               |               |
+|    + generic_isnan<float>       | hls_isnan.h:16          | 1,146 (3 calls) |               |               |               |               |
+|       fp_struct                 | x_hls_utils.h:283       |  933 (3 calls)  |               |               |               |               |
+|    + to_ieee                    | x_hls_utils.h:346       |  294            |               |               |               |               |
+|     + to_float                  | x_hls_utils.h:322       |  292            |               |               |               |               |
+|        data                     | x_hls_utils.h:309       |  274            |               |               |               |               |
+|    + to_int                     | x_hls_utils.h:319       |  566 (2 calls)  |               |               |               |               |
+|       data                      | x_hls_utils.h:309       |  548 (2 calls)  |               |               |               |               |
+|    fabsf                        | fabsfloat.cpp:7         |                 |  72 (9 calls) |  72 (9 calls) |  72 (9 calls) |  72 (9 calls) |
+|    generic_round<float>         | hls_round.h:159         |                 | 360 (9 calls) | 360 (9 calls) | 360 (9 calls) | 360 (9 calls) |
+|    generic_fmax<float>          | hls_fmax.h:19           |                 | 180 (9 calls) | 180 (9 calls) | 180 (9 calls) | 180 (9 calls) |
+|    generic_fmin<float>          | hls_fmin.h:19           |                 | 162 (9 calls) | 162 (9 calls) | 162 (9 calls) | 162 (9 calls) |
++---------------------------------+-------------------------+-----------------+---------------+---------------+---------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

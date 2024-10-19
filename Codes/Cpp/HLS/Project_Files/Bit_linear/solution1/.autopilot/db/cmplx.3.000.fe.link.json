@@ -1,0 +1,281 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "4 2 8",
+    "file": "bit_linear.cpp",
+    "fileloc": 4,
+    "instructions": 21,
+    "name": "bit_linear",
+    "total_instructions": 12965
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 309,
+    "instructions": 32,
+    "name": "data",
+    "total_instructions": 274
+  },
+  "10": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 20,
+    "instructions": 18,
+    "name": "init_mask_table<float>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 18
+  },
+  "11": {
+    "basicblocks": 22,
+    "calls": "17 17 23 23 7 23 6 6",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 82,
+    "name": "generic_fmax<float>",
+    "total_instructions": 2868
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 298,
+    "instructions": 40,
+    "name": "fp_struct",
+    "total_instructions": 281
+  },
+  "13": {
+    "basicblocks": 6,
+    "calls": "10 9 17 16 1 12 7",
+    "file": "hls_round.h",
+    "fileloc": 159,
+    "instructions": 98,
+    "loads": {
+      "L": 4
+    },
+    "name": "generic_round<float>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 2561
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "x_hls_utils.h",
+    "fileloc": 322,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_float",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 292
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "fabsfloat.cpp",
+    "fileloc": 7,
+    "instructions": 2,
+    "name": "fabsf",
+    "total_instructions": 938
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "17 17 7",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_copysign<float>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 934
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 283,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 311
+  },
+  "18": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "bit_linear.h",
+    "fileloc": 45,
+    "instructions": 6,
+    "name": "clamp",
+    "total_instructions": 6
+  },
+  "19": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "bit_linear.h",
+    "fileloc": 29,
+    "instructions": 29,
+    "loads": {
+      "L": 1
+    },
+    "name": "abs_mean",
+    "total_instructions": 969
+  },
+  "2": {
+    "basicblocks": 19,
+    "calls": "19 18",
+    "file": "bit_linear.h",
+    "fileloc": 72,
+    "instructions": 47,
+    "loads": {
+      "L": 1
+    },
+    "name": "weight_quant",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3587
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "11",
+    "file": "fmaxfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "fmaxf",
+    "total_instructions": 2870
+  },
+  "21": {
+    "basicblocks": 22,
+    "calls": "17 17 23 23 7 23 6 6",
+    "file": "hls_fmin.h",
+    "fileloc": 19,
+    "instructions": 82,
+    "name": "generic_fmin<float>",
+    "total_instructions": 2868
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "21",
+    "file": "fminfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "fminf",
+    "total_instructions": 2870
+  },
+  "23": {
+    "basicblocks": 3,
+    "calls": "17",
+    "file": "hls_isnan.h",
+    "fileloc": 16,
+    "instructions": 18,
+    "name": "generic_isnan<float>",
+    "total_instructions": 382
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "13",
+    "file": "roundfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "roundf",
+    "total_instructions": 2563
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "15",
+    "file": "bit_linear.h",
+    "fileloc": 13,
+    "instructions": 19,
+    "loads": {
+      "L": 1
+    },
+    "name": "find_max_abs",
+    "total_instructions": 957
+  },
+  "4": {
+    "basicblocks": 13,
+    "calls": "3 18 24 20 22",
+    "file": "bit_linear.h",
+    "fileloc": 50,
+    "instructions": 40,
+    "loads": {
+      "L": 1
+    },
+    "name": "activation_quant",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 9306
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "16",
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "generic_fabs<float>",
+    "total_instructions": 936
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "x_hls_utils.h",
+    "fileloc": 319,
+    "instructions": 5,
+    "name": "to_int",
+    "total_instructions": 283
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "14",
+    "file": "x_hls_utils.h",
+    "fileloc": 346,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 294
+  },
+  "8": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "bit_linear.h",
+    "fileloc": 92,
+    "instructions": 51,
+    "loads": {
+      "L": 3
+    },
+    "name": "matrix_multiply",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 51
+  },
+  "9": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 32,
+    "instructions": 18,
+    "name": "init_one_half_table<float>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 18
+  }
+}

@@ -1,0 +1,490 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 15, 
+                   Column: 22 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_15_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 18, 
+                   Column: 19 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_18_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.h, Line: 12, 
+                   Column: 22 }
+Function:        _Z8abs_meanPA3_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_12_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.h, Line: 14, 
+                   Column: 26 }
+Function:        _Z8abs_meanPA3_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_14_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_15_1
+  - String:          ''' ('
+  - LoopLoc:         'Weight_quantization/src/weight_quant.cpp:15:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_18_2
+  - String:          ''' ('
+  - LoopLoc:         'Weight_quantization/src/weight_quant.cpp:18:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_18_2
+  - String:          ''' ('
+  - LoopLoc:         'Weight_quantization/src/weight_quant.cpp:18:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_18_2
+  - String:          ''' ('
+  - LoopLoc:         'Weight_quantization/src/weight_quant.cpp:18:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.h, Line: 10, 
+                   Column: 0 }
+Function:        _Z8abs_meanPA3_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_12_1
+  - String:          ''' ('
+  - LoopLoc:         'Weight_quantization/src/weight_quant.h:12:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.h, Line: 10, 
+                   Column: 0 }
+Function:        _Z8abs_meanPA3_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_14_2
+  - String:          ''' ('
+  - LoopLoc:         'Weight_quantization/src/weight_quant.h:14:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.h, Line: 10, 
+                   Column: 0 }
+Function:        _Z8abs_meanPA3_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_14_2
+  - String:          ''' ('
+  - LoopLoc:         'Weight_quantization/src/weight_quant.h:14:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Weight_quantization/src/weight_quant.h, Line: 10, 
+                   Column: 0 }
+Function:        _Z8abs_meanPA3_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_14_2
+  - String:          ''' ('
+  - LoopLoc:         'Weight_quantization/src/weight_quant.h:14:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 322, Column: 0 }
+Function:        _ZNK9fp_structIfE8to_floatEv.21.31.40.51
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.3.24.34.43.54)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_float() const (.21.31.40.51)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 346, Column: 0 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_float() const (.21.31.40.51)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                   Line: 7, Column: 0 }
+Function:        fabsf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          fabsf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                   Line: 242, Column: 0 }
+Function:        _ZSt4fabsf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fabsf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::fabs(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                       Line: 242, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.3.24.34.43.54)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(ap_uint<32>)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 298, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                   Line: 1757, Column: 0 }
+Function:        _ZSt5roundf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          roundf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\roundfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::round(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                       Line: 1757, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'abs_mean(float (*) [3])'
+    DebugLoc:        { File: Weight_quantization/src/weight_quant.h, Line: 10, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'weight_quant(float (*) [3], float (*) [3])'
+    DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'clamp(float, float)'
+    DebugLoc:        { File: Weight_quantization/src/weight_quant.h, Line: 22, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'weight_quant(float (*) [3], float (*) [3])'
+    DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::round(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                       Line: 1757, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'weight_quant(float (*) [3], float (*) [3])'
+    DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          input
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: Weight_quantization/src/weight_quant.cpp, Line: 7, 
+                   Column: 0 }
+Function:        _Z12weight_quantPA3_fS0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          output
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

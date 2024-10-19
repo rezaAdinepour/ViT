@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "weight_quant",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "weight_quant"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/OneDrive/Desktop/ViT/Weight_quantization/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "weight_quant",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "weight_quant"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/OneDrive/Desktop/ViT/Weight_quantization/solution1/csynth.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

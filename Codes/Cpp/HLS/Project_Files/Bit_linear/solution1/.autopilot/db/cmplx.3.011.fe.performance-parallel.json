@@ -1,0 +1,119 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "9 7 4 5 7 4 5 7 4 5 7 4 5 9 7 4 5 7 4 5 7 4 5 7 4 5 7 7 7 7 7 7 7 7",
+    "file": "bit_linear.cpp",
+    "fileloc": 4,
+    "instructions": 199,
+    "loads": {
+      "T": 16
+    },
+    "name": "bit_linear",
+    "stores": {
+      "T": 4
+    },
+    "total_instructions": 1297
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fabsfloat.cpp",
+    "fileloc": 7,
+    "instructions": 8,
+    "name": "fabsf",
+    "total_instructions": 8
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "bit_linear.h",
+    "fileloc": 92,
+    "instructions": 73,
+    "loads": {
+      "L": 16
+    },
+    "name": "matrix_multiply",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 73
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "bit_linear.h",
+    "fileloc": 29,
+    "instructions": 34,
+    "loads": {
+      "L": 8
+    },
+    "name": "abs_mean",
+    "total_instructions": 98
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 20,
+    "name": "generic_fmax<float>",
+    "total_instructions": 20
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_fmin.h",
+    "fileloc": 19,
+    "instructions": 18,
+    "name": "generic_fmin<float>",
+    "total_instructions": 18
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "9 7 4 5 7 4 5 7 4 5 7 4 5 9 7 4 5 7 4 5 7 4 5 7 4 5",
+    "file": "bit_linear.h",
+    "fileloc": 50,
+    "instructions": 65,
+    "name": "activation_quant",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 779
+  },
+  "7": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 159,
+    "instructions": 40,
+    "loads": {
+      "G": 2
+    },
+    "name": "generic_round<float>",
+    "total_instructions": 40
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "3 7 7 7 7 7 7 7 7",
+    "file": "bit_linear.h",
+    "fileloc": 72,
+    "instructions": 95,
+    "loads": {
+      "L": 8
+    },
+    "name": "weight_quant",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 513
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1",
+    "file": "bit_linear.h",
+    "fileloc": 13,
+    "instructions": 13,
+    "name": "find_max_abs",
+    "total_instructions": 45
+  }
+}

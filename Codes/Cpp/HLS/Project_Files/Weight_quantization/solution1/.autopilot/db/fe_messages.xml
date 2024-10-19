@@ -1,0 +1,102 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/OneDrive/Desktop/ViT/Weight_quantization/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="weight_quant" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=weight_quant" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/OneDrive/Desktop/ViT/Weight_quantization/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="weight_quant" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=weight_quant" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Weight_quantization/src/weight_quant.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_quant" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=input complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Weight_quantization/src/weight_quant.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_quant" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=output complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Weight_quantization/src/weight_quant.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_quant" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Weight_quantization/src/weight_quant.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_quant" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Weight_quantization/src/weight_quant.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weight_quant" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:15:22" msg_body="Loop 'VITIS_LOOP_15_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_15_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:18:19" msg_body="Loop 'VITIS_LOOP_18_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_18_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.h:12:22" msg_body="Loop 'VITIS_LOOP_12_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_12_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.h:14:26" msg_body="Loop 'VITIS_LOOP_14_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_14_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_15_1' (Weight_quantization/src/weight_quant.cpp:15:22) in function 'weight_quant' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Weight_quantization/src/weight_quant.cpp:15:22" LoopName="VITIS_LOOP_15_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_18_2' (Weight_quantization/src/weight_quant.cpp:18:19) in function 'weight_quant' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Weight_quantization/src/weight_quant.cpp:18:19" LoopName="VITIS_LOOP_18_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.h:10:0" msg_body="Unrolling loop 'VITIS_LOOP_12_1' (Weight_quantization/src/weight_quant.h:12:22) in function 'abs_mean' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Weight_quantization/src/weight_quant.h:12:22" LoopName="VITIS_LOOP_12_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.h:10:0" msg_body="Unrolling loop 'VITIS_LOOP_14_2' (Weight_quantization/src/weight_quant.h:14:26) in function 'abs_mean' completely with a factor of 3">
+        <args Factor="3" LoopLoc="Weight_quantization/src/weight_quant.h:14:26" LoopName="VITIS_LOOP_14_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::data() const (.3.24.34.43.54)' into 'fp_struct&lt;float&gt;::to_float() const (.21.31.40.51)'">
+        <args Callee="fp_struct&lt;float&gt;::data() const (.3.24.34.43.54)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 309 Column 0" Caller="fp_struct&lt;float&gt;::to_float() const (.21.31.40.51)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 322 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:346:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_float() const (.21.31.40.51)' into 'fp_struct&lt;float&gt;::to_ieee() const'">
+        <args Callee="fp_struct&lt;float&gt;::to_float() const (.21.31.40.51)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 322 Column 0" Caller="fp_struct&lt;float&gt;::to_ieee() const" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 346 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'float generic_copysign&lt;float&gt;(float, float)'">
+        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 283 Column 0" Caller="float generic_copysign&lt;float&gt;(float, float)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_ieee() const' into 'float generic_copysign&lt;float&gt;(float, float)'">
+        <args Callee="fp_struct&lt;float&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 346 Column 0" Caller="float generic_copysign&lt;float&gt;(float, float)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0" msg_body="Inlining function 'float generic_copysign&lt;float&gt;(float, float)' into 'float generic_fabs&lt;float&gt;(float)'">
+        <args Callee="float generic_copysign&lt;float&gt;(float, float)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0" Caller="float generic_fabs&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h} Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp:7:0" msg_body="Inlining function 'float generic_fabs&lt;float&gt;(float)' into 'fabsf'">
+        <args Callee="float generic_fabs&lt;float&gt;(float)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h} Line 12 Column 0" Caller="fabsf" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp} Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:242:0" msg_body="Inlining function 'fabsf' into 'std::fabs(float)'">
+        <args Callee="fabsf" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp} Line 7 Column 0" Caller="std::fabs(float)" Caller-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath} Line 242 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h:160:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'float generic_round&lt;float&gt;(float)'">
+        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 283 Column 0" Caller="float generic_round&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h} Line 160 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h:160:0" msg_body="Inlining function 'float generic_copysign&lt;float&gt;(float, float)' into 'float generic_round&lt;float&gt;(float)'">
+        <args Callee="float generic_copysign&lt;float&gt;(float, float)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h} Line 10 Column 0" Caller="float generic_round&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h} Line 160 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h:160:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::data() const (.3.24.34.43.54)' into 'float generic_round&lt;float&gt;(float)'">
+        <args Callee="fp_struct&lt;float&gt;::data() const (.3.24.34.43.54)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 309 Column 0" Caller="float generic_round&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h} Line 160 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h:160:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(ap_uint&lt;32&gt;)' into 'float generic_round&lt;float&gt;(float)'">
+        <args Callee="fp_struct&lt;float&gt;::fp_struct(ap_uint&lt;32&gt;)" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 298 Column 0" Caller="float generic_round&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h} Line 160 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h:160:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_ieee() const' into 'float generic_round&lt;float&gt;(float)'">
+        <args Callee="fp_struct&lt;float&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 346 Column 0" Caller="float generic_round&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h} Line 160 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:1757:0" msg_body="Inlining function 'roundf' into 'std::round(float)'">
+        <args Callee="roundf" Callee-DebugLoc="File {C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\roundfloat.cpp} Line 6 Column 0" Caller="std::round(float)" Caller-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath} Line 1757 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:7:0" msg_body="Inlining function 'abs_mean(float (*) [3])' into 'weight_quant(float (*) [3], float (*) [3])'">
+        <args Callee="abs_mean(float (*) [3])" Callee-DebugLoc="File Weight_quantization/src/weight_quant.h Line 10 Column 0" Caller="weight_quant(float (*) [3], float (*) [3])" Caller-DebugLoc="File Weight_quantization/src/weight_quant.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:7:0" msg_body="Inlining function 'clamp(float, float)' into 'weight_quant(float (*) [3], float (*) [3])'">
+        <args Callee="clamp(float, float)" Callee-DebugLoc="File Weight_quantization/src/weight_quant.h Line 22 Column 0" Caller="weight_quant(float (*) [3], float (*) [3])" Caller-DebugLoc="File Weight_quantization/src/weight_quant.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:7:0" msg_body="Inlining function 'std::round(float)' into 'weight_quant(float (*) [3], float (*) [3])'">
+        <args Callee="std::round(float)" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath} Line 1757 Column 0" Caller="weight_quant(float (*) [3], float (*) [3])" Caller-DebugLoc="File Weight_quantization/src/weight_quant.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:7:0" msg_body="Applying array_partition to 'input': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="input"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Weight_quantization/src/weight_quant.cpp:7:0" msg_body="Applying array_partition to 'output': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="output"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

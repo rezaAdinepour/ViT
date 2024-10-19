@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="bit_linear.cpp" path="C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.cpp"/>
+    <originFiles name="bit_linear.h" path="C:\OneDrive\Desktop\ViT\Bit_linear\src\bit_linear.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_bit_linear.cpp" path="C:\OneDrive\Desktop\ViT\Bit_linear\src\tb_bit_linear.cpp"/>
+    <originFiles name="tb_bit_linear.h" path="C:\OneDrive\Desktop\ViT\Bit_linear\src\tb_bit_linear.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

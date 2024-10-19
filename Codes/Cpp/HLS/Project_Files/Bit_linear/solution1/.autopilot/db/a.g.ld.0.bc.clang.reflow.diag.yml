@@ -1,0 +1,1025 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 95, Column: 19 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_95_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 98, Column: 19 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_98_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 103, Column: 31 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_103_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 78, Column: 19 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_78_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 81, Column: 19 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_81_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 33, Column: 19 }
+Function:        _Z8abs_meanPA2_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_33_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 36, Column: 19 }
+Function:        _Z8abs_meanPA2_f
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_36_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 53, Column: 19 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_53_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 60, Column: 26 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_60_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 17, Column: 19 }
+Function:        _Z12find_max_absPfi
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_17_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 93, Column: 0 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_95_1
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:95:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_multiply
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 93, Column: 0 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_98_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:98:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_multiply
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 93, Column: 0 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_103_3
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:103:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_multiply
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 93, Column: 0 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_103_3
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:103:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_multiply
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 93, Column: 0 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_98_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:98:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_multiply
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 93, Column: 0 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_103_3
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:103:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_multiply
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 93, Column: 0 }
+Function:        _Z15matrix_multiplyPA4_fPA2_fS2_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_103_3
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:103:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_multiply
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_78_1
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:78:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_81_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:81:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_81_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:81:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_81_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:81:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_81_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:81:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          weight_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 30, Column: 0 }
+Function:        _Z8abs_meanPA2_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_33_1
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:33:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 30, Column: 0 }
+Function:        _Z8abs_meanPA2_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_36_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:36:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 30, Column: 0 }
+Function:        _Z8abs_meanPA2_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_36_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:36:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 30, Column: 0 }
+Function:        _Z8abs_meanPA2_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_36_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:36:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 30, Column: 0 }
+Function:        _Z8abs_meanPA2_f
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_36_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:36:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          abs_mean
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_53_1
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:53:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          activation_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_60_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:60:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          activation_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_60_2
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:60:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          activation_quant
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 14, Column: 0 }
+Function:        _Z12find_max_absPfi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_17_1
+  - String:          ''' ('
+  - LoopLoc:         'Bit_linear/src/bit_linear.h:17:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          find_max_abs
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 322, Column: 0 }
+Function:        _ZNK9fp_structIfE8to_floatEv.28.38.47.58
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.10.31.41.50.61)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_float() const (.28.38.47.58)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 346, Column: 0 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_float() const (.28.38.47.58)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                   Line: 12, Column: 0 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                   Line: 7, Column: 0 }
+Function:        fabsf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          fabsf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.10.31.41.50.61)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(ap_uint<32>)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 298, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                   Line: 160, Column: 0 }
+Function:        _Z13generic_roundIfET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_round<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_round.h', 
+                       Line: 160, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isnanIfEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isnan<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 319, Column: 0 }
+Function:        _ZNK9fp_structIfE6to_intEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.10.31.41.50.61)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_int() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 319, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmax<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmax<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmax<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_int() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmax<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fminIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmin<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fminIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmin<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fminIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmin<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fminIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_int() const'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 319, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmin<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'clamp(float, float)'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 46, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'activation_quant(float (*) [4], float (*) [4])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          roundf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\roundfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'activation_quant(float (*) [4], float (*) [4])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fmaxf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'activation_quant(float (*) [4], float (*) [4])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+Function:        _Z16activation_quantPA4_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fminf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fminfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'activation_quant(float (*) [4], float (*) [4])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                   Line: 242, Column: 0 }
+Function:        _ZSt4fabsf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fabsf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::fabs(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                       Line: 242, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                   Line: 1757, Column: 0 }
+Function:        _ZSt5roundf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          roundf
+    DebugLoc:        { File: 'C:\scratch\2023.2\hls_product\689\2023.2\src\shared\hls\clib\hlsmath\src\c\roundfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::round(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                       Line: 1757, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'clamp(float, float)'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 46, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'weight_quant(float (*) [2], float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+Function:        _Z12weight_quantPA2_fS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::round(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath', 
+                       Line: 1757, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'weight_quant(float (*) [2], float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 5, Column: 0 }
+Function:        _Z10bit_linearPA4_fPA2_fS2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          input
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 5, Column: 0 }
+Function:        _Z10bit_linearPA4_fPA2_fS2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          weight
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 5, Column: 0 }
+Function:        _Z10bit_linearPA4_fPA2_fS2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          output
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 16, Column: 2 }
+Function:        _Z10bit_linearPA4_fPA2_fS2_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'activation_quant(float (*) [4], float (*) [4])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 51, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'bit_linear(float (*) [4], float (*) [2], float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 17, Column: 5 }
+Function:        _Z10bit_linearPA4_fPA2_fS2_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'weight_quant(float (*) [2], float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 73, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'bit_linear(float (*) [4], float (*) [2], float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 18, Column: 5 }
+Function:        _Z10bit_linearPA4_fPA2_fS2_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'matrix_multiply(float (*) [4], float (*) [2], float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 93, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'bit_linear(float (*) [4], float (*) [2], float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 74, Column: 18 }
+Function:        _Z10bit_linearPA4_fPA2_fS2_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'abs_mean(float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.h, Line: 30, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'bit_linear(float (*) [4], float (*) [2], float (*) [2])'
+    DebugLoc:        { File: Bit_linear/src/bit_linear.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="weight_quant.cpp" path="C:\OneDrive\Desktop\ViT\Weight_quantization\src\weight_quant.cpp"/>
+    <originFiles name="weight_quant.h" path="C:\OneDrive\Desktop\ViT\Weight_quantization\src\weight_quant.h"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_weight_quant.cpp" path="C:\OneDrive\Desktop\ViT\Weight_quantization\src\tb_weight_quant.cpp"/>
+    <originFiles name="tb_weight_quant.h" path="C:\OneDrive\Desktop\ViT\Weight_quantization\src\tb_weight_quant.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

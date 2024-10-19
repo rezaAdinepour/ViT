@@ -1,0 +1,20 @@
+C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp:3620:5: warning: Added loop label VITIS_LOOP_12_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 3; i++)
+    ^~~
+    VITIS_LOOP_12_1: 
+C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp:3620:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp:3622:9: warning: Added loop label VITIS_LOOP_14_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 3; j++)
+        ^~~
+        VITIS_LOOP_14_2: 
+C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp:3622:9: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp:3654:5: warning: Added loop label VITIS_LOOP_15_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 3; i++)
+    ^~~
+    VITIS_LOOP_15_1: 
+C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp:3654:5: note: FIX-IT applied suggested code changes
+C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp:3657:2: warning: Added loop label VITIS_LOOP_18_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < 3; j++)
+ ^~~
+ VITIS_LOOP_18_2: 
+C:\OneDrive\Desktop\ViT\Weight_quantization\solution1\.autopilot\db\weight_quant.pp.0.cpp:3657:2: note: FIX-IT applied suggested code changes

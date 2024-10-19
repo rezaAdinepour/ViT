@@ -1,0 +1,313 @@
+
+
+================================================================
+== Synthesis Summary Report of 'bit_linear'
+================================================================
++ General Information: 
+    * Date:           Mon Jul 29 22:45:45 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        Bit_linear
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+    |          Modules         | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |          |             |            |     |
+    |          & Loops         | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |      FF     |     LUT    | URAM|
+    +--------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+    |+ bit_linear              |     -|  0.00|       72|  720.000|         -|        3|     -|       yes|     -|  49 (~0%)|  10839 (~0%)|  9935 (~0%)|    -|
+    | + find_max_abs           |     -|  3.04|        4|   40.000|         -|        1|     -|       yes|     -|         -|    577 (~0%)|   517 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|    115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|    115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|    115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|    115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|    115 (~0%)|   209 (~0%)|    -|
+    | + generic_round_float_s  |     -|  4.86|        1|   10.000|         -|        1|     -|       yes|     -|         -|    115 (~0%)|   209 (~0%)|    -|
+    | + generic_fmax_float_s   |     -|  5.81|        0|    0.000|         -|        1|     -|       yes|     -|         -|            -|   124 (~0%)|    -|
+    | + generic_fmax_float_s   |     -|  5.81|        0|    0.000|         -|        1|     -|       yes|     -|         -|            -|   124 (~0%)|    -|
+    | + generic_fmax_float_s   |     -|  5.81|        0|    0.000|         -|        1|     -|       yes|     -|         -|            -|   124 (~0%)|    -|
+    +--------------------------+------+------+---------+---------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-------------------+-----------+----------+
+| Port              | Direction | Bitwidth |
++-------------------+-----------+----------+
+| input_0_address0  | out       | 1        |
+| input_0_address1  | out       | 1        |
+| input_0_q0        | in        | 32       |
+| input_0_q1        | in        | 32       |
+| input_1_address0  | out       | 1        |
+| input_1_address1  | out       | 1        |
+| input_1_q0        | in        | 32       |
+| input_1_q1        | in        | 32       |
+| input_2_address0  | out       | 1        |
+| input_2_address1  | out       | 1        |
+| input_2_q0        | in        | 32       |
+| input_2_q1        | in        | 32       |
+| input_3_address0  | out       | 1        |
+| input_3_address1  | out       | 1        |
+| input_3_q0        | in        | 32       |
+| input_3_q1        | in        | 32       |
+| output_0_address0 | out       | 1        |
+| output_0_address1 | out       | 1        |
+| output_0_d0       | out       | 32       |
+| output_0_d1       | out       | 32       |
+| output_1_address0 | out       | 1        |
+| output_1_address1 | out       | 1        |
+| output_1_d0       | out       | 32       |
+| output_1_d1       | out       | 32       |
+| weight_0_address0 | out       | 2        |
+| weight_0_address1 | out       | 2        |
+| weight_0_q0       | in        | 32       |
+| weight_0_q1       | in        | 32       |
+| weight_1_address0 | out       | 2        |
+| weight_1_address1 | out       | 2        |
+| weight_1_q0       | in        | 32       |
+| weight_1_q1       | in        | 32       |
++-------------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| input    | in        | float*   |
+| weight   | in        | float*   |
+| output   | out       | float*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+-------------------+---------+----------+
+| Argument | HW Interface      | HW Type | HW Usage |
++----------+-------------------+---------+----------+
+| input    | input_0_address0  | port    | offset   |
+| input    | input_0_ce0       | port    |          |
+| input    | input_0_q0        | port    |          |
+| input    | input_0_address1  | port    | offset   |
+| input    | input_0_ce1       | port    |          |
+| input    | input_0_q1        | port    |          |
+| input    | input_1_address0  | port    | offset   |
+| input    | input_1_ce0       | port    |          |
+| input    | input_1_q0        | port    |          |
+| input    | input_1_address1  | port    | offset   |
+| input    | input_1_ce1       | port    |          |
+| input    | input_1_q1        | port    |          |
+| input    | input_2_address0  | port    | offset   |
+| input    | input_2_ce0       | port    |          |
+| input    | input_2_q0        | port    |          |
+| input    | input_2_address1  | port    | offset   |
+| input    | input_2_ce1       | port    |          |
+| input    | input_2_q1        | port    |          |
+| input    | input_3_address0  | port    | offset   |
+| input    | input_3_ce0       | port    |          |
+| input    | input_3_q0        | port    |          |
+| input    | input_3_address1  | port    | offset   |
+| input    | input_3_ce1       | port    |          |
+| input    | input_3_q1        | port    |          |
+| weight   | weight_0_address0 | port    | offset   |
+| weight   | weight_0_ce0      | port    |          |
+| weight   | weight_0_q0       | port    |          |
+| weight   | weight_0_address1 | port    | offset   |
+| weight   | weight_0_ce1      | port    |          |
+| weight   | weight_0_q1       | port    |          |
+| weight   | weight_1_address0 | port    | offset   |
+| weight   | weight_1_ce0      | port    |          |
+| weight   | weight_1_q0       | port    |          |
+| weight   | weight_1_address1 | port    | offset   |
+| weight   | weight_1_ce1      | port    |          |
+| weight   | weight_1_q1       | port    |          |
+| output   | output_0_address0 | port    | offset   |
+| output   | output_0_ce0      | port    |          |
+| output   | output_0_we0      | port    |          |
+| output   | output_0_d0       | port    |          |
+| output   | output_0_address1 | port    | offset   |
+| output   | output_0_ce1      | port    |          |
+| output   | output_0_we1      | port    |          |
+| output   | output_0_d1       | port    |          |
+| output   | output_1_address0 | port    | offset   |
+| output   | output_1_ce0      | port    |          |
+| output   | output_1_we0      | port    |          |
+| output   | output_1_d0       | port    |          |
+| output   | output_1_address1 | port    | offset   |
+| output   | output_1_ce1      | port    |          |
+| output   | output_1_we1      | port    |          |
+| output   | output_1_d1       | port    |          |
++----------+-------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------------------+-----+--------+--------------------+------+---------+---------+
+| Name                                                        | DSP | Pragma | Variable           | Op   | Impl    | Latency |
++-------------------------------------------------------------+-----+--------+--------------------+------+---------+---------+
+| + bit_linear                                                | 49  |        |                    |      |         |         |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U33                          |     |        | scale              | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U22                         | 3   |        | scaled_val         | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U34                          |     |        | input_quant        | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U23                         | 3   |        | scaled_val_1       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U35                          |     |        | input_quant_1      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U24                         | 3   |        | scaled_val_2       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U33                          |     |        | input_quant_2      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U22                         | 3   |        | scaled_val_3       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U34                          |     |        | input_quant_3      | fdiv | fabric  | 6       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U33                          |     |        | scale_1            | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U23                         | 3   |        | scaled_val_4       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U34                          |     |        | input_quant_4      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U24                         | 3   |        | scaled_val_5       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U35                          |     |        | input_quant_5      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U25                         | 3   |        | scaled_val_6       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U35                          |     |        | input_quant_6      | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U26                         | 3   |        | scaled_val_7       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U36                          |     |        | input_quant_7      | fdiv | fabric  | 6       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U14                        | 2   |        | sum                | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U15                        | 2   |        | sum_1              | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U16                        | 2   |        | sum_2              | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U17                        | 2   |        | sum_3              | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U18                        | 2   |        | sum_4              | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U19                        | 2   |        | sum_5              | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U20                        | 2   |        | sum_6              | fadd | fulldsp | 2       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U21                        | 2   |        | sum_7              | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U22                         | 3   |        | mean               | fmul | maxdsp  | 1       |
+|   ddiv_64ns_64ns_64_13_no_dsp_1_U48                         |     |        | div_i8             | ddiv | fabric  | 12      |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U25                         | 3   |        | p_x_assign_8       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U36                          |     |        | weight_quantized   | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U26                         | 3   |        | p_x_assign_9       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U37                          |     |        | weight_quantized_1 | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U27                         | 3   |        | p_x_assign_s       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U38                          |     |        | weight_quantized_2 | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U28                         | 3   |        | p_x_assign_1       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U36                          |     |        | weight_quantized_3 | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U29                         | 3   |        | p_x_assign_2       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U37                          |     |        | weight_quantized_4 | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U30                         | 3   |        | p_x_assign_3       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U38                          |     |        | weight_quantized_5 | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U31                         | 3   |        | p_x_assign_4       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U37                          |     |        | weight_quantized_6 | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U32                         | 3   |        | p_x_assign_5       | fmul | maxdsp  | 1       |
+|   fdiv_32ns_32ns_32_7_no_dsp_1_U38                          |     |        | weight_quantized_7 | fdiv | fabric  | 6       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U23                         | 3   |        | mul_i              | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U14                        | 2   |        | add_i              | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U24                         | 3   |        | mul_124_i          | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U18                        | 2   |        | add_125_i          | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U27                         | 3   |        | mul_2_i            | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U14                        | 2   |        | add_2_i            | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U29                         | 3   |        | mul_3_i            | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U18                        | 2   |        | add_3_i            | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U25                         | 3   |        | mul_119_i          | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U15                        | 2   |        | add_120_i          | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U28                         | 3   |        | mul_119_1_i        | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U19                        | 2   |        | add_120_1_i        | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U29                         | 3   |        | mul_119_2_i        | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U15                        | 2   |        | add_120_2_i        | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U30                         | 3   |        | mul_119_3_i        | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U19                        | 2   |        | add_120_3_i        | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U26                         | 3   |        | mul_1_i            | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U16                        | 2   |        | add_1_i            | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U27                         | 3   |        | mul_1_110_i        | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U20                        | 2   |        | add_1_111_i        | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U30                         | 3   |        | mul_1_2_i          | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U16                        | 2   |        | add_1_2_i          | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U31                         | 3   |        | mul_1_3_i          | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U20                        | 2   |        | add_1_3_i          | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U28                         | 3   |        | mul_1_1_i          | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U17                        | 2   |        | add_1_1_i          | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U31                         | 3   |        | mul_1_1_1_i        | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U21                        | 2   |        | add_1_1_1_i        | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U32                         | 3   |        | mul_1_1_2_i        | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U17                        | 2   |        | add_1_1_2_i        | fadd | fulldsp | 2       |
+|   fmul_32ns_32ns_32_2_max_dsp_1_U32                         | 3   |        | mul_1_1_3_i        | fmul | maxdsp  | 1       |
+|   fadd_32ns_32ns_32_3_full_dsp_1_U21                        | 2   |        | add_1_1_3_i        | fadd | fulldsp | 2       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_346) | 0   |        |                    |      |         |         |
+|    data_fu_133_p2                                           |     |        | data               | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_355) | 0   |        |                    |      |         |         |
+|    data_fu_133_p2                                           |     |        | data               | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_364) | 0   |        |                    |      |         |         |
+|    data_fu_133_p2                                           |     |        | data               | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_373) | 0   |        |                    |      |         |         |
+|    data_fu_133_p2                                           |     |        | data               | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_382) | 0   |        |                    |      |         |         |
+|    data_fu_133_p2                                           |     |        | data               | add  | fabric  | 0       |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_391) | 0   |        |                    |      |         |         |
+|    data_fu_133_p2                                           |     |        | data               | add  | fabric  | 0       |
++-------------------------------------------------------------+-----+--------+--------------------+------+---------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------------------------------------+--------+------+------+------+--------+----------------+------+---------+------------------+
+| Name                                                        | Usage  | Type | BRAM | URAM | Pragma | Variable       | Impl | Latency | Bitwidth, Depth, |
+|                                                             |        |      |      |      |        |                |      |         | Banks            |
++-------------------------------------------------------------+--------+------+------+------+--------+----------------+------+---------+------------------+
+| + bit_linear                                                |        |      | 0    | 0    |        |                |      |         |                  |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_346) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_355) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_364) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_373) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_382) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
+|  + generic_round_float_s (grp_generic_round_float_s_fu_391) |        |      | 0    | 0    |        |                |      |         |                  |
+|    mask_table_U                                             | rom_1p |      |      |      |        | mask_table     | auto | 1       | 23, 32, 1        |
+|    one_half_table_U                                         | rom_1p |      |      |      |        | one_half_table | auto | 1       | 24, 32, 1        |
++-------------------------------------------------------------+--------+------+------+------+--------+----------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------+-------------------------------------------------------+
+| Type            | Options               | Location                                              |
++-----------------+-----------------------+-------------------------------------------------------+
+| array_partition | variable=input dim=2  | Bit_linear/src/bit_linear.cpp:6 in bit_linear, input  |
+| array_partition | variable=weight dim=2 | Bit_linear/src/bit_linear.cpp:7 in bit_linear, weight |
+| array_partition | variable=output dim=2 | Bit_linear/src/bit_linear.cpp:8 in bit_linear, output |
+| pipeline        | II=3                  | Bit_linear/src/bit_linear.cpp:14 in bit_linear        |
+| pipeline        | II=1                  | Bit_linear/src/bit_linear.h:16 in find_max_abs        |
+| unroll          |                       | Bit_linear/src/bit_linear.h:19 in find_max_abs        |
+| pipeline        | II=1                  | Bit_linear/src/bit_linear.h:32 in abs_mean            |
+| unroll          |                       | Bit_linear/src/bit_linear.h:35 in abs_mean            |
+| unroll          |                       | Bit_linear/src/bit_linear.h:38 in abs_mean            |
+| pipeline        | II=1                  | Bit_linear/src/bit_linear.h:52 in activation_quant    |
+| unroll          |                       | Bit_linear/src/bit_linear.h:55 in activation_quant    |
+| unroll          |                       | Bit_linear/src/bit_linear.h:62 in activation_quant    |
+| pipeline        | II=1                  | Bit_linear/src/bit_linear.h:77 in weight_quant        |
+| unroll          |                       | Bit_linear/src/bit_linear.h:80 in weight_quant        |
+| unroll          |                       | Bit_linear/src/bit_linear.h:83 in weight_quant        |
+| pipeline        | II=1                  | Bit_linear/src/bit_linear.h:94 in matrix_multiply     |
+| unroll          |                       | Bit_linear/src/bit_linear.h:97 in matrix_multiply     |
+| unroll          |                       | Bit_linear/src/bit_linear.h:100 in matrix_multiply    |
+| unroll          |                       | Bit_linear/src/bit_linear.h:105 in matrix_multiply    |
++-----------------+-----------------------+-------------------------------------------------------+
+
+
